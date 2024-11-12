@@ -11,6 +11,10 @@ html {
 	box-sizing: border-box;
 }
 
+:root {
+	--index: calc(1vw + 1vh);
+}
+
 article,
 aside,
 details,
@@ -581,13 +585,15 @@ ul {
 }
 
 .site-promo__title {
-	font-size: 3.5em;
+	/* font-size: 3.5em; */
+	font-size: calc(var(--index) * 2);
 	margin-bottom: 20px;
 }
 
 .site-promo__text {
 	margin-bottom: 45px;
 	padding: 0 30px;
+	font-size: calc(var(--index) / 1.65);
 	color: #8c8f94;
 }
 
@@ -595,6 +601,7 @@ ul {
 	width: 215px;
 	height: 60px;
 	margin: 0 auto;
+	font-size: calc(var(--index) / 1.65);
 }
 
 .site-promo__ifone {
