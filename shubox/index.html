@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shubox</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/jquery.arcticmodal-0.3/jquery.arcticmodal-0.3.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header" id="header">
+        <div class="header__wrapper">
+          <div class="mobile-nav">
+            <div class="mobile-nav__btn" id="mobileMenuButton"><span></span><span></span><span></span></div>
+          </div>
+          <div class="header__menu">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="#header">Главная</a></li>
+                <li class="menu__item"><a class="menu__link" href="#about">Про ShuBox</a></li>
+                <li class="menu__item"><a class="menu__link" href="#choose">Выбрать</a></li>
+                <li class="menu__item"><a class="menu__link" href="#guarantee">Гарантия</a></li>
+                <li class="menu__item"><a class="menu__link" href="#gallery">Галерея</a></li>
+                <li class="menu__item"><a class="menu__link" href="#faq">FAQ</a></li>
+              </ul>
+            </nav>
+            <div class="header-phone">
+              <div class="header-phone__item">+7 (999) 534-45-79</div>
+            </div>
+          </div>
+        </div>
+        <div class="intro">
+          <div class="intro__inner">
+            <div class="intro__item">
+              <div class="intro__banner">
+                <div class="intro__letter">s</div>
+                <div class="intro__letter">h</div>
+                <div class="intro__letter">u</div>
+                <div class="intro__letter">b</div>
+                <div class="intro__letter">o</div>
+                <div class="intro__letter">x</div>
+                <div class="intro__image" id="intro"><img class="intro__pic parallax-layer" src="images/intro.png"></div>
+              </div>
+              <div class="intro__text">Стильные боксы для хранения  обуви, <span>косметики или украшений</span></div>
+            </div><a class="intro__btn" href="#about"><span class="intro__btn-text">Узнать<br>подробнее<br>про ShoBox</span></a><a class="intro__btn intro__modal" href="#"><span class="intro__btn-text">Заказать<br>звонок<br>менеджера</span></a>
+          </div>
+        </div>
+      </header>
+      <div class="about" id="about">
+        <div class="about__inner">
+          <h1 class="about__title"> <span>Что такое</span><span>ShuBox?</span></h1>
+          <div class="about__item">
+            <div class="about__video">
+              <div class="video" id="videoBox"><img class="video__play" id="playBtn" src="images/play.png">
+                <video id="video">
+                  <source src="images/9a836dfc.mp4">
+                </video>
+              </div>
+            </div>
+            <div class="about__text">
+              <p class="about__paragraph"><span class="about__first">ShuBox</span> — классическая тумбочка для хранения обуви, стилизированная под обувные коробки извесных брендов.</p>
+              <p class="about__paragraph">Это простой стильный аксесcуар для интерьера, и оригинальный подарок от которого будет в восторге любая дама.</p>
+              <button class="about__btn about__modal" type="button">ЗАКАЗАТЬ SHUBOX</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="product" id="choose">
+        <div class="wrapper">
+          <div class="product__inner">
+            <h2 class="caption">Создайте уникальный дизайн</h2>
+            <div class="product__item">
+              <div class="product__thumb">
+                <h3 class="product__title">Mini</h3>
+                <div class="product__image"><img class="product__pic" src="images/c-mini.jpg" width="223" height="311" alt="Mini"></div>
+                <div class="product__size">Размеры: 43/33/23 см</div>
+                <p class="product__desc">Box для хранения<br>гаджетов и косметики</p>
+              </div>
+              <div class="product__thumb">
+                <h3 class="product__title">Compact</h3>
+                <div class="product__image"><img class="product__pic" src="images/c-compact.jpg" width="223" height="311" alt="Compact"></div>
+                <div class="product__size">Размеры: 75/55/47 см</div>
+                <p class="product__desc">Box для хранения<br>12-15 пар обуви </p>
+              </div>
+              <div class="product__thumb">
+                <h3 class="product__title">Classic</h3>
+                <div class="product__image"><img class="product__pic" src="images/c-classic.jpg" width="223" height="311" alt="Classic"></div>
+                <div class="product__size">Размеры: 90/65/55 см</div>
+                <p class="product__desc">Box для хранения<br>20 пар обуви</p>
+              </div>
+            </div>
+            <div class="product__buttons">
+              <button class="product__btn product__modal" type="button">Связаться с менеджером</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="promo">
+        <div class="promo__inner">
+          <div class="promo__item">
+            <div class="discount">
+              <div class="discount__inner">
+                <p class="discount__text">Скидка к Новому Году</p>
+                <p class="discount__text">−10% на любой ShuBox</p>
+                <p class="discount__text">Успей заказать до 15 декабря</p>
+              </div>
+            </div>
+          </div>
+          <div class="promo__item promo-modal">
+            <div class="create">
+              <p class="create__text">СОЗДАТЬ SHUBOX</p>
+              <p class="create__text">со скидкой</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="order">
+        <div class="wrapper">
+          <h2 class="caption">Как заказать ShuBox?</h2>
+          <div class="order__inner">
+            <div class="order__item">
+              <p class="order__text">Оставляете заявку</p>
+            </div>
+            <div class="order__arrow">
+              <svg width="31" stroke="#363636" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 18.7">
+                <path d="M4.2 9.4h32.1"></path>
+                <path d="M31.3 13.4l5-4-5-4"></path>
+              </svg>
+            </div>
+            <div class="order__item">
+              <p class="order__text">Обсуждаете заказ<br>с менеджером и<br>утверждаете дизайн</p>
+            </div>
+            <div class="order__arrow">
+              <svg width="31" stroke="#363636" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 18.7">
+                <path d="M4.2 9.4h32.1"></path>
+                <path d="M31.3 13.4l5-4-5-4"></path>
+              </svg>
+            </div>
+            <div class="order__item">
+              <p class="order__text">7 дней<br>производства</p>
+            </div>
+            <div class="order__arrow">
+              <svg width="31" stroke="#363636" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 18.7">
+                <path d="M4.2 9.4h32.1"></path>
+                <path d="M31.3 13.4l5-4-5-4"></path>
+              </svg>
+            </div>
+            <div class="order__item">
+              <p class="order__text">Получаете бокс<br>курьером	</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="gallery" id="gallery">
+        <div class="gallery__inner">
+          <div class="gallery__slider">
+            <div class="gallery__btn"></div>
+            <div class="gallery__item" id="gallerySlider">
+              <div class="gallery__image"><img class="gallery__pic" src="images/g-alenavodonaeva.png" alt="Алена Водонаева">
+                <div class="gallery__mask">
+                  <div class="gallery__mask_inner">
+                    <div class="gallery__name">Алена Водонаева</div>
+                    <div class="gallery__insta">Instagram: <a class="gallery__link" href="https://www.instagram.com/alenavodonaeva/?hl=ru" target="_blank">@alenavodonaeva</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__image"><img class="gallery__pic" src="images/g-evgeniyafeofilaktova.png" alt="Евгения Феофилактова">
+                <div class="gallery__mask">
+                  <div class="gallery__mask_inner">
+                    <div class="gallery__name">Евгения Феофилактова</div>
+                    <div class="gallery__insta">Instagram: <a class="gallery__link" href="https://www.instagram.com/evgeniyafeofilaktova/?hl=ru" target="_blank">@evgeniyafeofilaktova</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__image"><img class="gallery__pic" src="images/g-lopyrevavika.png" alt="Виктория Лопырева">
+                <div class="gallery__mask">
+                  <div class="gallery__mask_inner">
+                    <div class="gallery__name">Виктория Лопырева</div>
+                    <div class="gallery__insta">Instagram: <a class="gallery__link" href="https://www.instagram.com/lopyrevavika/?hl=ru" target="_blank">@lopyrevavika</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__image"><img class="gallery__pic" src="images/g-sashakabaeva.png" alt="Саша Кабаева">
+                <div class="gallery__mask">
+                  <div class="gallery__mask_inner">
+                    <div class="gallery__name">Александра Кабаева</div>
+                    <div class="gallery__insta">Instagram: <a class="gallery__link" href="https://www.instagram.com/sashakabaeva_official/?hl=ru" target="_blank">@sashakabaeva</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__image"><img class="gallery__pic" src="images/g-olesyavasenko.png" alt="Олеся Васенко">
+                <div class="gallery__mask">
+                  <div class="gallery__mask_inner">
+                    <div class="gallery__name">Олеся Васенко</div>
+                    <div class="gallery__insta">Instagram: <a class="gallery__link" href="https://www.instagram.com/olesyavasenko/" target="_blank">@olesyavasenko</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__image"><img class="gallery__pic" src="images/g-stacy_starrr.png" alt="Anastacia">
+                <div class="gallery__mask">
+                  <div class="gallery__mask_inner">
+                    <div class="gallery__name">Anastacia</div>
+                    <div class="gallery__insta">Instagram: <a class="gallery__link" href="https://www.instagram.com/stacy_starrr/" target="_blank">@stacy_starrr</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__image"><img class="gallery__pic" src="images/g-svetlana_kuzovova.png" alt="Светлана Кузовова">
+                <div class="gallery__mask">
+                  <div class="gallery__mask_inner">
+                    <div class="gallery__name">Светлана Кузовова</div>
+                    <div class="gallery__insta">Instagram: <a class="gallery__link" href="https://www.instagram.com/svetlana_kuzovova/" target="_blank">@svetlana_kuzovova</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="gallery__image"><img class="gallery__pic" src="images/g-vovagauti.png" alt="Вова Гаути">
+                <div class="gallery__mask">
+                  <div class="gallery__mask_inner">
+                    <div class="gallery__name">Вова Гаути</div>
+                    <div class="gallery__insta">Instagram: <a class="gallery__link" href="https://www.instagram.com/vovagauti/?hl=ru" target="_blank">@vovagauti</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="guarantee" id="guarantee">
+        <div class="wrapper">
+          <div class="guarantee__inner">
+            <div class="guarantee__item">
+              <div class="guarantee__image"><img class="guarantee__pic" src="images/guarantee.jpg" width="468" height="566" alt="guarantee"></div>
+              <div class="guarantee__desc">
+                <div class="description">
+                  <h3 class="description__title">Собственное производство</h3>
+                  <p class="description__text">Все наши боксы изготавливаются на собственном производстве в городе Рязань, что позволяет нам лично контролировать производство и гарантировать качество готового продукта.</p>
+                </div>
+              </div>
+            </div>
+            <div class="guarantee__item">
+              <div class="guarantee__desc">
+                <div class="description">
+                  <h3 class="description__title">Гарантия качества</h3>
+                  <p class="description__text">Мы предоставляем гарантию 2 года на наши боксы. При выявлении любого производственного дефекта мы гарантируем ремонт за свой счет или вернём деньги.</p>
+                </div>
+              </div>
+              <div class="guarantee__desc">
+                <div class="description">
+                  <h3 class="description__title">Ручная работа</h3>
+                  <p class="description__text">Наши специалисты тщательно собирают каждую деталь бокса, тем самым обеспечивая качество и долговечность каждой детали.</p>
+                </div>
+              </div>
+              <div class="guarantee__desc">
+                <div class="description">
+                  <h3 class="description__title">Экологичные материалы</h3>
+                  <p class="description__text">Используем для создания только экологичные материалы, которые соответствуют европейским стандартам EN 312 и EN 14322, и не вызовут у вас или ваших детей аллергии.</p>
+                </div>
+              </div>
+              <div class="guarantee__desc">
+                <div class="description">
+                  <h3 class="description__title">Работаем по закону</h3>
+                  <p class="description__text">Никаких сомнительных платежей на банковские карты физ. лицам. Мы выставляем официальный счет через интернет эквайринг Тинькофф банка, после оплаты которого вам приходит чек, подтверждающий вашу покупку.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="faq" id="faq">
+        <div class="wrapper">
+          <h2 class="caption">Остались вопросы?</h2>
+          <div class="faq__inner">
+            <div class="faq__item">
+              <div class="faq__desc">
+                <div class="description">
+                  <h3 class="description__title">Могу ли я сделать индивидуальный рисунок и цвет? </h3>
+                  <p class="description__text">Мы разработаем для вас индивидуальный дизайн бокса бесплатно и учтем все ваши пожелания.</p>
+                </div>
+              </div>
+              <div class="faq__desc">
+                <div class="description">
+                  <h3 class="description__title">Как я могу произвести оплату?</h3>
+                  <p class="description__text">Вы можете произвести оплату наличными на банковскую карту или по безналичному расчету.</p>
+                </div>
+              </div>
+              <div class="faq__desc">
+                <div class="description">
+                  <h3 class="description__title">Можно ли, чтобы бокс упаковали в подарочную упаковку?</h3>
+                  <p class="description__text">За дополнительную оплату наша служба доставки может упаковать ваш заказ в красивую подарочную упаковку</p>
+                </div>
+              </div>
+            </div>
+            <div class="faq__item">
+              <div class="faq__desc">
+                <div class="description">
+                  <h3 class="description__title">Какой срок изготовления?</h3>
+                  <p class="description__text">Все боксы изготавливаются вручную по индивидуальному заказу, поэтому срок изготовления 7-10 дней.</p>
+                </div>
+              </div>
+              <div class="faq__desc">
+                <div class="description">
+                  <h3 class="description__title">Как мне его доставят?</h3>
+                  <p class="description__text">Наш курьер доставить бокс к вам домой в течение двух дней после его изготовления.</p>
+                </div>
+              </div>
+              <div class="faq__desc">
+                <div class="description">
+                  <h3 class="description__title">Какие есть скидки?</h3>
+                  <p class="description__text">К Новому Году наша компания проводит акцию -20 % на любой бокс. Поспешите сделать заказ до 21 декабря. Также при заказа более 2-х и более боксов предусматривается индивидуальная скидка.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="conection">
+        <div class="conection__inner">
+          <div class="wrapper">
+            <h2 class="caption">Хотите связаться с менеджером<span class="conection__title">и обсудить детали заказа?</span></h2>
+            <div class="conection__item">
+              <div class="conection__form">
+                <form class="form-conection" id="formConection" action="sendmail.php" data-them="Связаться с менеджером" data-hide=".form-conection" data-show=".form__thanks">
+                  <input type="text" placeholder="Ваше имя" data-name="Имя: " data-required>
+                  <input type="text" placeholder="Ваш телефон" data-name="Телефон: " data-required>
+                  <input type="text" placeholder="Ваш email" data-name="Email: ">
+                  <button class="conection__btn" type="submit">ОСТАВИТЬ ЗАЯВКУ</button>
+                </form>
+                <div class="form__thanks">
+                  <div class="form__thanks-img"><img src="images/checked.png" width="50" height="50"></div>
+                  <div class="form__thanks-text">Спасибо, что оставили заявку. В течении 30 минут мы с вами свяжемся.</div>
+                </div>
+              </div>
+              <div class="conection__image"><img class="conection__pic" src="images/connection.png" width="407" height="458" alt="connection"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="section-wrapper">
+          <h2 class="caption">Контакты</h2>
+          <div class="contacts__inner">
+            <div class="contacts__item">
+              <p class="contacts__text" style="text-align: left; margin-left: 30px;">
+                Производство: г. Рязань, ул. Энгельса, д. 26<br>
+                Офис: г. Санкт-Петербург, ул. Пулковское шоссе, д. 28 БЦ PULKOVO STAR
+              </p>
+            </div>
+            <div class="contacts__item">
+              <p class="order__text">+7 (499) 350-37-31</p>
+            </div>
+            <div class="contacts__item">
+              <p class="order__text">info@shu-box.ru</p>
+            </div>
+          </div>
+          <hr class="contacts__line">
+          <div class="contacts__inner">
+            <div class="contacts__item1"><p class="contacts__text" style="text-align: left; margin-left: 30px;">ИП Шпагин Андрей Игоревич<br>ОГРНИП 317784700331606</p></div>
+            <div class="contacts__item1"><p class="order__text"><a href="privacy-policy.html" target="_blank" style="color: #fff;">Политика конфиндициальности</a></p></div>
+            <div class="contacts__item1"><p class="order__text"><a href="public.html" target="_blank" style="color: #fff;">Публичная оферта</a></p></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="popup">
+      <div style="display: none;">
+        <div class="box-modal" id="popupZvonok">
+          <div class="box-modal_close arcticmodal-close">
+                <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                    <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"> </rect>
+                    <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                  </g>
+                </svg>
+          </div>
+          <div class="form__container">
+            <div class="form__title">Оставьте свои контактные данные, и наш менеджер свяжется с вами в течение 10 минут</div>
+            <form class="form-zvonok" id="formZvonok" action="sendmail.php" data-them="Заказ звонка" data-hide=".form-zvonok" data-show=".form__thanks">
+              <input type="text" placeholder="Ваше имя" data-name="Имя: " data-required>
+              <input type="text" placeholder="Ваш телефон" data-name="Телефон: " data-required>
+              <input type="text" placeholder="Ваш email" data-name="Email: ">
+              <button class="modal-submit" type="submit">Заказать звонок</button>
+            </form>
+            <div class="form__thanks">
+              <div class="form__thanks-img"><img src="images/checked.png" width="50" height="50"></div>
+              <div class="form__thanks-text">Спасибо, что оставили заявку. В течении 10 минут мы с вами свяжемся.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;">
+        <div class="box-modal" id="popupZakazat">
+          <div class="box-modal_close arcticmodal-close">
+                <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                    <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"> </rect>
+                    <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                  </g>
+                </svg>
+          </div>
+          <div class="form__container">
+            <div class="form__title">Оставьте заявку прямо сейчас и получите скидку 10%</div>
+            <form class="form-zakazat" id="formZakazat" action="sendmail.php" data-them="Запрос каталога" data-hide=".form-zakazat" data-show=".form__thanks">
+              <input type="text" placeholder="Ваше имя" data-name="Имя: " data-required>
+              <input type="text" placeholder="Ваш телефон" data-name="Телефон: " data-required>
+              <input type="text" placeholder="Ваш email" data-name="Email: ">
+              <button class="modal-submit" type="submit">Заказать Shubox</button>
+            </form>
+            <div class="form__thanks">
+              <div class="form__thanks-img"><img src="images/checked.png" width="50" height="50"></div>
+              <div class="form__thanks-text">Спасибо, что оставили заявку. В течении 10 минут мы с вами свяжемся.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;">
+        <div class="box-modal" id="popupSozdat">
+          <div class="box-modal_close arcticmodal-close">
+                <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                    <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"> </rect>
+                    <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                  </g>
+                </svg>
+          </div>
+          <div class="form__container">
+            <div class="form__title">Оставьте заявку прямо сейчас и получите скидку 10%</div>
+            <form class="form-sozdat" id="formSozdat" action="sendmail.php" data-them="Помочь с выбором" data-hide=".form-sozdat" data-show=".form__thanks">
+              <input type="text" placeholder="Ваше имя" data-name="Имя: " data-required>
+              <input type="text" placeholder="Ваш телефон" data-name="Телефон: " data-required>
+              <input type="text" placeholder="Ваш email" data-name="Email: ">
+              <button class="modal-submit" type="submit">Заказать Shubox</button>
+            </form>
+            <div class="form__thanks">
+              <div class="form__thanks-img"><img src="images/checked.png" width="50" height="50"></div>
+              <div class="form__thanks-text">Спасибо, что оставили заявку. В течении 10 минут мы с вами свяжемся.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display: none;">
+        <div class="box-modal" id="popupProduct">
+          <div class="box-modal_close arcticmodal-close">
+                <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                    <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"> </rect>
+                    <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                  </g>
+                </svg>
+          </div>
+          <div class="form__container">
+            <div class="form__title">Оставьте заявку и наш менеджер свяжется с вами в течение 10 минут.</div>
+            <form class="form-zakazatzvonok" id="popupProduct" action="sendmail.php" data-them="Заказ консультации" data-hide=".form-zakazatzvonok" data-show=".form__thanks">
+              <input type="text" placeholder="Ваше имя" data-name="Имя: " data-required>
+              <input type="text" placeholder="Ваш телефон" data-name="Телефон: " data-required>
+              <input type="text" placeholder="Ваш email" data-name="Email: ">
+              <button class="modal-submit" type="submit">Заказать звонок</button>
+            </form>
+            <div class="form__thanks">
+              <div class="form__thanks-img"><img src="images/checked.png" width="50" height="50"></div>
+              <div class="form__thanks-text">Спасибо, что оставили заявку. В течении 10 минут мы с вами </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: none;">
+      <div class="box-modal" id="downloadMobile">
+      <div class="exit-popup">
+          <div class="exit-popup__head">
+            <div class="arcticmodal-close exit-popup__close" onclick="document.getElementById('exitPopup').style.display = 'none';">
+              <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                  <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"> </rect>
+                  <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="exit-popup__inner">
+            <img class="exit-popup__book" src="images/exit-popup-book.png" alt="ShuBox">
+            <div class="exit-popup__descr">
+              <h1 class="exit-popup__title">
+                Скачайте  прямо сейчас
+              </h1>
+              <p class="exit-popup__text">
+                Каталог боксов ShuBox  и подберите идеальный  вариант для себя.
+              </p>
+            </div>
+            <div class="exit-popup__form">
+              <form data-action="exitpopup-submit.php?f=e1" method="post" target="_blank">
+                <input class="exit-popup__field" type="text" name="name" placeholder="имя" required>
+                <input class="exit-popup__field" type="tel" name="phone" placeholder="номер телефона" required>
+                <input type="hidden" name="utm_source" value="">
+                <input type="hidden" name="utm_medium" value="">
+                <input type="hidden" name="utm_campaign" value="">
+                <input type="hidden" name="utm_content" value="">
+                <input type="hidden" name="utm_term" value=""> 
+                <input type="hidden" name="getcid" value="">
+                <input class="exit-popup__submit" type="submit" value="Скачать">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="exitPopup">
+        <div class="underlay"></div>
+        <div class="exit-popup">
+          <div class="exit-popup__head">
+            <div class="exit-popup__close" onclick="document.getElementById('exitPopup').style.display = 'none';">
+              <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                  <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"> </rect>
+                  <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="exit-popup__inner">
+            <img class="exit-popup__book" src="images/exit-popup-book.png" alt="ShuBox">
+            <div class="exit-popup__descr">
+              <h1 class="exit-popup__title">
+                Скачайте  прямо сейчас
+              </h1>
+              <p class="exit-popup__text">
+                Каталог боксов ShuBox  и подберите идеальный  вариант для себя.
+              </p>
+            </div>
+            <div class="exit-popup__form">
+              <form data-action="exitpopup-submit.php?f=e2" method="post" target="_blank">
+                <input class="exit-popup__field" type="text" name="name" placeholder="имя" required>
+                <input class="exit-popup__field" type="tel" name="phone" placeholder="номер телефона" required>
+                <input type="hidden" name="utm_source" value="">
+                <input type="hidden" name="utm_medium" value="">
+                <input type="hidden" name="utm_campaign" value="">
+                <input type="hidden" name="utm_content" value="">
+                <input type="hidden" name="utm_term" value=""> 
+                <input type="hidden" name="getcid" value="">
+                  <a href="catalog/Каталог «ShuBox».pdf" download><input class="exit-popup__submit" type="submit" value="Скачать"></a>
+                <!-- <input class="exit-popup__submit" type="submit" value="Скачать" onclick="document.getElementById('exitPopup').style.display = 'none';"> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="libs/jquery/jquery.min.js" defer></script>
+    <!-- <script src="js/sendmail.js" defer></script> -->
+    <script src="libs/slick/slick.min.js" defer></script>
+    <script src="libs/jquery.arcticmodal-0.3/jquery.arcticmodal-0.3.min.js" defer></script>
+    <script src="libs/jparallax/jquery.parallax.js" defer></script>
+    <script src="js/scripts.min.js" defer></script>
+    <script src="js/exitpopup.js"></script>
+  </body>
+</html>
