@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/jquery.arcticmodal-0.3.css">
+    <link rel="stylesheet" href="assets/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="site-wrapper">
+        <header class="page-header">
+          <div class="menu-hidden">
+            <div class="section-wrapper">
+              <div class="menu-hidden__inner">
+                <div class="logo"><img class="logo__image" src="assets/images/logo.png" width="56" height="64" alt="Wellmats"></div>
+                <nav class="menu">
+                  <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#features">Наши приемущества</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#gallery">Галерея</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#catalog">Выбрать комплект</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+                  </ul>
+                </nav>
+                <div class="header-phone">
+                  <div class="header-phone__item">+0 (000) 000-00-00</div>
+                </div>
+                <div class="header__feedback"><button type="button" class="menu-hidden__feedback-btn callback-modal">Заказать звонок</button></div>
+              </div>
+            </div>
+          </div>
+          <div class="section-wrapper">
+            <div class="mobile-nav">
+              <div class="mobile-nav__logo"><img class="logo__image" src="assets/images/logo.png" width="25" height="28" alt="Wellmats"></div>
+              <div class="mobile-nav__btn" id="mobileMenuButton"><span></span><span></span><span></span></div>
+            </div>
+            <div class="header-menu">
+              <div class="logo"><img class="logo__image" src="assets/images/logo.png" width="56" height="64" alt="Wellmats"></div>
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__link" href="#features">Наши приемущества</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#gallery">Галерея</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#catalog">Выбрать комплект</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#reviews">Отзывы</a></li>
+                </ul>
+              </nav>
+              <div class="header-phone">
+                <div class="header-phone__item">+0 (000) 000-00-00</div>
+              </div>
+              <div class="header__feedback"><button type="button" class="header__feedback-btn callback-modal">Заказать звонок</button></div>
+            </div>
+            <div class="intro">
+              <div class="caption">
+                <h1 class="caption__title">Автоковрики из экокожи<span style="display: block"> по индивидуальному заказу</span></h1>
+                <p class="caption__subtitle">Аксессуар ручной работы для автомобилей премиум-класса</p>
+              </div>
+              <div class="intro__inner">
+                <div class="intro__item">
+                  <div class="intro__text">Разработка<br>индивидуального дизайна<br>под салон вашего автомобиля</div>
+                </div>
+                <div class="intro__item">
+                  <div class="intro__text">Изготовление 6-9 дней.<br>Доставка по всей<br>России</div>
+                </div>
+                <div class="intro__item">
+                  <div class="intro__text">Ваш автомобиль не нужен для<br>замеров. В наличии есть лекала<br>под 99 % автомобилей</div>
+                </div>
+              </div>
+              <div class="intro__feedback"><button type="button" class="intro__feedback-btn zakazat-modal">Связаться с менеджером</button></div>
+            </div>
+          </div>
+        </header>
+        <section class="features" id="features">
+          <div class="section-wrapper">
+            <div class="caption">
+              <h2 class="caption__title">Преимущества автомобильных ковриков из экокожи от <span>«Wellmats»</span></h2>
+            </div>
+            <div class="fetures__inner">
+              <div class="features__item">
+                <h3 class="features__title">Легкий уход</h3>
+                <p class="features__text">Автоковрики Wellmats не требуют особого<br> 
+                  ухода. Их легко мыть и, в отличие от<br>
+                  натуральной кожи, не нужно покрывать<br> 
+                  защитными средствами и обновлять цвет.
+                </p>
+              </div>
+              <div class="features__item">
+                <h3 class="features__title">Высокая износостойкость</h3>
+                <p class="features__text">Материал экокожи выдерживает до 500<br>
+                  тысяч контактов физического<br>
+                  воздействия, а его прочность<br>
+                  поддерживается капроновой нитью,<br>
+                  которая используется в скалолазании.<br>
+                  Даже острые дамские шпильки не<br>
+                  страшны нашим коврикам.
+                </p>
+              </div>
+              <div class="features__item">
+                <h3 class="features__title">Индивидуальный дизайн</h3>
+                <p class="features__text">Все коврики создаются индивидуально<br>
+                  под интерьер салона автомобиля с<br>
+                  учетом всех предпочтений клиента.<br>
+                </p>
+              </div>
+              <div class="features__item">
+                <h3 class="features__title">Водоотталкивающий материал</h3>
+                <p class="features__text">Благодаря своему составу: полимерная<br>
+                  пленка и хлопок, коврики не пропускают<br>
+                  воду и защищают нижнюю поверхность<br>
+                  автомобиля от влаги и загрязнений.
+                </p>
+              </div>
+              <div class="features__item">
+                <h3 class="features__title">Ручная работа</h3>
+                <p class="features__text">Каждая модель создается по<br>
+                  индивидуальному заказу<br>
+                  высококлассными мастерами, с опытом<br>
+                  работы более 5 лет.
+                </p>
+              </div>
+              <div class="features__item">
+                <h3 class="features__title">Высококлассная экокожа</h3>
+                <p class="features__text">Наши коврики производятся из экокожи<br>
+                  немецкого производства, которая по<br>
+                  прочности значительно превосходит<br>
+                  натуральную кожу.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="portfolio" id="gallery">
+          <div class="caption">
+            <h2 class="caption__title">Примеры наших работ</h2>
+            <p class="caption__subtitle">Элегантные коврики отлично дополняют заводской салон автомобиля и делают его уникальным.</p>
+          </div>
+          <div class="portfolio_inner">
+            <div class="portfolio__visible">
+              <div class="gallery" id="gallery1"><a class="gallery__img" href="assets/images/gallery-1x.jpg"><img class="gallery__pic" src="assets/images/gallery-1.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-2x.jpg"><img class="gallery__pic" src="assets/images/gallery-2.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-3x.jpg"><img class="gallery__pic" src="assets/images/gallery-3.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-4x.jpg"><img class="gallery__pic" src="assets/images/gallery-4.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-5x.jpg"><img class="gallery__pic" src="assets/images/gallery-5.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-6x.jpg"><img class="gallery__pic" src="assets/images/gallery-6.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-7x.jpg"><img class="gallery__pic" src="assets/images/gallery-7.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-8x.jpg"><img class="gallery__pic" src="assets/images/gallery-8.jpg" alt=""></a></div>
+              <button class="portfolio__btn" id="portfolioMore" type="button" style="z-index:10000;">Показать больше</button>
+            </div>
+            <div class="portfolio__hidden">
+              <div class="gallery" id="gallery2"><a class="gallery__img" href="assets/images/gallery-9x.jpg"><img class="gallery__pic" src="assets/images/gallery-9.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-10x.jpg"><img class="gallery__pic" src="assets/images/gallery-10.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-11x.jpg"><img class="gallery__pic" src="assets/images/gallery-11.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-12x.jpg"><img class="gallery__pic" src="assets/images/gallery-12.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-13x.jpg"><img class="gallery__pic" src="assets/images/gallery-13.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-14x.jpg"><img class="gallery__pic" src="assets/images/gallery-14.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-15x.jpg"><img class="gallery__pic" src="assets/images/gallery-15.jpg" alt=""></a><a class="gallery__img" href="assets/images/gallery-16x.jpg"><img class="gallery__pic" src="assets/images/gallery-16.jpg" alt=""></a></div>
+              <div class="caption">
+                <h2 class="caption__title">Посмотрите всю коллекцию автроковриков</h2>
+                <p class="caption__subtitle">Получите бесплатный электронный каталог на почту</p>
+              </div>
+              <div class="card"><img class="card__pic" src="assets/images/card.jpg" alt="card"></div>
+              <button type="button" class="portfolio__link catalog-modal">Получить каталог на почту</button>
+            </div>
+          </div>
+        </section>
+        <section class="catalog" id="catalog">
+          <div class="section-wrapper">
+            <div class="caption">
+              <h2 class="caption__title">Комплекты автоковриков</h2>
+            </div>
+            <div class="catalog__inner">
+              <div class="slider__arrow-left" id="catalogLeft">
+                <svg width="10" height="30" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>Left</desc>
+                  <polyline fill="none" stroke="#343434" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5"></polyline>
+                </svg>
+              </div>
+              <div class="slider__arrow-right" id="catalogRight">
+                <svg width="10" height="30" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>Left</desc>
+                  <polyline fill="none" stroke="#343434" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5"></polyline>
+                </svg>
+              </div>
+              <div class="catalog__slider">
+                <div class="catalog__item">
+                  <div class="catalog__image"><img src="assets/images/c-baza.jpg" alt="Базовый"></div>
+                  <div class="catalog__desc">
+                    <div class="catalog__name">Комплект «Базовый»</div>
+                    <div class="catalog__options">Комплектация:
+                      <div>— Водительский коврик</div>
+                      <div>— Пассажирский коврик</div>
+                      <div>— 2 сменяемых подпятника</div>
+                      <div>— Бесплатная доставка по РФ</div>
+                    </div>
+                    <p class="catalog__description">
+                      В комплект “Базовый” входят передние коврики, которые надежно защищают нижнюю поверхность  автомобиля от влаги и загрязнений. 
+                      Вы можете выбрать тип строчки, цвет материала, строчки и окантовки.
+                    </p>
+                    <div class="catalog__bottom">
+                      <div class="catalog__price">Цена: 11 000 руб.</div><button type="button" class="catalog__btn zakazat-modal">Купить</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="catalog__image"><img src="assets/images/c-standart.png" alt="Стандарт"></div>
+                  <div class="catalog__desc">
+                    <div class="catalog__name">Комплект «Стандарт»</div>
+                    <div class="catalog__options">Комплектация:
+                      <div>— Водительский коврик</div>
+                      <div>— Пассажирский коврик</div>
+                      <div>— Высокие 3D борта</div>
+                      <div>— 2 сменяемых подпятника</div>
+                      <div>— Бесплатная доставка по РФ</div>
+                    </div>
+                    <p class="catalog__description">Особенностью комплекта “Стандарт” являются высокие бортики, которые полностью закрывают заводскую обшивку автомобиля. При их производстве учитываются все геометрические особенности пола вашего автомобиля.</p>
+                    <div class="catalog__bottom">
+                      <div class="catalog__price">Цена: 19 000 руб.</div><button type="button" class="catalog__btn zakazat-modal">Купить</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="catalog__image"><img src="assets/images/c-premium.jpg" alt="Премиум"></div>
+                  <div class="catalog__desc">
+                    <div class="catalog__name">Комплект «Премиум»</div>
+                    <div class="catalog__options">Комплектация:
+                      <div>— Водительский коврик</div>
+                      <div>— Пассажирский коврик</div>
+                      <div>— Высокие 3D борта</div>
+                      <div>— 2 задних коврика</div>
+                      <div>— Перемычка между задними ковриками</div>
+                      <div>— 2 сменяемых подпятника</div>
+                      <div>— Бесплатная доставка по РФ</div>
+                    </div>
+                    <p class="catalog__description">Комплект “Премиум” включает 4 коврика с высокими бортами, которые полностью закрывают нижнюю поверхность вашего автомобиля. Элегантный дизайн отлично дополнит заводской салон автомобиля и придаст ему ощущение завершенности.</p>
+                    <div class="catalog__bottom">
+                      <div class="catalog__price">Цена: 26 000 руб.</div><button type="button" class="catalog__btn zakazat-modal">Купить</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="catalog__image"><img src="assets/images/c-bagaj.jpg" alt="Багажник"></div>
+                  <div class="catalog__desc">
+                    <div class="catalog__name">Комплект «Багажник»</div>
+                    <div class="catalog__options">Комплектация:
+                      <div>— Коврик в багажное отделение</div>
+                      <div>— Бесплатная доставка по РФ</div>
+                    </div>
+                    <p class="catalog__description">Этот комплект является важным дополнением, если вам приходиться перевозить в нем различные предметы, которые могут загрязнить обшивку. При покупке коврика в багажное отделение вместе с одним из комплектов в салон, вы получаете скидку 2000 рублей на всю сумму покупки.</p>
+                    <div class="catalog__bottom">
+                      <div class="catalog__price">Цена: 13 500 руб.</div><button type="button" class="catalog__btn zakazat-modal">Купить</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog__item">
+                  <div class="catalog__image"><img src="assets/images/c-comfort.jpg" alt="Комфорт"></div>
+                  <div class="catalog__desc">
+                    <div class="catalog__name">Комплект «Комфорт»</div>
+                    <div class="catalog__options">Комплектация:
+                      <div>— 2 накидки на сидения</div>
+                      <div>— Бесплатная доставка по РФ</div>
+                    </div>
+                    <p class="catalog__description">Комплект «Комфорт» включает в себя 2 накидки для сидений из алькантары (материал, который используют для отшива сидений BMW и Mercedes).</p>
+                    <div class="catalog__bottom">
+                      <div class="catalog__price">Цена: 8 000 руб.</div><button type="button" class="catalog__btn zakazat-modal">Купить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="pattern" id="style">
+          <div class="section-wrapper">
+            <div class="caption">
+              <h2 class="caption__title">Варианты узоров коврика</h2>
+            </div>
+            <div class="pattern__inner">
+              <div class="pattern__item">
+                <div class="dots" id="dotsStandart"></div>
+                <div class="pattern__version" id="standart">
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_standart-1.jpg" alt="">
+                    <div class="pattern__num">#1</div>
+                  </div>
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_standart-2.jpg" alt="">
+                    <div class="pattern__num">#2</div>
+                  </div>
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_standart-3.jpg" alt="">
+                    <div class="pattern__num">#3</div>
+                  </div>
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_standart-4.jpg" alt="">
+                    <div class="pattern__num">#4</div>
+                  </div>
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_standart-5.jpg" alt="">
+                    <div class="pattern__num">#5</div>
+                  </div>
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_standart-6.jpg" alt="">
+                    <div class="pattern__num">#6</div>
+                  </div>
+                </div>
+                <div class="pattern__name">Стандартные</div>
+              </div>
+              <div class="pattern__item">
+                <div class="dots" id="dotsExluse"></div>
+                <div class="pattern__version" id="exluse">
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_ex-1.jpg" alt="">
+                    <div class="pattern__num">#1&nbsp;+30%</div>
+                  </div>
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_ex-2.jpg" alt="">
+                    <div class="pattern__num">#2&nbsp;+30%</div>
+                  </div>
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_ex-3.jpg" alt="">
+                    <div class="pattern__num">#3&nbsp;+45%</div>
+                  </div>
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_ex-5.jpg" alt="">
+                    <div class="pattern__num">#4&nbsp;+100%</div>
+                  </div>
+                </div>
+                <div class="pattern__name">Эксклюзивные</div>
+              </div>
+              <div class="pattern__item">
+                <div class="dots" id="dotsComb"></div>
+                <div class="pattern__version" id="comb">
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_komb-1.jpg" alt="">
+                    <div class="pattern__num">#1&nbsp;+100%</div>
+                  </div>
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_komb-2.jpg" alt="">
+                    <div class="pattern__num">#2&nbsp;+75%</div>
+                  </div>
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_komb-3.jpg" alt="">
+                    <div class="pattern__num">#3&nbsp;+75%</div>
+                  </div>
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_komb-4.jpg" alt="">
+                    <div class="pattern__num">#4&nbsp;+75%</div>
+                  </div>
+                  <div class="pattern__slide"><img class="pattern__img" src="assets/images/p_komb-5.jpg" alt="">
+                    <div class="pattern__num">#5&nbsp;+75%</div>
+                  </div>
+                </div>
+                <div class="pattern__name">Комбинированые.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="questions-t">
+          <div class="section-wrapper">
+            <div class="questions-t__inner">
+              <div class="caption">
+                <h2 class="caption__title">Хотите заказать комплект для вашего<br>автомобиля, но у вас есть вопросы?</h2>
+                <p class="caption__subtitle">Оставьте свои контактные данные форме, и наш менеджер свяжется с вами в течение 30 минут, чтобы проконсультировать.</p>
+              </div>
+              <div class="questions-t__form">
+                <form class="form-questions1" id="formQuestions1" action="sendmail.php" data-them="Заказать автоковрик" data-hide=".form-questions1" data-show=".form__thanks-questions1" onsubmit="yaCounter46654131.reachGoal('form_action')">
+                  <input type="text" name="name" placeholder="Имя" data-name="Имя: " data-required>
+                  <input id="phone5" type="text" name="phone" placeholder="Телефон" data-name="Телефон: " data-required>
+                  <button type="submit">Заказать автоковрик</button>
+                </form>
+                <div class="form__thanks-questions1">Спасибо! Данные успешно отправлены.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="option">
+          <div class="section-wrapper">
+            <div class="option__inner">
+              <div class="caption">
+                <h2 class="caption__title">Хотите создать уникальный коврик?</h2>
+                <p class="caption__subtitle">Мы поможем реализовать вам любые задумки.</p>
+              </div>
+              <div class="option__slider">
+                <div class="slider__arrow-left" id="optionLeft">
+                  <svg width="10" height="30" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>Left</desc>
+                    <polyline fill="none" stroke="#343434" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5"></polyline>
+                  </svg>
+                </div>
+                <div class="slider__arrow-right" id="optionRight">
+                  <svg width="10" height="30" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>Left</desc>
+                    <polyline fill="none" stroke="#343434" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5"></polyline>
+                  </svg>
+                </div>
+                <div class="option__slides">
+                  <div class="option__item"><img class="option__pic" src="assets/images/options-1.jpg" alt="">
+                    <div class="option__sign">Вышивка тюнинга</div>
+                  </div>
+                  <div class="option__item"><img class="option__pic" src="assets/images/options-2.jpg" alt="">
+                    <div class="option__sign">Логотип марки машины</div>
+                  </div>
+                  <div class="option__item"><img class="option__pic" src="assets/images/options-3.jpg" alt="">
+                    <div class="option__sign">Уникальная отделка</div>
+                  </div>
+                  <div class="option__item"><img class="option__pic" src="assets/images/options-4.jpg" alt="">
+                    <div class="option__sign">Ваши инициалы</div>
+                  </div>
+                  <div class="option__item"><img class="option__pic" src="assets/images/options-5.jpg" alt="">
+                    <div class="option__sign">Название марки или любая надпись</div>
+                  </div>
+                  <div class="option__item"><img class="option__pic" src="assets/images/options-6.jpg" alt="">
+                    <div class="option__sign">Логотип компании</div>
+                  </div>
+                </div>
+                <div class="dots" id="dotsOption"></div>
+              </div>
+              <div class="option__btn">
+                <button type="button" class="option__btn-left pomoshsviborom-modal">Помощь с выбором</button>
+                <button type="button" class="option__btn-right zakazatzvonok-modal">Заказать коврики</button></div>
+            </div>
+          </div>
+        </section>
+        <div class="making">
+          <div class="section-wrapper">
+            <div class="making__inner">
+              <div class="making__desc">
+                <h3 class="making__title">Собственное производство по европейским стандартам качества</h3>
+                <p class="making__text">Главные наши ценности — это идеальный продукт и довольный клиент. Поэтому в нашем цеху работают только профессионалы своего дела, прошедшие несколько этапов отбора, а все коврики производятся на высококлассном японском оборудовании, которое широко используется в итальянских домах моды и лучших тюнинг ателье мира.</p>
+              </div>
+              <div class="making__video">
+                <div class="making__video-container">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/TyANLDuGrVA" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="order">
+          <div class="section-wrapper">
+            <div class="caption">
+              <h2 class="caption__title">Как заказать коврики для своего автомобиля?</h2>
+            </div>
+            <div class="order__inner">
+              <div class="order__item">
+                <p class="order__text">Закажите звонок менеджера и уточните все детали заказа</p>
+              </div>
+              <div class="order__arrow">
+                <svg width="60" stroke="#c59f5c" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 18.7">
+                  <path d="M4.2 9.4h32.1"></path>
+                  <path d="M31.3 13.4l5-4-5-4"></path>
+                </svg>
+              </div>
+              <div class="order__item">
+                <p class="order__text">Ожидайте 10-13 дней, пока ваш комплект находиться в производстве</p>
+              </div>
+              <div class="order__arrow">
+                <svg width="60" stroke="#c59f5c" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 18.7">
+                  <path d="M4.2 9.4h32.1"></path>
+                  <path d="M31.3 13.4l5-4-5-4"></path>
+                </svg>
+              </div>
+              <div class="order__item">
+                <p class="order__text">Получите товар почтой или курьером</p>
+              </div>
+            </div><button type="button" class="order__btn zakazat-modal">Сделать заказ</button>
+          </div>
+        </section>
+        <section class="reviews" id="reviews">
+          <div class="section-wrapper">
+            <div class="caption">
+              <h2 class="caption__title">Отзывы покупателей</h2>
+            </div>
+            <div class="reviews__inner">
+              <div class="slider__arrow-left" id="reviewsLeft">
+                <svg width="10" height="30" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>Left</desc>
+                  <polyline fill="none" stroke="#343434" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5"></polyline>
+                </svg>
+              </div>
+              <div class="slider__arrow-right" id="reviewsRight">
+                <svg width="10" height="30" viewBox="0 0 9.3 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>Left</desc>
+                  <polyline fill="none" stroke="#343434" stroke-linecap="butt" stroke-width="1" points="0.5,0.5 8.5,8.5 0.5,16.5"></polyline>
+                </svg>
+              </div>
+              <div class="reviews__slider">
+                <div class="reviews__item">
+                  <div class="reviews__item-left"><img class="reviews__image" src="assets/images/reviews-1.jpg" width="300" height="300" alt="Жанна Кныш"></div>
+                  <div class="reviews__item-right">
+                    <div class="reviews__name">Жанна Кныш<span>Toyota Corolla</span></div>
+                    <div class="reviews__soc">Instagram:<a class="reviews__link" href="https://www.instagram.com/p/BXv2DAGAvPL/?taken-by=analim.milana" target="_blank">@analim.milana</a></div>
+                    <div class="reviews__text">Спасибо большое за коврики. Очень понравились всей семье! Доставка и качество на высоте. Сделали за 6 дней, думала гораздо дольше придется ждать.</div>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-left"><img class="reviews__image" src="assets/images/reviews-2.jpg" width="300" height="300" alt="Геннадий Вячеславович"></div>
+                  <div class="reviews__item-right">
+                    <div class="reviews__name">Геннадий Вячеславович<span>Toyota FJ Cruiser</span></div>
+                    <div class="reviews__soc">Instagram:<a class="reviews__link" href="https://www.instagram.com/p/BVc18CDjQvI/?taken-by=sparta4x4" target="_blank">@drago7717</a></div>
+                    <div class="reviews__text">Заказываю коврики уже 3-й раз, сперва взял для двух автомобилей Toyota FJ Cruiser и Hyundai accent, потом решил заказать и для Lexus RX 350 Sport. В первых двух автомобилях уже больше 3-х месяцев, не протерлись, после мытья выглядят как новые.</div>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-left"><img class="reviews__image" src="assets/images/reviews-3.jpg" width="300" height="300" alt="Роман Мягкохлеб"></div>
+                  <div class="reviews__item-right">
+                    <div class="reviews__name">Роман Мягкохлеб<span>BMW X5</span></div>
+                    <div class="reviews__soc">Instagram:<a class="reviews__link" href="https://www.instagram.com/myagkohlib/" target="_blank">@myagkohlib</a></div>
+                    <div class="reviews__text">Cпасибо за отличные коврики! Подошли в салон идеально. Качеством доволен, выглядят отлично. Буду заказывать второй комплект для жены!</div>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-left"><img class="reviews__image" src="assets/images/reviews-4.jpg" width="300" height="300" alt="Ольга"></div>
+                  <div class="reviews__item-right">
+                    <div class="reviews__name">Ольга<span>Mazda 6</span></div>
+                    <div class="reviews__soc">Instagram:<a class="reviews__link" href="https://www.instagram.com/p/Bagph0BlwyD/?taken-by=leo7832" target="_blank">@leo7832</a></div>
+                    <div class="reviews__text">Я в восторге! Заказывала парню в машину. Подарок очень понравился и я сама осталась очень довольна. Уже хочу себе заказать и друзьям на подарки. Спасибо большое!</div>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-left"><img class="reviews__image" src="assets/images/reviews-5.jpg" width="300" height="300" alt="Катерина Шевченко"></div>
+                  <div class="reviews__item-right">
+                    <div class="reviews__name">Катерина Шевченко<span>Toyota Prada</span></div>
+                    <div class="reviews__soc">Instagram:<a class="reviews__link" href="https://www.instagram.com/p/BbY_yoyjCkA/?taken-by=katyaschevchenkooo" target="_blank">@katyaschevchenkooo</a></div>
+                    <div class="reviews__text">Огонь! Коврики очень понравились, они прям нереальные. Заказывала на подарок. В итоге получился отличный сюрприз. Отлично легли в салоне, теперь машина стала гораздо уютнее.</div>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-left"><img class="reviews__image" src="assets/images/reviews-6.jpg" width="300" height="300" alt="Виталий Савчук"></div>
+                  <div class="reviews__item-right">
+                    <div class="reviews__name">Виталий Савчук<span>Mercedes GLA</span></div>
+                    <div class="reviews__soc">Instagram:<a class="reviews__link" href="https://www.instagram.com/p/BMgQ-YXBQMl/?taken-by=vitaliy_2501" target="_blank">@vitaliy_2501</a></div>
+                    <div class="reviews__text">Коврики очень понравились! Брал на осень для защиты от грязи, в итоге просто получил наслаждение от одного вида. Буду заказывать еще!</div>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-left"><img class="reviews__image" src="assets/images/reviews-7.jpg" width="300" height="300" alt="Anya Luganets"></div>
+                  <div class="reviews__item-right">
+                    <div class="reviews__name">Anya Luganets<span>Lexus lx 570</span></div>
+                    <div class="reviews__soc">Instagram:<a class="reviews__link" href="https://www.instagram.com/p/BKu2XMOh6ls/?taken-by=ann__l" target="_blank">@ann__l</a></div>
+                    <div class="reviews__text">Спасибо! Мне коврики очень понравились, надеюсь имениннику также очень понравятся. Будет крутой сюрприз!</div>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__item-left"><img class="reviews__image" src="assets/images/reviews-8.jpg" width="300" height="300" alt="Алина Грицаенко"></div>
+                  <div class="reviews__item-right">
+                    <div class="reviews__name">Алина Грицаенко<span>Lexus rx 350</span></div>
+                    <div class="reviews__soc">Instagram:<a class="reviews__link" href="https://www.instagram.com/p/BbJvRO0jC-b/?taken-by=alina_gricaenko_hairdresser" target="_blank">@_alina_alya</a></div>
+                    <div class="reviews__text">Качество конечно отменное. Очень мягенькие, отлично дополняют салон. И главное, что салон теперь чистый и аккуратный. Даже муж оценил. Захотел себе такие.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="dots" id="dotsReviews"></div>
+            </div>
+          </div>
+        </section>
+        <section class="questions-b">
+          <div class="section-wrapper">
+            <div class="questions-t__inner">
+              <div class="caption">
+                <h2 class="caption__title">У вас остались вопросы?</h2>
+                <p class="caption__subtitle">Напишите нам, и наш менеджер свяжется с вами, чтобы помочь.</p>
+              </div>
+              <div class="questions-b__form">
+                <form class="form-questions2" id="formQuestions2" action="sendmail.php" data-them="Заказать автоковрик" data-hide=".form-questions2" data-show=".form__thanks-questions2" onsubmit="yaCounter46654131.reachGoal('form_action')">
+                  <input type="text" name="name"  placeholder="Имя" data-name="Имя: " data-required>
+                  <input id="phone6" type="text" name="phone"  placeholder="Телефон" data-name="Телефон: " data-required>
+                  <textarea name="massage" placeholder="Сформулируйте свой вопрос" data-name="Сообщение: " data-required></textarea>
+                  <button type="submit">Получить консультацию</button>
+                </form>
+                <div class="form__thanks-questions2">Спасибо! Данные успешно отправлены.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="contacts">
+          <div class="section-wrapper">
+            <div class="caption">
+              <div class="h2 caption__title">Контакты</div>
+            </div>
+            <div class="contacts__inner">
+              <div class="contacts__item">
+                <p class="contacts__text">Мордор, Барад-дур<br>Гондор, Осгилиат</p>
+              </div>
+              <div class="contacts__item">
+                <p class="order__text">+0 (000) 000-00-00</p>
+              </div>
+              <div class="contacts__item">
+                <p class="order__text">info@example.com</p>
+              </div>
+            </div>
+            <div class="social">
+              <div class="social__inner"><a class="social__link" href="https://www.facebook.com/" title="Facebook" target="_blank"></a><a class="social__link" href="https://www.instagram.com" title="Instagram" target="_blank"></a></div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="popup">
+        <div style="display: none;">
+          <div class="box-modal" id="popupCallback">
+            <div class="box-modal_close arcticmodal-close">
+                  <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                      <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"> </rect>
+                      <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                  </svg>
+            </div>
+            <div class="form__container">
+              <div class="form__title">Оставьте свои координаты, чтобы вам могли перезвонить наши специалисты</div>
+              <form class="form-callback" id="formCallback" action="sendmail.php" data-them="Заказ звонка" data-hide=".form-callback" data-show=".form__thanks-callback" onsubmit="yaCounter46654131.reachGoal('form_action')">
+                <input type="text" name="name" placeholder="Имя" data-name="Имя: " data-required>
+                <input id="phone1" type="text" name="phone" placeholder="Телефон" data-name="Телефон: " data-required>
+                <button class="modal-submit" type="submit">Заказать звонок</button>
+              </form>
+              <div class="form__thanks-callback">Спасибо! Данные успешно отправлены.</div>
+              <div class="form_footer">
+                <div class="form__text">Либо позвоните по телефону:</div>
+                <div class="form__text">+0 (000) 000-00-00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: none;">
+          <div class="box-modal" id="popupZakazat">
+            <div class="box-modal_close arcticmodal-close">
+                  <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                      <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"> </rect>
+                      <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                  </svg>
+            </div>
+            <div class="form__container">
+              <div class="form__title">Оставьте свои контактные данные, и наш менеджер свяжется с вами в течение 30 минут</div>
+              <form class="form-zakazat" id="formZakazat" action="sendmail.php" data-them="Заказ звонка" data-hide=".form-zakazat" data-show=".form__thanks-zakazat" onsubmit="yaCounter46654131.reachGoal('form_action')">
+                <input type="text" name="name" placeholder="Имя" data-name="Имя: " data-required>
+                <input id="phone2" type="text" name="phone" placeholder="Телефон" data-name="Телефон: " data-required>
+                <button class="modal-submit" type="submit">Оставить заявку</button>
+              </form>
+              <div class="form__thanks-zakazat">Спасибо! Данные успешно отправлены.</div>
+              <div class="form_footer">
+                <div class="form__text">Либо позвоните по телефону:</div>
+                <div class="form__text">+0 (000) 000-00-00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: none;">
+          <div class="box-modal" id="popupCatalog">
+            <div class="box-modal_close arcticmodal-close">
+                  <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                      <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"> </rect>
+                      <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                  </svg>
+            </div>
+            <div class="form__container">
+              <div class="form__title">Получите полный каталог автоковриков на почту</div>
+              <form class="form-catalog" id="formCatalog" action="sendmail.php" data-them="Запрос каталога" data-hide=".form-catalog" data-show=".form__thanks-catalog" onsubmit="yaCounter46654131.reachGoal('form_action')">
+                <input type="text" name="name" placeholder="Имя" data-name="Имя: " data-required>
+                <input type="text" name="email" placeholder="На какой e-mail отправить каталог?" data-name="E-mail: " data-required>
+                <button class="modal-submit" type="submit">Получить каталог</button>
+              </form>
+              <div class="form__thanks-catalog">Спасибо! Данные успешно отправлены.</div>
+              <div class="form_footer">
+                <div class="form__text">Либо позвоните по телефону:</div>
+                <div class="form__text">+0 (000) 000-00-00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: none;">
+          <div class="box-modal" id="popupPomoshsviborom">
+            <div class="box-modal_close arcticmodal-close">
+                  <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                      <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"> </rect>
+                      <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                  </svg>
+            </div>
+            <div class="form__container">
+              <div class="form__title">Не можете определиться какой коврик лучше всего подойдет для вашего атвомобиля? Наши специалисты помогут вам с выбором.</div>
+              <form class="form-pomoshsviborom" id="formPomoshsviborom" action="sendmail.php" data-them="Помочь с выбором" data-hide=".form-pomoshsviborom" data-show=".form__thanks-pomoshsviborom" onsubmit="yaCounter46654131.reachGoal('form_action')">
+                <input type="text" name="name" placeholder="Имя" data-name="Имя: " data-required>
+                <input id="phone3" type="text" name="phome" placeholder="Телефон" data-name="Телефон: " data-required>
+                <input type="text" name="email" placeholder="E-mail" data-name="E-mail: " data-required>
+                <button class="modal-submit" type="submit">Заказать звонок</button>
+              </form>
+              <div class="form__thanks-pomoshsviborom">Спасибо! Данные успешно отправлены.</div>
+              <div class="form_footer">
+                <div class="form__text">Либо позвоните по телефону:</div>
+                <div class="form__text">+0 (000) 000-00-00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display: none;">
+          <div class="box-modal" id="popupZakazatzvonok">
+            <div class="box-modal_close arcticmodal-close">
+                  <svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+                      <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"> </rect>
+                      <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+                    </g>
+                  </svg>
+            </div>
+            <div class="form__container">
+              <div class="form__title">Оставьте свои координаты, и мы проконсультируем вас по всем интересующим вопросам.</div>
+              <form class="form-zakazatzvonok" id="formZakazatzvonok" action="sendmail.php" data-them="Заказ консультации" data-hide=".form-zakazatzvonok" data-show=".form__thanks-zakazatzvonok" onsubmit="yaCounter46654131.reachGoal('form_action')">
+                <input type="text" name="name" placeholder="Имя" data-name="Имя: " data-required>
+                <input id="phone4" type="text" name="phone" placeholder="Телефон" data-name="Телефон: " data-required>
+                <input type="text" name="email" placeholder="E-mail" data-name="E-mail: " data-required>
+                <button class="modal-submit" type="submit">Заказать звонок</button>
+              </form>
+              <div class="form__thanks-zakazatzvonok">Спасибо! Данные успешно отправлены.</div>
+              <div class="form_footer">
+                <div class="form__text">Либо позвоните по телефону:</div>
+                <div class="form__text">+0 (000) 000-00-00</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="blueimp-gallery blueimp-gallery-controls" id="blueimp-gallery">
+        <div class="slides"></div><a class="prev">‹</a><a class="next">›</a><a class="close">×</a>
+      </div>
+
+    <script src="assets/js/lazy/1-jquery.min.js" defer></script>
+    <script src="assets/js/lazy/slick.js" defer></script>
+    <script src="assets/js/lazy/blueimp-gallery.min.js" defer></script>
+    <script src="assets/js/lazy/jquery.arcticmodal-0.3.min.js" defer></script>
+    <script src="assets/js/lazy/maskedinput.min.js" defer></script>
+    <script src="assets/js/lazy/sendmail.js" defer></script>
+    <script src="assets/js/lazy/zscripts.min.js" defer></script>
+</body>
+</html>
+
