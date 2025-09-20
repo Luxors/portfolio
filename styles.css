@@ -1,0 +1,29 @@
+.list {
+  column-count: 1;
+  list-style-type: none;
+}
+.list-item {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.list-item__link {
+  display: inline-block;
+  padding: 2px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+@media screen and (min-width: 425px) {
+  .list {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 680px) {
+  .list {
+    column-count: 3;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list {
+    column-count: 4;
+  }
+}
