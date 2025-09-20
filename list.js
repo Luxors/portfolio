@@ -47,5 +47,9 @@ export const list = [
   {
     key: "wellm",
     name: "wellm"
+  },
+  {
+    key: "metalife",
+    name: "metalife"
   }
 ]
