@@ -1,15 +1,51 @@
 
 export const list = [
-  "github-finder",
-  "mogo",
-  "moneykeeper",
-  "new providence",
-  "react slider",
-  "tour of heroes",
-  "user crm",
-  "yoga",
-  "architect",
-  "flyu",
-  "shubox",
-  "wellm"
+  {
+    key: "github-finder",
+    name: "Github Finder"
+  },
+  {
+    key: "mogo",
+    name: "Mogo"
+  },
+  {
+    key: "moneykeeper",
+    name: "Moneykeeper"
+  },
+  {
+    key: "new-providence",
+    name: "New Providence"
+  },
+  {
+    key: "react-slider",
+    name: "react slider"
+  },
+  {
+    key: "tour-of-heroes",
+    name: "tour of heroes"
+  },
+  {
+    key: "user-crm",
+    name: "user crm"
+  },
+  {
+    key: "yoga",
+    name: "yoga"
+  },
+  {
+    key: "architect",
+    name: "architect"
+  },
+  {
+    key: "flyu",
+    name: "flyU"
+  },
+  {
+    key: "shubox",
+    name: "shubox"
+  },
+  {
+    key: "wellm",
+    name: "wellm"
+  }
 ]

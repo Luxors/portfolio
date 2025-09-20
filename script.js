@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const listEl = document.getElementById('list');
 
   if (!list?.length) {
-    listEl.innerHTML = '<li class="list-item">Проектов нет</li>';
+    listEl.innerHTML = '<li class="list-item">There are no projects</li>';
     return;
   }
 
@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
     li.className = 'list-item';
     
     const a = document.createElement('a');
-    a.href = `https://luxors.github.io/portfolio/${item}`;
+    a.href = `https://luxors.github.io/portfolio/${item.key}`;
     a.target = '_blank';
     a.className = 'list-item__link';
-    a.textContent = item;
+    a.textContent = item.name;
     
     li.appendChild(a);
     fragment.appendChild(li);
