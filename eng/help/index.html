@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Изучай английский на слух</title>
+    <meta
+      name="description"
+      content="С помощью бесплатной серии 3-х видеоуроков вы научитесь изучать английский на слух"
+    />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="thanks">
+        <div class="thanks__inner">
+          <div class="thanks__intro">
+            <div class="wrapper__inner">
+              <h2 class="thanks__title">
+                Cпасибо за <span>регистрацию!</span>
+              </h2>
+              <div class="thanks__text">
+                <h3 class="thanks__caption">
+                  Сейчас на почту вам <span>придет письмо-подтверждение.</span>
+                </h3>
+                <p class="thanks__text">
+                  Перейдите по ссылке из письма, чтобы
+                  <span>подтвердить адрес электронной почты.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="thanks__image">
+            <img class="thanks__pic" src="images/bg_header.png" alt="bridge" />
+          </div>
+        </div>
+      </header>
+      <div class="help-main">
+        <div class="help-main__inner">
+          <div class="order">
+            <div class="wrapper__inner">
+              <div class="order__inner">
+                <div class="order__item">
+                  <img
+                    class="order__pic"
+                    src="images/order_step1.png"
+                    alt="headset"
+                  />
+                  <div class="order__caption">Шаг 1</div>
+                  <p class="order__text">
+                    Зайдите в свою<br />
+                    электронную почту
+                  </p>
+                  <a href="" id="href-id-1"
+                    ><button class="button" type="button">
+                      Перейти в почтовый ящик
+                    </button></a
+                  >
+                </div>
+                <div class="order__item">
+                  <img
+                    class="order__pic"
+                    src="images/order_step2.png"
+                    alt="book"
+                    style="width: 106%; margin-left: -7px"
+                  />
+                  <div class="order__caption">Шаг 2</div>
+                  <p class="order__text">
+                    Найдите письмо<br />от нас и откройте его<br />
+                  </p>
+                </div>
+                <div class="order__item">
+                  <img
+                    class="order__pic"
+                    src="images/order_step3.png"
+                    alt="video"
+                  />
+                  <div class="order__caption">Шаг 3</div>
+                  <p class="order__text">
+                    Перейдите по ссылке<br />внутри письма<br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="note">
+            <div class="wrapper__inner">
+              <div class="note__inner">
+                <img
+                  class="note__pic"
+                  src="images/girl.png"
+                  width="208"
+                  height="208"
+                  alt="girl"
+                />
+                <p class="note__text">
+                  Если вы сразу не обнаружили наше письмо в своем&#160;<span
+                    >почтовом ящике, обязательно проверьте папку «Спам»</span
+                  >&#160;и переместите его во «Входящие».
+                </p>
+                <p class="note__text">
+                  Если письма нет и в спаме, напишите об этом&#160;<span
+                    >на почту:
+                    <a
+                      class="note__text-link"
+                      href="mailto:support@fakeexpert.com"
+                      ><b>support@fakeexpert.com</b></a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="page-footer">
+        <div class="wrapper__inner">
+          <div class="page-footer__inner">
+            <div class="page-footer__about">
+              2010-2018 © «НЕ ЭФФЕКТИВНЫЙ АНГЛИЙСКИЙ С ПРОФАНОМ СЫЧЁВА Ж. П.
+              ОГРНИП 000000000000
+            </div>
+            <div class="page-footer__info">
+              <a class="page-footer__link" target="_blank">
+                Политика конфиденциальности
+              </a>
+              <a class="page-footer__link" target="_blank">
+                Пользовательское соглашение
+              </a>
+            </div>
+            <div>
+              Есть вопросы? Напишите на
+              <a class="page-footer__link" href="mailto:support@fakeexpert.com"
+                >support@fakeexpert.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      function getCookie(name) {
+        var matches = document.cookie.match(
+          new RegExp(
+            '(?:^|; )' +
+              name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') +
+              '=([^;]*)'
+          )
+        );
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+      }
+
+      saveformemail = getCookie('saveformemail');
+
+      var idButton = '#href-id-1'; //id кнопки, в которую подставляем ссылки. Если почта будет нераспознана, то кнопка отображаться не будет.
+
+      if (!saveformemail) {
+        $(idButton).css('display', 'none');
+      } else if (saveformemail.indexOf('gmail.com') + 1) {
+        $(idButton).attr('href', 'http://gmail.com');
+      } else if (saveformemail.indexOf('mail.ru') + 1) {
+        $(idButton).attr('href', 'http://mail.ru');
+      } else if (saveformemail.indexOf('yandex.ua') + 1) {
+        $(idButton).attr('href', 'http://mail.yandex.ua');
+      } else if (saveformemail.indexOf('yandex.ru') + 1) {
+        $(idButton).attr('href', 'http://mail.yandex.ru');
+      } else if (saveformemail.indexOf('rambler.ru') + 1) {
+        $(idButton).attr('href', 'http://mail.rambler.ru');
+      } else if (saveformemail.indexOf('yahoo.com') + 1) {
+        $(idButton).attr('href', 'http://yahoo.com');
+      } else {
+        $(idButton).css('display', 'none');
+      }
+    </script>
+
+    <!--  <script src="libs/jquery/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>-->
+  </body>
+</html>

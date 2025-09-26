@@ -1,0 +1,104 @@
+.timer_title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+
+.timer
+{
+	font-size: 0;
+	text-align: center;
+	font-family: "RobotoCondensedBold", sans-serif;
+	color: rgb(0, 0, 0);
+	margin-top: -30px;
+}
+
+/* Timer */
+
+.timer, .timer_block, .timer_digit_wrap, .timer_digit, .timer_hour_splitter, .timer_field_title
+{
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}  
+
+.timer_block
+{
+	display: inline-block;
+/*	font-size: 5px;*/
+}
+.timer_block:not(:last-child)
+{
+	margin-right: 10px;
+}
+.timer_digit_wrap
+{
+	display: inline-block;
+/*
+	width: 50%;
+	min-width: 40px;
+*/
+/*	float: left;*/
+}
+
+.timer_digit
+{
+	/* border: 1px solid #D2D2D2; */
+	-webkit-border-radius: 8px;
+	        border-radius: 8px;
+/*	margin-left: 2px;*/
+/*	margin-right: 2px;*/
+/*	padding: 10px 10px 0px 6px;*/
+	/* background: white; */
+	margin-top: -3px;
+	font-size: 50px;
+}
+
+.timer_hour_splitter
+{
+	display: none;
+	vertical-align: top;
+}
+
+.timer_field_title
+{
+	display: inline-block;
+	font-family: Roboto;
+	font-size: 18px;
+	color: rgb(0, 0, 0);
+}
+
+
+/* Timer END */
+
+/* Responsive fix */
+@media screen and (max-width: 991px) {
+
+.timer {
+    font-size: 35px;
+    text-align: center;
+/*    color: black;*/
+    margin-top: 0px;
+}
+/*
+.timer_digit {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 8px 6px;
+    margin-top: -6px;
+}
+*/
+.timer_digit_wrap {
+/*    min-width: 35px;*/
+ }
+.timer_field_title {
+	display: block;
+/*    font-size: 13px;*/
+}
+
+}
+
+@media screen and (max-width: 321px) {
+
+
+}
