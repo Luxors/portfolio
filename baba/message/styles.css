@@ -1,0 +1,182 @@
+@font-face {
+  font-family: 'MuseoSansCyrl-300';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../_fonts/MuseoSansCyrl-300.woff') format('woff'),
+    url('../_fonts/MuseoSansCyrl-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl-500';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../_fonts/MuseoSansCyrl-500.woff') format('woff'),
+    url('../_fonts/MuseoSansCyrl-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl-700';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../_fonts/MuseoSansCyrl-700.woff') format('woff'),
+    url('../_fonts/MuseoSansCyrl-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Solena-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url(../_fonts/Solena-Regular.woff) format('woff'),
+    url(../_fonts/Solena-Regular.woff2) format('woff2');
+}
+
+html {
+  height: 100%;
+  font-size: 20px;
+  line-height: 1.25;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a,
+button,
+input,
+textarea {
+  outline: none;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main {
+  display: block;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+body {
+  min-width: 320px;
+  font-size: 100%;
+  font-family: MuseoSansCyrl-500, sans-serif;
+  font-weight: bold;
+  background-color: #fafafa;
+}
+
+.body-wrapper {
+  width: 100%;
+  max-width: 1920px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-top: 110px;
+  background-image: url(./images/bg-body-top.jpg),
+    url(./images/bg-body-bottom.jpg);
+  background-repeat: no-repeat;
+  background-position: center top, center bottom;
+  -webkit-background-size: 100% 100px, 100% 100px;
+  background-size: 100% 100px, 100% 100px;
+}
+.form-container {
+  width: 90%;
+  max-width: 740px;
+  margin: 0 auto;
+  text-align: center;
+}
+.form-title {
+  margin-bottom: 30px;
+}
+.form-desc {
+  margin-bottom: 20px;
+}
+.form-field {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: MuseoSansCyrl-300, sans-serif;
+}
+.form-submit {
+  font-family: 'MuseoSansCyrl-700', sans-serif;
+  color: #fff;
+  background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#ff8100),
+    to(#ffde00)
+  );
+  background: -webkit-linear-gradient(bottom, #ff8100, #ffde00);
+  background: -o-linear-gradient(bottom, #ff8100, #ffde00);
+  background: linear-gradient(to top, #ff8100, #ffde00);
+  border: none;
+  border-bottom: 2px solid #cc7100;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: all 0.25s linear 0s;
+  -o-transition: all 0.25s linear 0s;
+  transition: all 0.25s linear 0s;
+}
+.form-submit:hover {
+  opacity: 0.7;
+}
+/*==========  Mobile First  ==========*/
+
+@media only screen and (min-width: 440px) {
+}
+
+@media only screen and (min-width: 576px) {
+}
+@media only screen and (min-width: 640px) {
+}
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  /**/
+}

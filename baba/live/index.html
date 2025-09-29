@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Live</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="../_libs/jquery/jquery.min.js" defer></script>
+    <link rel="stylesheet" href="../_styles/normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="modal" id="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__toolbar">
+        <button
+          class="modal__btn"
+          id="modalClose"
+          type="button"
+          title="Закрыть"
+        ></button>
+      </div>
+      <div class="modal__content">
+        <iframe
+          class="modal__video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/QJuUqsFWl0A?rel=0&amp;controls=0&amp;showinfo=0"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </aside>
+    <header class="page-header">
+      <div class="wrapper">
+        <div class="header-top">
+          <ul class="header-top__inner">
+            <li class="header-top__item">
+              <div class="header-top__text">
+                <p>Буба Касторская</p>
+                <p class="header-top__text-upper">
+                  система сферического развития
+                </p>
+              </div>
+            </li>
+
+            <li class="header-top__item">
+              <div class="header-top__text">
+                <p>16-17 сентября 2017</p>
+                <p>Москва, Swiss Hotel</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!--header main block-->
+        <div class="header-inner">
+          <div class="promo">
+            <h1 class="promo__title">
+              Живи по
+              <br />
+              <span class="promo__title-solena">полной!</span>
+            </h1>
+            <p class="promo__text">
+              Тренинг для женщин, которые хотят
+              <br />
+              выйти за рамки средней жизни
+            </p>
+            <a href="#faq-block" class="btn">Узнать подробности</a>
+          </div>
+          <div class="video">
+            <button
+              class="video__btn"
+              id="modalOpen"
+              type="button"
+              title="Смотреть видео"
+            >
+              <span class="video__img sprite"></span>
+            </button>
+          </div>
+        </div>
+        <!--end header main block-->
+      </div>
+    </header>
+    <main class="page-content">
+      <section class="goals">
+        <div class="wrapper">
+          <h2 class="title">Цели тренинга «Живи по полной! Live»</h2>
+          <div class="goals__inner">
+            <div class="goals__item">
+              <p class="goals__text">Вдохновить вас на перемены к лучшему</p>
+            </div>
+            <div class="goals__item">
+              <p class="goals__text">
+                Показать, как без риска выйти за пределы серых будней
+              </p>
+            </div>
+            <div class="goals__item">
+              <p class="goals__text">Раскрыть ваш потенциал</p>
+            </div>
+            <div class="goals__item">
+              <p class="goals__text">
+                Дать уверенность — вы достойны жизни, о которой мечтаете
+              </p>
+            </div>
+            <div class="goals__item">
+              <p class="goals__text">
+                Дать технологии для увеличения вашей энергии
+              </p>
+            </div>
+            <div class="goals__item">
+              <p class="goals__text">
+                Помочь внедрить привычки без насилия над собой
+              </p>
+            </div>
+          </div>
+          <a href="#faq-block" class="btn">Забронировать место</a>
+        </div>
+      </section>
+      <section class="life">
+        <div class="wrapper">
+          <h2 class="title">На что похожа ваша жизнь прямо сейчас?</h2>
+          <div class="life__inner">
+            <div class="compare">
+              <h3 class="compare__title">
+                Средняя и серая жизнь, которой живут 95% женщин
+              </h3>
+              <ul class="compare__list">
+                <li class="compare__item">
+                  Работа без реализации — обычная, как у всех
+                </li>
+                <li class="compare__item">
+                  Отношения без любви — средние, как у родителей, подруг,
+                  одноклассниц
+                </li>
+                <li class="compare__item">
+                  Жизнь без драйва — с отпуском раз в году и ипотекой на 10 лет
+                  вперед
+                </li>
+              </ul>
+              <p class="compare__text">
+                Каждый новый год приносит новые морщинки, очередные килограммы и
+                горькие сожаления о той жизни, которая могла бы быть...
+              </p>
+            </div>
+            <div class="compare">
+              <h3 class="compare__title">
+                Яркая и насыщенная жизнь, которой живут 5% женщин
+              </h3>
+              <ul class="compare__list">
+                <li class="compare__item">
+                  Интересная и хорошо оплачиваемая работа, которая приносит
+                  удовольствие и развитие
+                </li>
+                <li class="compare__item">
+                  Гармоничные и счастливые отношения, в которых есть поддержка,
+                  понимание и глубина
+                </li>
+                <li class="compare__item">
+                  Жизнь по полной — путешествия по миру без расписания,
+                  реализация всех задумок и планов
+                </li>
+              </ul>
+              <p class="compare__text">
+                Каждый новый год приносит новые возможности для роста, очередной
+                повод для гордости и глубокое чувство удовлетворения. Впереди
+                еще столько ярких событий!
+              </p>
+            </div>
+          </div>
+          <p class="life__footer">
+            Дочитайте этот текст до конца — и вы узнаете,<br />
+            как попасть в
+            <span class="life__footer-happy"> счастливые 5% </span>
+          </p>
+        </div>
+      </section>
+      <section class="faq" id="faq-block">
+        <div class="wrapper">
+          <h2 class="title">Ответы на популярные вопросы</h2>
+          <ul class="faq__list">
+            <li class="faq__item">
+              <p class="faq__question">
+                Зачем ехать в Москву, если я могу посмотреть в интернете
+                мастер-класс «Шесть точек опоры женской реализации»?
+              </p>
+              <p class="faq__answer">Ответ</p>
+            </li>
+            <li class="faq__item">
+              <p class="faq__question">
+                Разве можно за два дня кардинально изменить то, что не менялось
+                годами — свою жизнь?
+              </p>
+              <p class="faq__answer">Ответ</p>
+            </li>
+            <li class="faq__item">
+              <p class="faq__question">
+                Я совсем не понимаю, чем хочу заниматься. Стоит ли мне ехать на
+                тренинг?
+              </p>
+              <p class="faq__answer">Ответ</p>
+            </li>
+            <li class="faq__item">
+              <p class="faq__question">
+                Я получу на тренинге вдохновение, а потом все вернется на свои
+                места. Стоит ли тратить время и деньги?
+              </p>
+              <p class="faq__answer">Ответ</p>
+            </li>
+            <li class="faq__item">
+              <p class="faq__question">
+                Программа слишком фундаментальная. Я успею освоить её за два
+                дня?
+              </p>
+              <p class="faq__answer">Ответ</p>
+            </li>
+            <li class="faq__item">
+              <p class="faq__question">
+                Мне нравится моя работа, я реализовалась как профессионал. Но у
+                меня проблемы с мужчинами. Этот тренинг поможет мне?
+              </p>
+              <p class="faq__answer">Ответ</p>
+            </li>
+            <li class="faq__item">
+              <p class="faq__question">
+                Я читала много книг по саморазвитию и многое знаю. Сомневаюсь,
+                что мне дадут что-то новое на этом тренинге.
+              </p>
+              <p class="faq__answer">Ответ</p>
+            </li>
+            <li class="faq__item">
+              <p class="faq__question">
+                Все обещают, что после их тренинга моя жизнь кардинально
+                изменится. Почему я должна поверить вам?
+              </p>
+              <p class="faq__answer">Ответ</p>
+            </li>
+            <li class="faq__item">
+              <p class="faq__question">
+                У меня другой вопрос. Где я могу его задать?
+              </p>
+              <p class="faq__answer">Ответ</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="wrapper">
+        <div class="footer__inner">
+          <ul class="info">
+            <li class="info__item">
+              <a href="#faq-block" class="info__link"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="info__item">
+              <a href="#faq-block" class="info__link">Правила пользования</a>
+            </li>
+            <li class="info__item">
+              <a href="#faq-block" class="info__link"
+                >Отказ от ответственности</a
+              >
+            </li>
+          </ul>
+          <ul class="social">
+            <li class="social__item">
+              <a
+                href="#"
+                class="social__link sprite"
+                target="_blank"
+                title="facebook"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                class="social__link sprite"
+                target="_blank"
+                title="vk"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                class="social__link sprite"
+                target="_blank"
+                title="instagram"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                class="social__link sprite"
+                target="_blank"
+                title="youtube"
+              ></a>
+            </li>
+            <li class="social__item">
+              <a
+                href="#"
+                class="social__link sprite"
+                target="_blank"
+                title="telegram"
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="common.js" defer></script>
+  </body>
+</html>
