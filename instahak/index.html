@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Инстахак</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-lg-3">
+            <div class="logo"><span class="logo__inner"><img class="logo__pic" src="images/logo.png" width="58" height="58" alt="инстахак" title="ИНСТАХАК"></span><span class="logo__inner">
+                <h1 class="logo__title">инстахак</h1>
+                <p class="logo__sign">качаем фото и видео с инсты</p></span></div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-lg-5">
+            <div class="totaldownload">
+              <div class="totaldownload__text">Всего скачано фото и&nbsp;видео:&#8194;<b class="totaldownload__counter">66 906</b></div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="howtouse">
+              <button class="howtouse__btn" id="instructionOpen" type="button">Как пользоваться сервисом?</button>
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div class="instruction" id="instruction">
+              <p class="instruction__text"><strong>Как скачать фото, видео или галерею в Инстаграме?</strong>
+                <br>
+                Скопируйте из приложения или сайта ссылку на фото, видео или галерею (слайдшоу) и вставьте в поле ниже и нажмите кнопку "Скачать".
+              </p>
+              <p class="instruction__text"><strong>Как скачать фото профиля (аватарку) в Инстаграме?</strong>
+                <br>
+                Скопируйте из приложения или сайта ссылку на профиль в Инстаграме и вставьте в поле ниже и нажмите кнопку "Скачать".
+              </p>
+              <p class="instruction__text">После того, как Вы получили фотографию или видео, щелкните по ней и в открывшемся окне щелкните правой кнопкой мыши (зажмите тач на телефоне) и выберите "Сохранить изображение (картинку)" или "Сохранить видео".</p>
+              <p class="instruction__text">Вы супер молодчинка!</p>
+              <button class="instruction__btn" id="instructionClose" type="button">Закрыть это</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="download">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="sort">
+              <button class="sort__btn" type="button">Одна ссылка</button>
+              <button class="sort__btn" type="button">Несколько ссылок</button>
+              <button class="sort__btn" type="button">Все фото аккаунта</button>
+              <button class="sort__btn" type="button">Выборочные фото</button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="downloadform">
+              <p class="downloadform__descr">Вставьте ссылку на фото или видео из Инстаграма.</p>
+              <div class="downloadform__form">
+                <form action="" method="">
+                  <div class="downloadform__form-group">
+                    <input class="downloadform__input" type="text" name="link" required>
+                  </div>
+                  <div class="downloadform__form-group">
+                    <label class="downloadform__radio">
+                      <input type="radio" name="textchoice" value="с текстом" checked> с текстом
+                    </label>
+                    <label class="downloadform__radio">
+                      <input type="radio" name="textchoice" value="без текста"> без текста
+                    </label>
+                  </div>
+                  <div class="downloadform__form-group">
+                    <input class="downloadform__btn" type="submit" value="Посмотреть">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <div class="lastdownload">
+              <p class="lastdownload__descr">Последнее скачанное фото или видео кем&#8209;то:</p>
+              <div class="lastdownload__image"><img class="lastdownload__pic" src="images/lastdownload.jpg" alt=""></div>
+              <div class="lastdownload__footer">
+                <div class="lastdownload__button">
+                  <button class="lastdownload__btn">Скачать</button>
+                </div>
+                <div class="share"><span class="share__text">Поделиться:</span><a class="share__lik share__lik-inst" href="http://" target="_blank"><i class="fa fa-instagram"></i></a><a class="share__lik share__lik-vk" href="http://" target="_blank"><i class="fa fa-vk"></i></a><a class="share__lik share__lik-fb" href="http://" target="_blank"><i class="fa fa-facebook"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="info__inner">
+              <h2 class="info__title">Бесплатно скачать и найти фото и видео с Instagram</h2>
+              <p class="info__text">Теперь Вы можете искать, смотреть и даже скачивать фото и видео с Instagram онлайн без регистрации и авторизации на сайте или приложении! Инстаграм - это популярное приложение и сервис для съёмки, обработки и публикаций в интернете фотографий и видеороликов через различные мобильные устройства (смартфоны, планшеты и т.п.). Всего за несколько лет своего существования, приложение стало одним из самых скачиваемых в магазинах AppStore и Google Play. Оно установлено практически у каждого третьего владельца iPhone или устройства на Android - от школьников до бабушек. Ведь каждому, есть что показать!</p>
+              <p class="info__text">Несмотря на все достоинства, программа не позволяет искать, сохранять и просматривать чужие фотографии и видеоролики через интернет. А ведь практически всем пользователям, хочется иметь у себя копии самых любимых моментов своей жизни! С нашим ресурсом загрузить и сохранить фотографии, или например любимое видео с сайта Instagram на компьютер онлайн с нашим ресурсом не составит труда. Причем, не только и свои, но и других пользователей! Очень многие интересуются и задают такие вопросы: <strong>"Как сохранить и скачать фото и видео с instagram на компьютер без регистрации?"</strong> или например <strong>"Как найти свои фото и видео по хэштегам, а также других пользователей?"</strong>. Оно и понятно - мобильным телефоном не всегда удобно пользоваться. С нашим сервисом, теперь всё это очень легко и просто сделать!</p>
+              <p class="info__text">Для того, чтобы скачать онлайн фото с такого популярного сайта как Инстаграм, на нашем сайте Вам нужно написать в форме поиска слово (хэштэг #), которое хотите найти. Если Вы хотите найти пользователя, то укажите его имя на сайте в форме. После этого Вы можете открыть фотографию или видео в полном размере и нажать на кнопку "Скачать". Всё очень просто! Спасибо Instagrab!</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="info__inner">
+              <h2 class="info__title">Что мы уже умеем?</h2>
+              <ul>
+                <li class="info__list_items"><i class="fa fa-check-circle-o"></i>
+                  <strong class="info__strong">Поиск файлов по хэштегам -</strong>
+                  Ищем в режиме онлайн фотографии и видео с Instagram по хэштегам.
+                </li>
+                <li class="info__list_items"><i class="fa fa-check-circle-o"></i>
+                  <strong class="info__strong">Поиск пользователей -</strong>
+                  Ищем в режиме онлайн всех пользователей Instagram, в т.ч. и Вас!
+                </li>
+                <li class="info__list_items"><i class="fa fa-check-circle-o"></i>
+                  <strong class="info__strong">Просмотр фото и видео онлайн -</strong>
+                  С помощью нашего сайта можно смотреть фотографии и видео без регистрации в Instagram, даже в полноэкранном режие.
+                </li>
+                <li class="info__list_items"><i class="fa fa-check-circle-o"></i>
+                  <strong class="info__strong">Скачивание и сохранение файлов на компьютер или телефон -</strong>
+                  Благодаря нашему ресурсу, Вы можете скачивать фотографии или видео онлайн себе на устройство.
+                </li>
+                <li class="info__list_items"><i class="fa fa-check-circle-o"></i>
+                  <strong class="info__strong">Универсальный дизайн -</strong>
+                  Предоставляем универсальный дизайн, позволяющий удобно пользоваться ресурсом даже на мобильных устройствах.
+                </li>
+              </ul>
+              <h2 class="info__error">Нашли ошибку или сайт не работает?</h2>
+              <p class="info__text">Если наш сайт не работает на Вашем компьютере или устройстве и Вы уже попробовали решить проблему следуя <a class="info__text-link" href="#">инструкции</a>, пожалуйста, сообщите об ошибке нам воспользовашись <a class="info__text-link" href="#">формой контактов</a>.</p>
+              <h2 class="info__title">Расскажи об Инстаграбе друзьям:</h2>
+              <div class="info__share"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="copy">Instahub.ru - найти и скачать фото или видео с Instahub © 2014-2018 Все права защищены.</p>
+      <ul class="nav">
+        <li class="nav__items"><a class="nav__link" href="#">На вверх</a><span>/</span></li>
+        <li class="nav__items"><a class="nav__link" href="#">Инструкция</a><span>/</span></li>
+        <li class="nav__items"><a class="nav__link" href="#">Реклама</a><span>/</span></li>
+        <li class="nav__items"><a class="nav__link" href="#">Контакты</a><span>/</span></li>
+      </ul>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/scripts.min.js" defer></script>
+  </body>
+</html>
