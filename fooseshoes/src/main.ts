@@ -29,7 +29,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <div class="logo">
           <a href="#">
             <img
-              src="img/header_logo.png"
+              src="/src//src/assets/images/header_logo.png"
               alt="fooshoes"
               width="156"
               height="20"
@@ -40,7 +40,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <div class="header-bar">
           <button class="search">
             <img
-              src="img/header_search_icon.png"
+              src="/src/assets/images/header_search_icon.png"
               alt="search"
               width="14"
               height="14"
@@ -69,13 +69,13 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <ul class="menu-bar">
           <li class="menu-wishlist">
             <a href="#">
-              <img src="img/menu_star_icon.png" alt="" />
+              <img src="/src/assets/images/menu_star_icon.png" alt="" />
               <div class="menu-wishlist__total">30</div>
             </a>
           </li>
           <li class="menu-cart">
             <a href="#">
-              <img src="img/menu_cart_icon.png" alt="" />
+              <img src="/src/assets/images/menu_cart_icon.png" alt="" />
               <div class="menu-cart__total">0</div>
             </a>
           </li>
@@ -85,7 +85,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <div class="slider-container">
       <div class="slider">
-        <img class="slider__img" src="img/top_bg.jpg" alt="" />
+        <img class="slider__img" src="/src/assets/images/top_bg.jpg" alt="" />
         <div class="slider-inner">
           <div class="price">$145,99</div>
           <h1 class="slider-inner__title">
@@ -99,16 +99,16 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           </p>
           <ul class="slider-inner__action">
             <li>
-              <a href="#"><img src="img/top_eye_icon.png" alt="" /></a>
+              <a href="#"><img src="/src/assets/images/top_eye_icon.png" alt="" /></a>
             </li>
             <li>
-              <a href="#"><img src="img/top_star_icon.png" alt="" /></a>
+              <a href="#"><img src="/src/assets/images/top_star_icon.png" alt="" /></a>
             </li>
             <li>
-              <a href="#"><img src="img/top_share_icon.png" alt="" /></a>
+              <a href="#"><img src="/src/assets/images/top_share_icon.png" alt="" /></a>
             </li>
             <li>
-              <a href="#"><img src="img/top_cart_icon.png" alt="" /></a>
+              <a href="#"><img src="/src/assets/images/top_cart_icon.png" alt="" /></a>
             </li>
           </ul>
         </div>
@@ -127,19 +127,19 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <li class="active">
               <a>Pink Shoes<br /><span>Now af $145,99</span></a>
             </li>
-            <!--				  <img class="slider-nav__divider" src="img/divider.png" alt="" />-->
+            <!--				  <img class="slider-nav__divider" src="/src/assets/images/divider.png" alt="" />-->
             <li>
               <a>Anna Field<br /><span>Limited Edition</span></a>
             </li>
-            <!--				  <img class="slider-nav__divider" src="img/divider.png" alt="" />-->
+            <!--				  <img class="slider-nav__divider" src="/src/assets/images/divider.png" alt="" />-->
             <li>
               <a>Prada<br /><span>Summer is coming</span></a>
             </li>
-            <!--				  <img class="slider-nav__divider" src="img/divider.png" alt="" />-->
+            <!--				  <img class="slider-nav__divider" src="/src/assets/images/divider.png" alt="" />-->
             <li>
               <a>Casadei<br /><span>All Colors avaiable</span></a>
             </li>
-            <!--				  <img class="slider-nav__divider" src="img/divider.png" alt="" />-->
+            <!--				  <img class="slider-nav__divider" src="/src/assets/images/divider.png" alt="" />-->
             <li>
               <a>Mellow Yellow<br /><span>Free delivery</span></a>
             </li>
@@ -151,19 +151,19 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <div class="specials">
       <div class="wrapper">
         <div class="specials-item">
-          <img src="img/specials_onSale.jpg" alt="" />
+          <img src="/src/assets/images/specials_onSale.jpg" alt="" />
           <div class="specials-item__title">
             <a href="#">on sale</a>
           </div>
         </div>
         <div class="specials-item">
-          <img src="img/specials_offer.jpg" alt="" />
+          <img src="/src/assets/images/specials_offer.jpg" alt="" />
           <div class="specials-item__title">
             <a href="#">special offers</a>
           </div>
         </div>
         <div class="specials-item">
-          <img src="img/specials_mastHave.jpg" alt="" />
+          <img src="/src/assets/images/specials_mastHave.jpg" alt="" />
           <div class="specials-item__title">
             <a href="#">must have</a>
           </div>
@@ -180,7 +180,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <div class="product-item">
             <div class="product-img">
               <a href="#"
-                ><img src="img/newArrivals_item1.jpg" alt="" height="220"
+                ><img src="/src/assets/images/newArrivals_item1.jpg" alt="" height="220"
               /></a>
             </div>
             <div class="price"><span>$145,99</span></div>
@@ -190,7 +190,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <div class="product-item">
             <div class="product-img">
               <a href="#"
-                ><img src="img/newArrivals_item2.jpg" alt="" height="220"
+                ><img src="/src/assets/images/newArrivals_item2.jpg" alt="" height="220"
               /></a>
             </div>
             <div class="price"><span>$145,99</span></div>
@@ -202,7 +202,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <div class="product-item">
             <div class="product-img">
               <a href="#"
-                ><img src="img/newArrivals_item3.jpg" alt="" height="220"
+                ><img src="/src/assets/images/newArrivals_item3.jpg" alt="" height="220"
               /></a>
             </div>
             <div class="price"><span>$145,99</span></div>
@@ -220,23 +220,23 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <div class="product-item">
             <div class="product-img">
               <a href="#"
-                ><img src="img/bestSeller_item1.jpg" alt="" height="220"
+                ><img src="/src/assets/images/bestSeller_item1.jpg" alt="" height="220"
               /></a>
             </div>
             <div class="price"><span>$145,99</span></div>
             <div>
               <div class="product-action">
                 <button type="button" data-original-title="View">
-                  <img src="img/top_eye_icon.png" alt="" />
+                  <img src="/src/assets/images/top_eye_icon.png" alt="" />
                 </button>
                 <button type="button" data-original-title="Wishlist">
-                  <img src="img/top_star_icon.png" alt="" />
+                  <img src="/src/assets/images/top_star_icon.png" alt="" />
                 </button>
                 <button type="button" data-original-title="Share">
-                  <img src="img/top_share_icon.png" alt="" />
+                  <img src="/src/assets/images/top_share_icon.png" alt="" />
                 </button>
                 <button type="button" data-original-title="Buy">
-                  <img src="img/top_cart_icon.png" alt="" />
+                  <img src="/src/assets/images/top_cart_icon.png" alt="" />
                 </button>
               </div>
             </div>
@@ -245,7 +245,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <div class="product-item">
             <div class="product-img">
               <a href="#"
-                ><img src="img/bestSeller_item2.jpg" alt="" height="220"
+                ><img src="/src/assets/images/bestSeller_item2.jpg" alt="" height="220"
               /></a>
             </div>
             <div class="price"><span>$145,99</span></div>
@@ -257,7 +257,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             </div>
             <div class="product-img">
               <a href="#"
-                ><img src="img/bestSeller_item3.jpg" alt="" height="220"
+                ><img src="/src/assets/images/bestSeller_item3.jpg" alt="" height="220"
               /></a>
             </div>
             <div class="price"><span>$145,99</span></div>
@@ -347,39 +347,39 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
           <ul class="widget-flickr__list">
             <li>
               <a href="" class="widget-flickr__links"
-                ><img src="img/flickr_item1.jpg" alt=""
+                ><img src="/src/assets/images/flickr_item1.jpg" alt=""
               /></a>
             </li>
             <li>
               <a href="" class="widget-flickr__links"
-                ><img src="img/flickr_item2.jpg" alt=""
+                ><img src="/src/assets/images/flickr_item2.jpg" alt=""
               /></a>
             </li>
             <li>
               <a href="" class="widget-flickr__links"
-                ><img src="img/flickr_item3.jpg" alt=""
+                ><img src="/src/assets/images/flickr_item3.jpg" alt=""
               /></a>
             </li>
             <li>
               <a href="" class="widget-flickr__links"
-                ><img src="img/flickr_item4.jpg" alt=""
+                ><img src="/src/assets/images/flickr_item4.jpg" alt=""
               /></a>
             </li>
             <li>
               <a href="" class="widget-flickr__links"
-                ><img src="img/flickr_item5.jpg" alt=""
+                ><img src="/src/assets/images/flickr_item5.jpg" alt=""
               /></a>
             </li>
             <li>
               <a href="" class="widget-flickr__links"
-                ><img src="img/flickr_item6.jpg" alt=""
+                ><img src="/src/assets/images/flickr_item6.jpg" alt=""
               /></a>
             </li>
           </ul>
         </div>
       </div>
 
-      <img class="prefooter-divider" src="img/prefooter-divider.png" alt="" />
+      <img class="prefooter-divider" src="/src/assets/images/prefooter-divider.png" alt="" />
 
       <div class="prefooter-bottom wrapper">
         <form action="send.php" class="prefooter-form">
@@ -398,27 +398,27 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         <ul class="prefooter-social">
           <li>
             <a href="" class="prefooter-socials__link"
-              ><img src="img/social_fb.png" alt=""
+              ><img src="/src/assets/images/social_fb.png" alt=""
             /></a>
           </li>
           <li>
             <a href="" class="prefooter-socials__link"
-              ><img src="img/social_tw.png" alt=""
+              ><img src="/src/assets/images/social_tw.png" alt=""
             /></a>
           </li>
           <li>
             <a href="" class="prefooter-socials__link"
-              ><img src="img/social_goo.png" alt=""
+              ><img src="/src/assets/images/social_goo.png" alt=""
             /></a>
           </li>
           <li>
             <a href="" class="prefooter-socials__link"
-              ><img src="img/social_li.png" alt=""
+              ><img src="/src/assets/images/social_li.png" alt=""
             /></a>
           </li>
           <li>
             <a href="" class="prefooter-socials__link"
-              ><img src="img/social_fk.png" alt=""
+              ><img src="/src/assets/images/social_fk.png" alt=""
             /></a>
           </li>
         </ul>

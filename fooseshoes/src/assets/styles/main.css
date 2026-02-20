@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'AllerRegular';
-  src: url('fonts/Aller-Regular.woff2') format('woff2'),
-    url('fonts/Aller-Regular.woff') format('woff');
+  src:
+    url('../fonts/Aller-Regular.woff2') format('woff2'),
+    url('../fonts/Aller-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -637,7 +638,7 @@ body {
   width: 36px;
   height: 36px;
   cursor: pointer;
-  background: url('img/form-arrow-icon.png') no-repeat center;
+  background: url('../images/form-arrow-icon.png') no-repeat center;
   background-color: rgb(125, 125, 125);
   border: none;
 }
