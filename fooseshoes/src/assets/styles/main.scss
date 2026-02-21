@@ -28,15 +28,19 @@ li {
   margin: 0 auto;
 }
 body {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  /* max-width: 1400px;
-  min-width: 768px; */
   margin: 0 auto;
   color: #242424;
   background-color: #5d5d5d;
   font-size: 16px;
   line-height: 1;
   font-family: 'AllerRegular', sans-serif;
+}
+
+.main {
+  flex: 1
 }
 
 .price {

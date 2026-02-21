@@ -19,7 +19,9 @@ import LayoutFooter from '../components/layout/LayoutFooter.astro';
   <body>
     <LayoutHeader />
     <LayoutNav />
-    <slot />
+    <main class="main">
+      <slot />
+    </main>
     <LayoutFooter />
   </body>
 </html>
