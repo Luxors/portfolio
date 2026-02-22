@@ -1,47 +1,7 @@
-@font-face {
-  font-family: 'AllerRegular';
-  src:
-    url('../fonts/Aller-Regular.woff2') format('woff2'),
-    url('../fonts/Aller-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-}
-li {
-  list-style: none;
-}
-.clearfix {
-  content: '';
-  display: table;
-  clear: both;
-}
-.wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
-  color: #242424;
-  background-color: #5d5d5d;
-  font-size: 16px;
-  line-height: 1;
-  font-family: 'AllerRegular', sans-serif;
-}
-
-.main {
-  flex: 1
-}
+@forward './fonts';
+@forward './normalize';
+@forward './base';
+@forward './layout-header';
 
 .price {
   width: 68px;
@@ -69,53 +29,6 @@ body {
   color: rgb(255, 255, 255);
   font-weight: bold;
   line-height: 12px;
-}
-/*HEADER*/
-.header {
-  width: 100%;
-  background: #242424;
-}
-.header img {
-  vertical-align: middle;
-}
-.logo {
-  float: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.header-bar {
-  float: right;
-}
-.search {
-  float: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 22px;
-  background: inherit;
-  border: none;
-  cursor: pointer;
-}
-.login {
-  float: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 22px;
-  padding-right: 24px;
-  border-left: 1px solid #383838;
-  border-right: 1px solid #383838;
-}
-.login a {
-  text-transform: uppercase;
-}
-.login a,
-.login span {
-  font-size: 11px;
-  color: rgb(126, 126, 126);
-  line-height: 2.273;
-  text-align: center;
-}
-.login a:hover {
-  color: rgb(87, 197, 160);
 }
 
 /*TOP MENU*/

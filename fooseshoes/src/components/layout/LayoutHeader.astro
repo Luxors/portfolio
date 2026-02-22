@@ -1,30 +1,40 @@
-<header class="header clearfix">
+<header class="layout-header">
   <div class="wrapper">
-    <div class="logo">
-      <a href="#">
+    <div class="layout-header__container">
+      <a href="/" class="layout-header-brand">
         <img
-          src="/src//src/assets/images/header_logo.png"
-          alt="fooshoes"
-          width="156"
+          src="/src/assets/images/header_logo.png"
+          alt="Fooshoes"
+          width="155"
           height="20"
+          class="layout-header-brand__img"
         />
       </a>
-    </div>
 
-    <div class="header-bar">
-      <button class="search">
-        <img
-          src="/src/assets/images/header_search_icon.png"
-          alt="search"
-          width="14"
-          height="14"
-        />
-      </button>
-      <div class="login">
-        <a href="#">login</a>
-        <span>or</span>
-        <a href="#">register</a>
-      </div>
+      <ul class="layout-header-toolbar">
+        <li class="layout-header-toolbar__item">
+          <div class="layout-header-search">
+            <input type="search" class="layout-header-search__input" />
+            <button class="search layout-header-search__control">
+              <img
+                src="/src/assets/images/header_search_icon.png"
+                alt="search"
+                width="14"
+                height="14"
+              />
+            </button>
+          </div>
+        </li>
+        <li class="layout-header-toolbar__item">
+          <div class="layout-header-user">
+            <div class="layout-header-user__links">
+              <a href="#" class="layout-header-user__link">login</a>
+              <span class="layout-header-user__link-separator">or</span>
+              <a href="#" class="layout-header-user__link">register</a>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </header>
