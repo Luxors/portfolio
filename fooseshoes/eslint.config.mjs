@@ -1,4 +1,3 @@
-// eslint.config.mjs
 import eslintPluginAstro from 'eslint-plugin-astro';
 import js from '@eslint/js';
 import ts from 'typescript-eslint';
@@ -27,6 +26,7 @@ export default [
       'dist/',
       '.astro/',
       'public/',
+      'postcss.config.cjs',
     ],
   },
 ];
