@@ -2,6 +2,7 @@
 @forward './normalize';
 @forward './base';
 @forward './layout-header';
+@forward './layout-nav';
 
 .price {
   width: 68px;
@@ -31,87 +32,6 @@
   line-height: 12px;
 }
 
-/*TOP MENU*/
-.menu {
-  width: 100%;
-  background-color: rgb(255, 255, 255);
-}
-.menu-list {
-  float: left;
-  width: 70%;
-  font-size: 0;
-}
-.menu-list li {
-  display: inline-block;
-  padding-top: 20px;
-  padding-bottom: 21px;
-  padding-left: 3%;
-  padding-right: 3%;
-  font-size: 1rem;
-  border-left: 1px solid rgba(211, 211, 211, 0.9);
-}
-.menu-list li:last-child {
-  border-right: 1px solid rgba(211, 211, 211, 0.9);
-}
-.menu-list a {
-  color: rgb(36, 36, 36);
-  text-transform: capitalize;
-  line-height: 1.563;
-}
-.menu-list a:hover {
-  color: rgb(87, 197, 160);
-}
-.menu-bar {
-  float: right;
-  font-size: 0;
-}
-.menu-bar img {
-  margin-right: 8px;
-  vertical-align: middle;
-}
-.menu-wishlist {
-  float: left;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-left: 1px solid rgba(211, 211, 211, 0.9);
-  border-right: 1px solid rgba(211, 211, 211, 0.9);
-}
-.menu-cart {
-  float: right;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-right: 1px solid rgba(211, 211, 211, 0.9);
-}
-.menu-wishlist,
-.menu-cart {
-  padding-left: 22px;
-  padding-right: 22px;
-}
-.menu-bar a {
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 2.083;
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-.menu-bar div {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 5px;
-  vertical-align: middle;
-  font-size: 0.75rem;
-  line-height: 1.7;
-}
-.menu-wishlist__total {
-  background-color: rgb(173, 173, 173);
-}
-.menu-cart__total {
-  background-color: rgb(87, 197, 160);
-}
-.menu-bar a:hover {
-  opacity: 0.8;
-}
 /*SLIDER*/
 .slider {
   position: relative;

@@ -1,26 +1,61 @@
-<nav class="menu clearfix">
-  <div class="wrapper">
-    <ul class="menu-list">
-      <li><a href="/">home</a></li>
-      <li><a href="products">products</a></li>
-      <li><a href="about">about</a></li>
-      <li><a href="blog">blog</a></li>
-      <li><a href="contacts">contacts</a></li>
-    </ul>
+---
+const currentPath = Astro.url.pathname;
 
-    <ul class="menu-bar">
-      <li class="menu-wishlist">
-        <a href="wishlist">
-          <img src="/src/assets/images/menu_star_icon.png" alt="" />
-          <div class="menu-wishlist__total">30</div>
-        </a>
-      </li>
-      <li class="menu-cart">
-        <a href="cart">
-          <img src="/src/assets/images/menu_cart_icon.png" alt="" />
-          <div class="menu-cart__total">0</div>
-        </a>
-      </li>
-    </ul>
+import { Image } from 'astro:assets';
+
+import StarImage from '@/assets/images/menu_star_icon.png';
+import CartImage from '@/assets/images/menu_cart_icon.png';
+
+const menuItems = [
+  { href: '/', text: 'home' },
+  { href: '/products', text: 'products' },
+  { href: '/about', text: 'about' },
+  { href: '/blog', text: 'blog' },
+  { href: '/contacts', text: 'contacts' },
+];
+
+const toolbarItems = [
+  { id: 'wishlist', href: '/wishlist', icon: StarImage, count: 30 },
+  { id: 'cart', href: '/cart', icon: CartImage, count: 0 },
+];
+---
+
+<div class="layout-nav">
+  <div class="wrapper">
+    <div class="layout-nav__container">
+      <nav class="layout-nav-menu">
+        {
+          menuItems.map((item) => (
+            <a
+              href={item.href}
+              class:list={[
+                'layout-nav-menu__link',
+                { 'layout-nav-menu__link--active': currentPath === item.href },
+              ]}
+            >
+              {item.text}
+            </a>
+          ))
+        }
+      </nav>
+
+      <ul class="menu-bar layout-nav__toolbar layout-nav-toolbar">
+        {
+          toolbarItems.map((item) => (
+            <a href={item.href} class="layout-nav-toolbar__link">
+              <Image src={item.icon} alt="" class="layout-nav-toolbar__icon" />
+              <span
+                class:list={[
+                  'layout-nav-toolbar__count',
+                  `layout-nav-toolbar__count--${item.id}`,
+                ]}
+              >
+                {item.count}
+              </span>
+            </a>
+          ))
+        }
+      </ul>
+    </div>
   </div>
-</nav>
+</div>
