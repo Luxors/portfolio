@@ -21,12 +21,6 @@ export default [
     rules: {},
   },
   {
-    ignores: [
-      'node_modules/',
-      'dist/',
-      '.astro/',
-      'public/',
-      'postcss.config.cjs',
-    ],
+    ignores: ['node_modules/', 'dist/', '.astro/', 'public/', 'postcss.config.cjs'],
   },
 ];

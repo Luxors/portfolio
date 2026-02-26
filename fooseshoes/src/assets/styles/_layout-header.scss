@@ -49,16 +49,16 @@
   align-items: center;
   height: 100%;
   color: rgb(126, 126, 126);
-  
+
   &__links {
     line-height: 1;
   }
-  
+
   &__link {
     font-size: 0.75rem;
     text-transform: uppercase;
     color: inherit;
-    transition: color .1s;
+    transition: color 0.1s;
 
     &:hover {
       color: rgb(87, 197, 160);

@@ -45,10 +45,7 @@ const toolbarItems = [
             <a href={item.href} class="layout-nav-toolbar__link">
               <Image src={item.icon} alt="" class="layout-nav-toolbar__icon" />
               <span
-                class:list={[
-                  'layout-nav-toolbar__count',
-                  `layout-nav-toolbar__count--${item.id}`,
-                ]}
+                class:list={['layout-nav-toolbar__count', `layout-nav-toolbar__count--${item.id}`]}
               >
                 {item.count}
               </span>
