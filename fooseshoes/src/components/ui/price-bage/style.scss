@@ -1,0 +1,23 @@
+.base-price-bage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: 4.25rem;
+  padding: 0 0.625rem;
+  background: rgb(87, 197, 160);
+
+  &__text {
+    line-height: 1;
+    color: rgb(255, 255, 255);
+
+    &--sm {
+      font-size: 0.875rem;
+    }
+    
+    &--lg {
+      font-size: 1.125rem;
+    }
+  }
+}
