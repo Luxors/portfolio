@@ -1,74 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
+import HomeSlider from '@/components/home/HomeSlider.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-  <div class="slider-container">
-    <div class="slider">
-      <img class="slider__img" src="/src/assets/images/top_bg.jpg" alt="" />
-      <div class="slider-inner">
-        <div class="price">$145,99</div>
-        <h1 class="slider-inner__title">
-          Pink Shoes<br />
-          2013 Collection
-        </h1>
-        <p class="slider-inner__description">
-          Nunc non fermentum nunc. Sed ut ante <br />
-          eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..
-        </p>
-        <ul class="slider-inner__action">
-          <li>
-            <a href="#"><img src="/src/assets/images/top_eye_icon.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/src/assets/images/top_star_icon.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/src/assets/images/top_share_icon.png" alt="" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="/src/assets/images/top_cart_icon.png" alt="" /></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="slider-nav">
-      <div class="wrapper">
-        <div class="slider-nav__line">
-          <div class="slider-nav__bar"></div>
-        </div>
-        <ul class="slider-list">
-          <!--
-				  <div class="slider-line">
-					<div class="slider-bar"></div>
-				  </div>
-			-->
-          <li class="active">
-            <a>Pink Shoes<br /><span>Now af $145,99</span></a>
-          </li>
-          <!--				  <img class="slider-nav__divider" src="/src/assets/images/divider.png" alt="" />-->
-          <li>
-            <a>Anna Field<br /><span>Limited Edition</span></a>
-          </li>
-          <!--				  <img class="slider-nav__divider" src="/src/assets/images/divider.png" alt="" />-->
-          <li>
-            <a>Prada<br /><span>Summer is coming</span></a>
-          </li>
-          <!--				  <img class="slider-nav__divider" src="/src/assets/images/divider.png" alt="" />-->
-          <li>
-            <a>Casadei<br /><span>All Colors avaiable</span></a>
-          </li>
-          <!--				  <img class="slider-nav__divider" src="/src/assets/images/divider.png" alt="" />-->
-          <li>
-            <a>Mellow Yellow<br /><span>Free delivery</span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+  <HomeSlider />
 
   <div class="specials">
     <div class="wrapper">
