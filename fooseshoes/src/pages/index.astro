@@ -1,36 +1,14 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 import HomeSlider from '@/components/home/HomeSlider.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import HomeOffers from '@/components/home/HomeOffers.astro';
 ---
 
 <Layout>
   <HomeSlider />
+  <HomeOffers />
 
-  <div class="specials">
-    <div class="wrapper">
-      <div class="specials-item">
-        <img src="/src/assets/images/specials_onSale.jpg" alt="" />
-        <div class="specials-item__title">
-          <a href="#">on sale</a>
-        </div>
-      </div>
-      <div class="specials-item">
-        <img src="/src/assets/images/specials_offer.jpg" alt="" />
-        <div class="specials-item__title">
-          <a href="#">special offers</a>
-        </div>
-      </div>
-      <div class="specials-item">
-        <img src="/src/assets/images/specials_mastHave.jpg" alt="" />
-        <div class="specials-item__title">
-          <a href="#">must have</a>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <main class="main-content">
     <section class="promo wrapper">
       <header class="promo-header clearfix">
