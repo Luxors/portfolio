@@ -1,0 +1,63 @@
+---
+import './styles.scss';
+
+export interface Props {
+  productId: string;
+}
+
+const { productId } = Astro.props;
+
+const actions = [
+{ icon: '/src/assets/images/top_eye_icon.png', action: 'view' },
+  { icon: '/src/assets/images/top_star_icon.png', action: 'wishlist' },
+  { icon: '/src/assets/images/top_share_icon.png', action: 'share' },
+  { icon: '/src/assets/images/top_cart_icon.png', action: 'cart' }
+];
+
+---
+
+<script>
+  // import type { Props } from './BaseProductActions.astro';
+
+  const container = document.querySelector<HTMLElement>('.base-product-actions');
+
+  if (container) {
+    const id = container.dataset.productId!;
+    const buttons = container.querySelectorAll('.base-product-actions__control');
+
+    buttons.forEach((button) => {
+    const action = button.getAttribute('data-action')!;
+    button.addEventListener('click', () => {
+        switch(action ) {
+          case 'view':
+            console.log(`View product ${id}`);
+            // window.location.href = `/product/${productId}`;
+            break;
+          case 'wishlist':
+            console.log(`Adding product ${id} to wishlist`);
+            // addToFavorites(productId);
+            break;
+          case 'share':
+            console.log(`Share product ${id}`);
+            // openShareDialog(productId);
+            break;
+          case 'cart':
+            console.log(`Adding product ${id} to cart`);
+            // addToCart(productId);
+            break;
+        }
+      });
+  });
+  }
+
+</script>
+
+<ul data-product-id={productId} class="base-product-actions">
+  {actions.map((item) => (
+    <li class="base-product-actions__item">
+      <button type="button" data-action={item.action} class="base-product-actions__control">
+        <img src={item.icon} alt='' class="base-product-actions__icon" />
+      </button>
+    </li>
+  ))}
+</ul>
