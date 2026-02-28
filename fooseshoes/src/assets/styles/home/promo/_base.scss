@@ -1,0 +1,46 @@
+.home-promo {
+  margin-bottom: 2.188rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 28px;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: normal;
+    text-transform: capitalize;
+    color: rgb(36, 36, 36);
+  }
+
+  &__show-all {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: rgb(188, 181, 167);
+    font-weight: bold;
+    line-height: 1.786;
+    text-align: center;
+    border: 1px solid rgb(188, 181, 167);
+    background-color: rgb(235, 231, 223);
+
+    &:hover {
+      color: rgb(235, 231, 223);
+      background-color: rgb(188, 181, 167);
+    }
+  }
+
+  &__products {
+    display: flex;
+    gap: 3.75rem;
+
+    .base-product-card {
+      flex: 1;
+    }
+  }
+}

@@ -1,7 +1,58 @@
 ---
+import type { Product } from "@/components/ui/product-card/BaseProductCard.astro";
+
 import Layout from '@/layouts/Layout.astro';
 import HomeSlider from '@/components/home/HomeSlider.astro';
 import HomeOffers from '@/components/home/HomeOffers.astro';
+import HomePromo from '@/components/home/HomePromo.astro';
+
+const productsNew: Product[] = [
+  {
+    productId: '1',
+    title: 'Even & Odd',
+    price: '145,99',
+    bage: null,
+    image: '/src/assets/images/newArrivals_item1.jpg',
+  },
+  {
+    productId: '2',
+    title: 'buffalo decollete',
+    price: '185,99',
+    bage: 'on sale',
+    image: '/src/assets/images/newArrivals_item2.jpg',
+  },
+  {
+    productId: '3',
+    title: 'Even & Odd',
+    price: '145,99',
+    bage: null,
+    image: '/src/assets/images/newArrivals_item3.jpg',
+  }
+]
+
+const productsBest: Product[] = [
+  {
+    productId: '4',
+    title: 'Even & Odd',
+    price: '145,99',
+    bage: null,
+    image: '/src/assets/images/bestSeller_item1.jpg',
+  },
+  {
+    productId: '6',
+    title: 'Even & Odd',
+    price: '185,99',
+    bage: null,
+    image: '/src/assets/images/bestSeller_item2.jpg',
+  },
+  {
+    productId: '7',
+    title: 'Bullo Decollete',
+    price: '145,99',
+    bage: 'out of stock',
+    image: '/src/assets/images/bestSeller_item3.jpg',
+  }
+]
 ---
 
 <Layout>
@@ -10,97 +61,8 @@ import HomeOffers from '@/components/home/HomeOffers.astro';
 
 
   <main class="main-content">
-    <section class="promo wrapper">
-      <header class="promo-header clearfix">
-        <h2>New arrivals on FooseShoes</h2>
-        <a class="promo-header__btn">show all</a>
-      </header>
-      <div class="product-container">
-        <div class="product-item">
-          <div class="product-img">
-            <a href="#"
-              ><img src="/src/assets/images/newArrivals_item1.jpg" alt="" height="220" /></a
-            >
-          </div>
-          <div class="price"><span>$145,99</span></div>
-          <h4 class="product-title">Even&Odd</h4>
-        </div>
-
-        <div class="product-item">
-          <div class="product-img">
-            <a href="#"
-              ><img src="/src/assets/images/newArrivals_item2.jpg" alt="" height="220" /></a
-            >
-          </div>
-          <div class="price"><span>$145,99</span></div>
-          <h4 class="product-title">Even&Odd</h4>
-          <div class="product-tumb__promo">
-            <p>on sale!</p>
-          </div>
-        </div>
-        <div class="product-item">
-          <div class="product-img">
-            <a href="#"
-              ><img src="/src/assets/images/newArrivals_item3.jpg" alt="" height="220" /></a
-            >
-          </div>
-          <div class="price"><span>$145,99</span></div>
-          <h4 class="product-title">Bullo Decollete</h4>
-        </div>
-      </div>
-    </section>
-
-    <section class="promo wrapper">
-      <header class="promo-header clearfix">
-        <h2>New arrivals on FooseShoes</h2>
-        <a class="promo-header__btn">show all</a>
-      </header>
-      <div class="product-container">
-        <div class="product-item">
-          <div class="product-img">
-            <a href="#"><img src="/src/assets/images/bestSeller_item1.jpg" alt="" height="220" /></a
-            >
-          </div>
-          <div class="price"><span>$145,99</span></div>
-          <div>
-            <div class="product-action">
-              <button type="button" data-original-title="View">
-                <img src="/src/assets/images/top_eye_icon.png" alt="" />
-              </button>
-              <button type="button" data-original-title="Wishlist">
-                <img src="/src/assets/images/top_star_icon.png" alt="" />
-              </button>
-              <button type="button" data-original-title="Share">
-                <img src="/src/assets/images/top_share_icon.png" alt="" />
-              </button>
-              <button type="button" data-original-title="Buy">
-                <img src="/src/assets/images/top_cart_icon.png" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-item">
-          <div class="product-img">
-            <a href="#"><img src="/src/assets/images/bestSeller_item2.jpg" alt="" height="220" /></a
-            >
-          </div>
-          <div class="price"><span>$145,99</span></div>
-          <h4 class="product-title">Even&Odd</h4>
-        </div>
-        <div class="product-item">
-          <div class="product-tumb__promo orange">
-            <p>out of stock</p>
-          </div>
-          <div class="product-img">
-            <a href="#"><img src="/src/assets/images/bestSeller_item3.jpg" alt="" height="220" /></a
-            >
-          </div>
-          <div class="price"><span>$145,99</span></div>
-          <h4 class="product-title">Bullo Decollete</h4>
-        </div>
-      </div>
-    </section>
+    <HomePromo title="New arrivals on FooseShoes" products={productsNew} />
+    <HomePromo title="best sellers of the months" products={productsBest} />
 
     <div class="addons wrapper">
       <div class="addons-block">
