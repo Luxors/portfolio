@@ -1,0 +1,32 @@
+---
+import './_styles.scss';
+
+import BasePriceBage from '../price-bage/BasePriceBage.astro';
+import BaseProductActions from '../product-actions/BaseProductActions.astro';
+
+export interface Product {
+  productId: string;
+  title: string;
+  price: string;
+  bage: string | null;
+  image: string;
+}
+
+const { product } = Astro.props as { product: Product };
+---
+
+<article class="base-product-card">
+  {product.bage && (
+    <div class="base-product-card__bage">{product.bage}</div>
+  )}
+  <a href="products" class="base-product-card__link">
+    <img src={product.image} alt={product.title} height="220" class="base-product-card__img" />
+  </a>
+  <footer class="base-product-card__footer">
+    <BasePriceBage price={product.price} textSize='sm' />
+    <div class="base-product-card__footer-inner">
+      <h4 class="base-product-card__title">{product.title}</h4>
+      <BaseProductActions productId={product.productId} />
+    </div>
+  </footer>
+</article>
