@@ -1,10 +1,11 @@
 ---
-import type { Product } from "@/components/ui/product-card/BaseProductCard.astro";
+import type { Product } from '@/components/ui/product-card/BaseProductCard.astro';
 
 import Layout from '@/layouts/Layout.astro';
 import HomeSlider from '@/components/home/HomeSlider.astro';
 import HomeOffers from '@/components/home/HomeOffers.astro';
 import HomePromo from '@/components/home/HomePromo.astro';
+import HomeAddons from '@/components/home/HomeAddons.astro';
 
 const productsNew: Product[] = [
   {
@@ -27,8 +28,8 @@ const productsNew: Product[] = [
     price: '145,99',
     bage: null,
     image: '/src/assets/images/newArrivals_item3.jpg',
-  }
-]
+  },
+];
 
 const productsBest: Product[] = [
   {
@@ -51,50 +52,17 @@ const productsBest: Product[] = [
     price: '145,99',
     bage: 'out of stock',
     image: '/src/assets/images/bestSeller_item3.jpg',
-  }
-]
+  },
+];
 ---
 
 <Layout>
   <HomeSlider />
   <HomeOffers />
 
-
-  <main class="main-content">
+  <div class="home-content">
     <HomePromo title="New arrivals on FooseShoes" products={productsNew} />
     <HomePromo title="best sellers of the months" products={productsBest} />
-
-    <div class="addons wrapper">
-      <div class="addons-block">
-        <h3 class="addons-title">free shipping</h3>
-        <p class="addons-text">
-          Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class aptent taciti
-          sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem,
-        </p>
-      </div>
-
-      <div class="addons-block">
-        <h3 class="addons-title">testimonials</h3>
-        <p class="addons-text">
-          vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit <a>[...]</a>
-        </p>
-        <address class="testimonials-autor">- John Doe -</address>
-      </div>
-
-      <div class="addons-block">
-        <h3 class="addons-title">blog news</h3>
-        <a class="news" href="#">
-          <div class="news-date">apr 01</div>
-          <h4 class="news-title">Nice & clean. The best for you blog!</h4>
-          <p class="news-text">Vivamus metus turpis, bibendum vitae euismod vel</p>
-        </a>
-        <a class="news" href="#">
-          <div class="news-date">apr 01</div>
-          <h4 class="news-title">What an Ecommerce theme!</h4>
-          <p class="news-text">Vulputate vel nibh. Class aptent taciti sociosqu ad litora</p>
-        </a>
-      </div>
-    </div>
-  </main>
+    <HomeAddons />
+  </div>
 </Layout>
