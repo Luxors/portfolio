@@ -1,0 +1,64 @@
+---
+const items = [
+  {
+    link: 'https://www.facebook.com/',
+    name: 'Facebook',
+    image: '/src/assets/images/social_fb.png'
+  },
+  {
+    link: 'https://x.com/',
+    name: 'Twitter',
+    image: '/src/assets/images/social_tw.png'
+  },
+  {
+    link: 'https://www.google.com/',
+    name: 'Google',
+    image: '/src/assets/images/social_goo.png'
+  },
+  {
+    link: 'https://linkedin.com/',
+    name: 'Linkedin',
+    image: '/src/assets/images/social_li.png'
+  },
+  {
+    link: 'https://www.flickr.com/',
+    name: 'Flickr',
+    image: '/src/assets/images/social_fk.png'
+  }
+]
+---
+
+<ul class="layout-social">
+  {
+    items.map((item) => (
+      <li>
+        <a href={item.link} target="_blank" rel="noopener noreferrer" class="layout-social__link">
+          <img src={item.image} alt={item.name} class="layout-social__image" />
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style lang="scss">
+  .layout-social {
+    --size: 2.75rem;
+
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.625rem;
+
+    &__link {
+      flex-shrink: 0;
+      display: block;
+      width: var(--size);
+      height: var(--size);
+    }
+
+    &__image {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+</style>
