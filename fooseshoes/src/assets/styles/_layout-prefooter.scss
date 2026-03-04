@@ -1,0 +1,18 @@
+.layout-prefooter {
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
+  background-color: rgb(36, 36, 36);
+
+  &__divider {
+    border: none;
+    height: 1px;
+    background-color: #141414;
+  }
+}
+
+.layout-prefooter-widgets {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  padding-bottom: 3.25rem;
+}
