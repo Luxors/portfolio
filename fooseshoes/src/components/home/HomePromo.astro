@@ -1,11 +1,11 @@
 ---
-import type { Product } from "@/components/ui/product-card/BaseProductCard.astro";
+import type { IProduct } from "@/components/ui/product-card/BaseProductCard.astro";
 
 import BaseProductCard from "@/components/ui/product-card/BaseProductCard.astro";
 
 export interface Props {
   title: string;
-  products: Product[];
+  products: IProduct[];
 }
 
 const { title, products } = Astro.props;
