@@ -1,16 +1,42 @@
-<footer class="footer">
-  <div class="footer-wrapper clearfix">
-    <p class="footer-copy">
-      Copyright © Fooseshoes 2013. <br />Designed by EnzoLiVolti.
+---
+const navItems = [
+  {
+    title: 'Home',
+    link: '/'
+  },
+  {
+    title: 'Support',
+    link: 'support'
+  },
+  {
+    title: 'Terms and Conditions',
+    link: 'terms-and-conditions'
+  },
+  {
+    title: 'Faqs',
+    link: 'faq'
+  },
+  {
+    title: 'Contact us',
+    link: 'contacts'
+  }
+]
+---
+
+<footer class="layout-footer">
+  <div class="layout-footer__wrapper">
+    <p class="layout-footer-copy">
+      Copyright © Fooseshoes 2013. <br />
+      Designed by <a href="http://enzolivolti.com/freebies/" target="_blank" rel="noopener noreferrer" class="layout-footer-copy__link">EnzoLiVolti</a>.
     </p>
-    <nav class="footer-nav">
-      <ul class="footer-nav__list">
-        <li><a href="">Home</a>/</li>
-        <li><a href="">Support</a>/</li>
-        <li><a href="">Terms and Conditions</a>/</li>
-        <li><a href="">Faqs</a>/</li>
-        <li><a href="">Contact us</a></li>
-      </ul>
+    <nav class="layout-footer-nav">
+      {
+        navItems.map((item) => (
+          <div>
+            <a href={item.link} class="layout-footer-nav__link">{item.title}</a>
+          </div>
+        ))
+      }
     </nav>
   </div>
 </footer>
