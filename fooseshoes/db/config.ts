@@ -1,8 +1,6 @@
 import { defineDb, defineTable, column } from 'astro:db';
 
 // https://astro.build/db/config
-
-// Определяем таблицу для товаров интернет-магазина
 const Product = defineTable({
   columns: {
     productId: column.number({ primaryKey: true }),
@@ -16,7 +14,16 @@ const Product = defineTable({
     isBestSeller: column.boolean({ default: false }),
     isSpecialOffer: column.boolean({ default: false }),
     createdAt: column.date({ default: new Date() }),
-    // categoryId: column.number({ references: () => Category.columns.id }), // так можно добавить связь с другой таблицей
+    categoryId: column.number({ references: () => Category.columns.id }), // так можно добавить связь с другой таблицей
+  },
+});
+
+const Category = defineTable({
+  columns: {
+    id: column.number({ primaryKey: true }),
+    title: column.text(),
+    description: column.text({ optional: true }),
+    createdAt: column.date({ default: new Date() }),
   },
 });
 
