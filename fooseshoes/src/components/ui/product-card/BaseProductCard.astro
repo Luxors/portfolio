@@ -10,6 +10,10 @@ export interface IProduct {
   price: number;
   imageUrl: string;
   isOnSale?: boolean;
+  isAvailable?: boolean;
+  isNewArrival?: boolean;
+  isBestSeller?: boolean;
+  isSpecialOffer?: boolean;
 }
 
 const { product } = Astro.props as { product: IProduct };

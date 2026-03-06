@@ -9,30 +9,9 @@ import HomeOffers from '@/components/home/HomeOffers.astro';
 import HomePromo from '@/components/home/HomePromo.astro';
 import HomeAddons from '@/components/home/HomeAddons.astro';
 
-const productsBest: IProduct[] = [
-  {
-    productId: 14,
-    title: 'Even & Odd',
-    price: 145.99,
-    imageUrl: '/src/assets/images/bestSeller_item1.jpg',
-  },
-  {
-    productId: 16,
-    title: 'Even & Odd',
-    price: 185.99,
-    isOnSale: true,
-    imageUrl: '/src/assets/images/bestSeller_item2.jpg',
-  },
-  {
-    productId: 17,
-    title: 'Bullo Decollete',
-    price: 145.99,
-    // bage: 'out of stock',
-    imageUrl: '/src/assets/images/bestSeller_item3.jpg',
-  },
-];
-
-const products = await db.select().from(Product);
+const products: IProduct[] = await db.select().from(Product);
+const newArrivals = products?.filter((product: IProduct) => product.isNewArrival === true) ?? []
+const bestSellers = products?.filter((product: IProduct) => product.isBestSeller === true) ?? []
 ---
 
 <Layout>
@@ -40,8 +19,8 @@ const products = await db.select().from(Product);
   <HomeOffers />
 
   <div class="home-content">
-    <HomePromo title="New arrivals on FooseShoes" products={products} />
-    <HomePromo title="best sellers of the months" products={productsBest} />
+    <HomePromo title="New arrivals on FooseShoes" products={newArrivals} />
+    <HomePromo title="best sellers of the months" products={bestSellers} />
     <HomeAddons />
   </div>
 </Layout>
