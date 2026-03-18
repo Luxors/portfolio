@@ -1,3 +1,7 @@
+---
+import IconSearch from '@/assets/images/icons/search.svg';
+---
+
 <header class="layout-header">
   <div class="wrapper">
     <div class="layout-header__container">
@@ -15,13 +19,8 @@
         <li class="layout-header-toolbar__item">
           <div class="layout-header-search">
             <input type="search" class="layout-header-search__input" />
-            <button class="search layout-header-search__control">
-              <img
-                src="/src/assets/images/header_search_icon.png"
-                alt="search"
-                width="14"
-                height="14"
-              />
+            <button class="layout-header-search__control">
+              <IconSearch width={20} height={20} stroke="currentColor" />
             </button>
           </div>
         </li>

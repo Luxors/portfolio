@@ -14,7 +14,7 @@ const Product = defineTable({
     isBestSeller: column.boolean({ default: false }),
     isSpecialOffer: column.boolean({ default: false }),
     createdAt: column.date({ default: new Date() }),
-    categoryId: column.number({ references: () => Category.columns.id }), // так можно добавить связь с другой таблицей
+    // categoryId: column.number({ references: () => Category.columns.id }), // так можно добавить связь с другой таблицей
   },
 });
 

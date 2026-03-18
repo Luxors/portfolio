@@ -1,17 +1,29 @@
 ---
 import './styles.scss';
 
+import type { SvgComponent } from "astro/types";
+
+import IconStar from '@/assets/images/icons/star.svg';
+import IconEye from '@/assets/images/icons/eye.svg';
+import IconShare from '@/assets/images/icons/share.svg';
+import IconCart from '@/assets/images/icons/cart.svg';
+
 export interface Props {
   productId: number;
 }
 
+interface Action {
+  action: string;
+  icon: SvgComponent;
+}
+
 const { productId } = Astro.props;
 
-const actions = [
-  { icon: '/src/assets/images/top_eye_icon.png', action: 'view' },
-  { icon: '/src/assets/images/top_star_icon.png', action: 'wishlist' },
-  { icon: '/src/assets/images/top_share_icon.png', action: 'share' },
-  { icon: '/src/assets/images/top_cart_icon.png', action: 'cart' }
+const actions: Action[] = [
+  { icon: IconEye, action: 'view' },
+  { icon: IconStar, action: 'wishlist' },
+  { icon: IconShare, action: 'share' },
+  { icon: IconCart, action: 'cart' }
 ];
 ---
 
@@ -51,7 +63,7 @@ const actions = [
   {actions.map((item) => (
     <li class="base-product-actions__item">
       <button type="button" data-action={item.action} class="base-product-actions__control">
-        <img src={item.icon} alt='' class="base-product-actions__icon" />
+        <item.icon class="base-product-actions__icon"  />
       </button>
     </li>
   ))}

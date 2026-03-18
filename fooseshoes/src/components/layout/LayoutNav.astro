@@ -1,10 +1,11 @@
 ---
 const currentPath = Astro.url.pathname;
 
-import { Image } from 'astro:assets';
+// import { Image } from 'astro:assets';
+// import type { SvgComponent } from "astro/types";
 
-import StarImage from '@/assets/images/menu_star_icon.png';
-import CartImage from '@/assets/images/menu_cart_icon.png';
+import IconStar from '@/assets/images/icons/star.svg';
+import IconCart from '@/assets/images/icons/cart.svg';
 
 const menuItems = [
   { href: '/', text: 'home' },
@@ -15,8 +16,8 @@ const menuItems = [
 ];
 
 const toolbarItems = [
-  { id: 'wishlist', href: '/wishlist', icon: StarImage, count: 30 },
-  { id: 'cart', href: '/cart', icon: CartImage, count: 0 },
+  { id: 'wishlist', href: '/wishlist', icon: IconStar, count: 30 },
+  { id: 'cart', href: '/cart', icon: IconCart, count: 0 },
 ];
 ---
 
@@ -43,7 +44,7 @@ const toolbarItems = [
         {
           toolbarItems.map((item) => (
             <a href={item.href} class="layout-nav-toolbar__link">
-              <Image src={item.icon} alt="" class="layout-nav-toolbar__icon" />
+              <item.icon class="layout-nav-toolbar__icon" />
               <span
                 class:list={['layout-nav-toolbar__count', `layout-nav-toolbar__count--${item.id}`]}
               >
