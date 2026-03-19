@@ -26,6 +26,8 @@
   height: 100%;
 
   &__item {
+    display: flex;
+    align-items: center;
     height: 100%;
     padding: 0 1.25rem;
     border-right: 1px solid #383838;
@@ -35,13 +37,62 @@
 .layout-header-search {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 2.75rem;
 
   &__control {
+    display: flex;
     flex-shrink: 0;
     width: 2.75rem;
-    height: 2.75rem;
+    height: 100%;
     color: rgb(126, 126, 126);
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #3d3d3d;
+    }
+  }
+
+  .layout-header-search__input {
+    visibility: hidden;
+    width: 0;
+    height: 100%;
+    padding: 0.5rem 0.938rem;
+    font-size: 0.875rem;
+    color: #7d7d7d;
+    background-color: #2e2e2e;
+    border: none;
+    transition: width 0.3s ease-in-out;
+
+    &:focus-visible {
+      outline: 1px solid #57c5a0;
+    }
+  }
+
+  .layout-header-search__icon {
+    margin: auto;
+
+    &--x {
+      display: none;
+    }
+
+    &--search {
+      display: block;
+    }
+  }
+
+  &--visible {
+    .layout-header-search__input {
+      width: 15.625rem;
+      visibility: visible;
+    }
+
+    .layout-header-search__icon--search {
+      display: none;
+    }
+
+    .layout-header-search__icon--x {
+      display: block;
+    }
   }
 }
 

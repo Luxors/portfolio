@@ -1,5 +1,5 @@
 ---
-import IconSearch from '@/assets/images/icons/search.svg';
+import LayoutHeaderSearch from '@/components/layout/LayoutHeaderSearch.astro';
 ---
 
 <header class="layout-header">
@@ -17,12 +17,7 @@ import IconSearch from '@/assets/images/icons/search.svg';
 
       <ul class="layout-header-toolbar">
         <li class="layout-header-toolbar__item">
-          <div class="layout-header-search">
-            <input type="search" class="layout-header-search__input" />
-            <button class="layout-header-search__control">
-              <IconSearch width={20} height={20} stroke="currentColor" />
-            </button>
-          </div>
+          <LayoutHeaderSearch />
         </li>
         <li class="layout-header-toolbar__item">
           <div class="layout-header-user">
