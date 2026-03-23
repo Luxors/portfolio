@@ -1,0 +1,83 @@
+---
+import type { SvgComponent } from "astro/types";
+
+import IconFacebook from '@/assets/images/icons/facebook.svg';
+import IconTwitter from '@/assets/images/icons/twitter.svg';
+import IconGoogle from '@/assets/images/icons/google.svg';
+import IconLinkedin from '@/assets/images/icons/linkedin.svg';
+import IconFlickr from '@/assets/images/icons/flickr.svg';
+
+interface SocialItem {
+  link: string;
+  name: string;
+  icon: SvgComponent;
+}
+
+const items: SocialItem[] = [
+  {
+    link: 'https://www.facebook.com/',
+    name: 'Facebook',
+    icon: IconFacebook
+  },
+  {
+    link: 'https://x.com/',
+    name: 'Twitter',
+    icon: IconTwitter
+  },
+  {
+    link: 'https://www.google.com/',
+    name: 'Google',
+    icon: IconGoogle
+  },
+  {
+    link: 'https://linkedin.com/',
+    name: 'Linkedin',
+    icon: IconLinkedin
+  },
+  {
+    link: 'https://www.flickr.com/',
+    name: 'Flickr',
+    icon: IconFlickr
+  }
+]
+---
+
+<ul class="layout-social">
+  {
+    items.map((item) => (
+      <li>
+        <a href={item.link} target="_blank" rel="noopener noreferrer" class="layout-social__link">
+          <item.icon width={20} height={20} class="layout-social__icon" />
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style lang="scss">
+  .layout-social {
+    --size: 2.75rem;
+
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0.625rem;
+
+    &__link {
+      display: flex;
+      width: var(--size);
+      height: var(--size);
+      color: #7d7d7d;
+      background-color: #2e2e2e;
+      transition: color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+      &:hover {
+        opacity: 0.7;
+        color: #57c5a0;
+      }
+    }
+
+    &__icon {
+      margin: auto;
+    }
+  }
+</style>

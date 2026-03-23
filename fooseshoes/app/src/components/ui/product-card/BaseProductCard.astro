@@ -1,0 +1,36 @@
+---
+import './_styles.scss';
+
+import BasePriceBage from '../price-bage/BasePriceBage.astro';
+import BaseProductActions from '../product-actions/BaseProductActions.astro';
+
+export interface IProduct {
+  productId: number;
+  title: string;
+  price: number;
+  imageUrl: string;
+  isOnSale?: boolean;
+  isAvailable?: boolean;
+  isNewArrival?: boolean;
+  isBestSeller?: boolean;
+  isSpecialOffer?: boolean;
+}
+
+const { product } = Astro.props as { product: IProduct };
+---
+
+<article class="base-product-card">
+  {product.isOnSale && (
+    <div class="base-product-card__bage">On Sale</div>
+  )}
+  <a href="products" class="base-product-card__link">
+    <img src={product.imageUrl} alt={product.title} height="220" class="base-product-card__img" />
+  </a>
+  <footer class="base-product-card__footer">
+    <BasePriceBage price={product.price} textSize='sm' />
+    <div class="base-product-card__footer-inner">
+      <h4 class="base-product-card__title">{product.title}</h4>
+      <BaseProductActions productId={product.productId} />
+    </div>
+  </footer>
+</article>

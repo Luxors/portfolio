@@ -1,0 +1,64 @@
+.home-addons-item {
+  min-height: 11.563rem;
+  padding: 2rem 2.5rem;
+  background-color: rgba(0, 0, 0, 0.05);
+
+  &__title {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #242424;
+  }
+
+  &__text {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #242424;
+  }
+}
+
+.home-addons-item-blog {
+  position: relative;
+  display: block;
+  padding-left: 4rem;
+  text-decoration: none;
+  color: rgb(36, 36, 36);
+
+  &:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+
+  &:hover .home-addons-item-blog__title {
+    color: rgb(87, 197, 160);
+  }
+
+  &__date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 3rem;
+    height: 2.25rem;
+    padding: 0 0.5rem;
+    text-align: center;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 0.75rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(87, 197, 160);
+  }
+
+  &__title {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    transition: color 0.3s ease-in-out;
+  }
+  &__text {
+    font-size: 0.875rem;
+    line-height: 1.25;
+  }
+}
