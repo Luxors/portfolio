@@ -1,0 +1,59 @@
+---
+const currentPath = Astro.url.pathname;
+
+// import { Image } from 'astro:assets';
+// import type { SvgComponent } from "astro/types";
+
+import IconStar from '@/assets/images/icons/star.svg';
+import IconCart from '@/assets/images/icons/cart.svg';
+
+const menuItems = [
+  { href: '/portfolio/fooseshoes', text: 'home' },
+  { href: '/portfolio/fooseshoes/products', text: 'products' },
+  { href: '/portfolio/fooseshoes/about', text: 'about' },
+  { href: '/portfolio/fooseshoes/blog', text: 'blog' },
+  { href: '/portfolio/fooseshoes/contacts', text: 'contacts' },
+];
+
+const toolbarItems = [
+  { id: 'wishlist', href: '/wishlist', icon: IconStar, count: 30 },
+  { id: 'cart', href: '/cart', icon: IconCart, count: 0 },
+];
+---
+
+<div class="layout-nav">
+  <div class="wrapper">
+    <div class="layout-nav__container">
+      <nav class="layout-nav-menu">
+        {
+          menuItems.map((item) => (
+            <a
+              href={item.href}
+              class:list={[
+                'layout-nav-menu__link',
+                { 'layout-nav-menu__link--active': currentPath === item.href },
+              ]}
+            >
+              {item.text}
+            </a>
+          ))
+        }
+      </nav>
+
+      <ul class="menu-bar layout-nav__toolbar layout-nav-toolbar">
+        {
+          toolbarItems.map((item) => (
+            <a href={item.href} class="layout-nav-toolbar__link">
+              <item.icon class="layout-nav-toolbar__icon" />
+              <span
+                class:list={['layout-nav-toolbar__count', `layout-nav-toolbar__count--${item.id}`]}
+              >
+                {item.count}
+              </span>
+            </a>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</div>

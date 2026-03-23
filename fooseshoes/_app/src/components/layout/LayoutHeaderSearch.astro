@@ -1,0 +1,39 @@
+---
+import IconSearch from '@/assets/images/icons/search.svg';
+import IconX from '@/assets/images/icons/x.svg';
+---
+
+<script>
+  const VISIBLE_CLASS = "layout-header-search--visible";
+
+  const container = document.getElementById('layout-header-search');
+  const input = document.getElementById('layout-header-search-input');
+  const control = document.getElementById('layout-header-search-control');
+
+  function toggleVisible() {
+    if (!container) return;
+
+    container.classList.toggle(VISIBLE_CLASS);
+    if (container.classList.contains(VISIBLE_CLASS)) {
+      input?.focus();
+    }
+  }
+
+  function handleClickOutside(e: MouseEvent) {
+    if (container?.classList.contains(VISIBLE_CLASS) && 
+        !container?.contains(e.target as HTMLElement)) {
+      container?.classList.remove(VISIBLE_CLASS);
+    }
+  }
+
+  control?.addEventListener('click', toggleVisible)
+  document.addEventListener('click', handleClickOutside);
+</script>
+
+<div id="layout-header-search" class="layout-header-search" >
+  <input id="layout-header-search-input" type="search" class="layout-header-search__input" />
+  <button id="layout-header-search-control" class="layout-header-search__control">
+    <IconX width={20} height={20} stroke="currentColor" class="layout-header-search__icon layout-header-search__icon--x" />
+    <IconSearch width={20} height={20} stroke="currentColor" class="layout-header-search__icon layout-header-search__icon--search" />
+  </button>
+</div>

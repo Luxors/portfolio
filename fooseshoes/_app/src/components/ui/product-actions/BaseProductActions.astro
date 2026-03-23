@@ -1,0 +1,70 @@
+---
+import './styles.scss';
+
+import type { SvgComponent } from "astro/types";
+
+import IconStar from '@/assets/images/icons/star.svg';
+import IconEye from '@/assets/images/icons/eye.svg';
+import IconShare from '@/assets/images/icons/share.svg';
+import IconCart from '@/assets/images/icons/cart.svg';
+
+export interface Props {
+  productId: number;
+}
+
+interface Action {
+  action: string;
+  icon: SvgComponent;
+}
+
+const { productId } = Astro.props;
+
+const actions: Action[] = [
+  { icon: IconEye, action: 'view' },
+  { icon: IconStar, action: 'wishlist' },
+  { icon: IconShare, action: 'share' },
+  { icon: IconCart, action: 'cart' }
+];
+---
+
+<script >
+  const containers = document.querySelectorAll<HTMLElement>('.base-product-actions');
+
+  if (containers) {
+    containers.forEach(container => {
+      const productId = container.dataset.id;
+      const buttons = container.querySelectorAll<HTMLButtonElement>('.base-product-actions__control');
+      
+      buttons.forEach((button) => {
+        const action = button.dataset.action;
+
+        button.addEventListener('click', () => {
+          switch(action) {
+            case 'view':
+              console.log(`View product ${productId}`);
+              break;
+            case 'wishlist':
+              console.log(`Adding product ${productId} to wishlist`);
+              break;
+            case 'share':
+              console.log(`Share product ${productId}`);
+              break;
+            case 'cart':
+              console.log(`Adding product ${productId} to cart`);
+              break;
+          }
+        });
+      });
+    });
+  }
+</script>
+
+<ul data-id={productId} class="base-product-actions">
+  {actions.map((item) => (
+    <li class="base-product-actions__item">
+      <button type="button" data-action={item.action} class="base-product-actions__control">
+        <item.icon class="base-product-actions__icon"  />
+      </button>
+    </li>
+  ))}
+</ul>

@@ -1,0 +1,42 @@
+---
+const navItems = [
+  {
+    title: 'Home',
+    link: '/'
+  },
+  {
+    title: 'Support',
+    link: 'support'
+  },
+  {
+    title: 'Terms and Conditions',
+    link: 'terms-and-conditions'
+  },
+  {
+    title: 'Faqs',
+    link: 'faq'
+  },
+  {
+    title: 'Contact us',
+    link: 'contacts'
+  }
+]
+---
+
+<footer class="layout-footer">
+  <div class="layout-footer__wrapper">
+    <p class="layout-footer-copy">
+      Copyright © Fooseshoes 2013. <br />
+      Designed by <a href="http://enzolivolti.com/freebies/" target="_blank" rel="noopener noreferrer" class="layout-footer-copy__link">EnzoLiVolti</a>.
+    </p>
+    <nav class="layout-footer-nav">
+      {
+        navItems.map((item) => (
+          <div>
+            <a href={item.link} class="layout-footer-nav__link">{item.title}</a>
+          </div>
+        ))
+      }
+    </nav>
+  </div>
+</footer>

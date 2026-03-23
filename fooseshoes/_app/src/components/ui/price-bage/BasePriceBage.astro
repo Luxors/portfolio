@@ -1,0 +1,15 @@
+---
+import './styles.scss';
+
+interface Props {
+  price: number;
+  textSize?: 'sm' | 'md' | 'lg';
+}
+
+
+const { price, textSize = 'lg' } = Astro.props;
+---
+
+<div class="base-price-bage">
+  <span class={`base-price-bage__text base-price-bage__text--${textSize}`}>${price}</span>
+</div>
