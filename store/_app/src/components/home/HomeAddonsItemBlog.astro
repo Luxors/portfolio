@@ -1,0 +1,16 @@
+---
+export interface AddonsItemBlog {
+  link: string;
+  date: string;
+  title: string;
+  text: string;
+}
+
+const { item } = Astro.props as { item: AddonsItemBlog };
+---
+
+<a class="home-addons-item-blog" href={item.link}>
+  <div class="news-date home-addons-item-blog__date">{item.date}</div>
+  <h5 class="news-title home-addons-item-blog__title">{item.title}</h5>
+  <p class="news-text home-addons-item-blog__text">{item.text}</p>
+</a>

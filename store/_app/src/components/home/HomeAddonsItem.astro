@@ -1,0 +1,16 @@
+---
+import type { AddonsItemBlog } from './HomeAddonsItemBlog.astro';
+
+export interface AddonsItem {
+  title: string;
+  text?: string;
+  items?: AddonsItemBlog[];
+}
+
+const { item } = Astro.props as { item: AddonsItem };
+---
+
+<div class="home-addons-item">
+  <h4 class="home-addons-item__title">{item.title}</h4>
+  {item.text ? <p class="home-addons-item__text">{item.text}</p> : <slot />}
+</div>

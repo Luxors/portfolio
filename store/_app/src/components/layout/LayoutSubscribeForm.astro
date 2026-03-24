@@ -1,0 +1,50 @@
+---
+import IconChevronRight from '@/assets/images/icons/chevron-right.svg';
+---
+
+<form class="layout-subscribe-form">
+  <input
+    class="layout-subscribe-form__field"
+    type="email"
+    name="subscribe"
+    placeholder="Enter email for newsletter"
+  />
+  <button class="layout-subscribe-form__button">
+    <IconChevronRight style={{margin: 'auto'}} />
+  </button>
+</form>
+
+<style lang="scss">
+  .layout-subscribe-form {
+    --size: 2.75rem;
+
+    display: flex;
+    flex-wrap: nowrap;
+    height: var(--size);
+
+    &__field {
+      width: 15.625rem;
+      height: 100%;
+      padding: 0.5rem 0.938rem;
+      font-size: 0.875rem;
+      font-style: italic;
+      color: rgb(125, 125, 125);
+      background-color: rgb(46, 46, 46);
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__button {
+      display: flex;
+      width: var(--size);
+      height: 100%;
+      color: #7d7d7d;
+      background-color: #3d3d3d;
+      border: none;
+      cursor: pointer;
+    }
+  }
+</style>

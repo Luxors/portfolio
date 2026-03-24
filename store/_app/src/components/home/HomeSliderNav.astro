@@ -1,0 +1,32 @@
+---
+export interface Props {
+  items: Array<{
+    title: string;
+    description: string;
+  }>;
+}
+
+const { items } = Astro.props;
+
+const activeBarWidth = (100 / items.length);
+---
+
+
+  <div class="home-slider-nav">
+    <div class="home-slider-nav__container">
+      <div class="home-slider-nav__bar">
+        <div class="home-slider-nav__active-bar" style={{width: `${activeBarWidth}%`}} ></div>
+      </div>
+      <ul class="slider-list home-slider-nav__list">
+        {items.map((item) => (
+          <li class="home-slider-nav__item">
+            <button type="button" class="home-slider-nav__control">
+              <span class="home-slider-nav__line--active"></span>
+              <span class="home-slider-nav__title">{item.title}</span>
+              <span class="home-slider-nav__description">{item.description}</span>
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>

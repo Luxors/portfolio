@@ -1,0 +1,28 @@
+---
+import type { IProduct } from "@/components/ui/product-card/BaseProductCard.astro";
+
+import BaseProductCard from "@/components/ui/product-card/BaseProductCard.astro";
+
+export interface Props {
+  title: string;
+  products: IProduct[];
+}
+
+const { title, products } = Astro.props;
+---
+
+<div class="wrapper">
+  <section class="home-promo">
+    <header class="home-promo__header">
+      <h2 class="home-promo__title">{title}</h2>
+      <a href="products" class="home-promo__show-all">show all</a>
+    </header>
+    <div class="home-promo__products">
+      {
+        products.map((item) => (
+          <BaseProductCard product={item} />
+        ))
+      }
+    </div>
+  </section>
+</div>

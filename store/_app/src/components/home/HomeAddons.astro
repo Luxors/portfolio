@@ -1,0 +1,44 @@
+---
+import type { AddonsItem } from './HomeAddonsItem.astro';
+
+import HomeAddonsItem from './HomeAddonsItem.astro';
+import HomeAddonsItemBlog from './HomeAddonsItemBlog.astro';
+
+const items: AddonsItem[] = [
+  {
+    title: 'free shipping',
+    text: 'Vivamus metus turpis, bibendum vitae euismod vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem,',
+  },
+  {
+    title: 'testimonials',
+    text: 'vel, vulputate vel nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec erat sem, vehicula id dictum sit',
+  },
+  {
+    title: 'blog',
+    items: [
+      {
+        link: 'blog',
+        date: 'apr 01',
+        title: 'Nice & clean. The best for you blog!',
+        text: 'Vivamus metus turpis, bibendum vitae euismod vel',
+      },
+      {
+        link: 'blog',
+        date: 'apr 01',
+        title: 'What an Ecommerce theme!',
+        text: 'Vulputate vel nibh. Class aptent taciti sociosqu ad litora',
+      },
+    ],
+  },
+];
+---
+
+<div class="wrapper home-addons">
+  {
+    items.map((item) => (
+      <HomeAddonsItem item={item}>
+        {!item.text && item.items?.map((blog) => <HomeAddonsItemBlog item={blog} />)}
+      </HomeAddonsItem>
+    ))
+  }
+</div>

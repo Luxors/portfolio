@@ -1,0 +1,33 @@
+---
+const items = [
+  {
+    text: 'on sale',
+    image: '/src/assets/images/specials_onSale.jpg',
+    query: 'sale'
+  },
+  {
+    text: 'special offers',
+    image: '/src/assets/images/specials_offer.jpg',
+    query: 'special'
+  },
+  {
+    text: 'must have',
+    image: '/src/assets/images/specials_mastHave.jpg',
+    query: 'top'
+  }
+]
+---
+
+<div class="offers">
+  <div class="wrapper">
+    <ul class="offers__list">
+      {items.map((item) => (
+        <li class="offers__item offers-item" style={`background-image: url(${item.image});`}>
+          <div class="offers-item__title">
+            <a href={`products?query=${item.query}`} class="offers-item__link">{item.text}</a>
+          </div>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>

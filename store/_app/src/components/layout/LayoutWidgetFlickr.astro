@@ -1,0 +1,60 @@
+---
+const items = [
+  {
+    link: 'https://www.flickr.com/',
+    image: '/src/assets/images/flickr_item1.jpg'
+  },
+  {
+    link: 'https://www.flickr.com/',
+    image: '/src/assets/images/flickr_item2.jpg'
+  },
+  {
+    link: 'https://www.flickr.com/',
+    image: '/src/assets/images/flickr_item3.jpg'
+  },
+  {
+    link: 'https://www.flickr.com/',
+    image: '/src/assets/images/flickr_item4.jpg'
+  },
+  {
+    link: 'https://www.flickr.com/',
+    image: '/src/assets/images/flickr_item5.jpg'
+  },
+  {
+    link: 'https://www.flickr.com/',
+    image: '/src/assets/images/flickr_item6.jpg'
+  }
+]
+---
+
+<ul class="layout-widget-flickr">
+  {
+    items.map((item) => (
+      <li>
+        <a href={item.link} target="_blank" rel="noopener noreferrer" class="layout-widget-flickr__link">
+          <img src={item.image} alt="" class="layout-widget-flickr__image"/>
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style lang="scss">
+  .layout-widget-flickr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6.25rem);
+    gap: 1rem;
+
+    &__link,
+    &__image {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &__image {
+      object-fit: cover;
+    }
+  }
+</style>

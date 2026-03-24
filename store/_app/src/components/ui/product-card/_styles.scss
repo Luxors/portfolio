@@ -1,0 +1,62 @@
+.base-product-card {
+  position: relative;
+  background-color: #fff;
+
+  &__bage {
+    position: absolute;
+  }
+
+  &__link {
+    display: flex;
+  }
+
+  &__img {
+    height: 13.75rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  &__footer {
+    position: relative;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0 2px 0 #ccc;
+
+    &-inner {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      padding: 0.813rem 0;
+    }
+  }
+
+  &__title {
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #57c5a0;
+  }
+
+  .base-price-bage {
+    position: absolute;
+    bottom: 0;
+    left: 0.75rem;
+  }
+
+  .base-product-actions {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-45%);
+    z-index: -1;
+    opacity: 0;
+    background-color: #fff;
+    transition: opacity 0.3s ease-out;
+  }
+
+  &:hover .base-product-actions {
+    z-index: 1;
+    opacity: 1;
+  }
+}
