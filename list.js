@@ -55,4 +55,8 @@ export const list = [
     key: 'fooseshoes',
     name: 'fooseshoes',
   },
+  {
+    key: 'industrial',
+    name: 'industrial',
+  },
 ];

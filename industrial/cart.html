@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>test</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="styles/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper"><header class="site-header clearfix">
+<div class="inline logo">
+<a class="logo__link" href="index.html"><img class="logo__img" src="https://s20.postimg.cc/xzyr9le4d/logo.png" alt="industrial"></a>
+</div>
+<nav class="site-menu">
+<ul class="site-menu__list">
+<li class="site-menu__item"><a href="index.html" class="site-menu__link">home</a></li>
+<li class="site-menu__item"><a href="#" class="site-menu__link">shop</a>
+<ul class="menu-dropdown">
+<li class="menu-dropdown__item">
+<a href="catalog.html" class="site-menu__link">catalog</a>
+</li>
+<li class="menu-dropdown__item">
+<a href="#" class="site-menu__link">lorem</a>
+</li>
+<li class="menu-dropdown__item">
+<a href="#" class="site-menu__link">lorem</a>
+</li>
+<li class="menu-dropdown__item">
+<a href="#" class="site-menu__link">lorem</a>
+</li>
+</ul>
+</li>
+<li class="site-menu__item"><a href="#" class="site-menu__link">contacts</a></li>
+<li class="site-menu__item">
+<a href="login.html" class="site-menu__link">sign in</a>
+</li>
+<li class="site-menu__item"><a href="admin.html" class="site-menu__link">admin</a></li>
+</ul>
+</nav>
+<div class="tools">
+<div class="search">
+<a class="search__btn" href="search.html">
+<img class="search__img" src="https://s20.postimg.cc/d70xyxayl/search_ico.png" alt="search">
+</a>
+</div>
+<div class="cart">
+<a class="cart__btn" href="cart.html">
+<img src="https://s20.postimg.cc/g3jdlgrel/cart_ico.png" alt="cart" class="cart__img">
+</a>
+</div>
+<div class="burger">
+<img src="img/bars.png" alt="cart" class="cart__img">
+</div>
+</div>
+</header><main class="page-content"></main><div class="shopping-cart">
+<h1 class="shopping-cart__title">shopping cart</h1>
+<table class="shopping-cart__table desktop-cart" >
+<tr class="shopping-cart__td" >
+<th class="shopping-cart__th" colspan="2">Product Name</th>
+<th class="shopping-cart__th" >Remove</th>
+<th class="shopping-cart__th" >Price</th>
+<th class="shopping-cart__th" >Qty</th>
+<th class="shopping-cart__th" >Total</th>
+</tr>
+<tr class="shopping-cart__td" >
+<td class="shopping-cart__td" >
+<a class="shopping-cart__link" href="#"><img class="shopping-cart__img" src="https://cdn.shopify.com/s/files/1/0404/1101/products/BoomMic_black_gallery_2_1024x1024_422b803c-2541-4395-b06e-f9cd4d523b03_1024x1024.jpg?8031213328467994175" alt=""></a>
+</td>
+<td class="shopping-cart__td" >Lorem ipsum</td>
+<td class="shopping-cart__td" >
+<button type="button">
+<img src="img/delete_ico.png" alt="">
+</button>
+</td>
+<td class="shopping-cart__td" >$300</td>
+<td class="shopping-cart__td" >
+<div class="product-selection__quantity">
+<button class="less">-</button>
+<input class="quantity" name="quantity" type="text" value="1"/>
+<button class="more">+</button>
+</div>
+</td>
+<td class="shopping-cart__td" >$300</td>
+</tr>
+<tr class="shopping-cart__td" >
+<td class="shopping-cart__td shopping-cart__td-subtotal" colspan="5">Subtotal:</td>
+<td class="shopping-cart__td" >$300</td>
+</tr>
+</table>
+<table class="shopping-cart__table mobile-cart" >
+<tr class="shopping-cart__tr">
+<th class="shopping-cart__th">Product Name</th>
+<td class="shopping-cart__td">Lorem ipsum</td>
+</tr>
+<tr class="shopping-cart__tr" >
+<th class="shopping-cart__th">Product Image</th>
+<td class="shopping-cart__td" >
+<a class="shopping-cart__link" href="#"><img class="shopping-cart__img" src="https://cdn.shopify.com/s/files/1/0404/1101/products/BoomMic_black_gallery_2_1024x1024_422b803c-2541-4395-b06e-f9cd4d523b03_1024x1024.jpg?8031213328467994175" alt=""></a>
+</td>
+</tr>
+<tr class="shopping-cart__tr" >
+<th class="shopping-cart__th" >Qty</th>
+<td class="shopping-cart__td" >
+<div class="product-selection__quantity">
+<button class="less">-</button>
+<input class="quantity" name="quantity" type="text" value="1"/>
+<button class="more">+</button>
+</div>
+</td>
+</tr>
+<tr class="shopping-cart__tr" >
+<th class="shopping-cart__th" >Remove</th>
+<td class="shopping-cart__td" >
+<button type="button">
+<img src="img/delete_ico.png" alt="">
+</button>
+</td>
+</tr>
+<tr class="shopping-cart__tr" >
+<th class="shopping-cart__th" >Price</th>
+<td class="shopping-cart__td" >$300</td>
+</tr>
+<tr class="shopping-cart__tr" >
+<th class="shopping-cart__th" >Total</th>
+<td class="shopping-cart__td" >$300</td>
+</tr>
+<tr class="shopping-cart__tr" >
+<th class="shopping-cart__td">Subtotal:</th>
+<td class="shopping-cart__td" >$300</td>
+</tr>
+</table>
+<div class="shopping-cart__buttons clearfix">
+<a class="shopping-cart__btn shopping-cart__btn-left" href="catalog.html">continue shopping</a>
+<a class="shopping-cart__btn shopping-cart__btn-right" href="#">checkout</a>
+</div>
+</div><div class="newsletter">
+<h4 class="newsletter__title">Get our freshest content delivered to your inbox</h4>
+<p class="newsletter__text">For the latest stories, news, events, promotions and exclusive offers, sign up today. We know you get a lot of emails, but we promise... ours is the one you want.</p>
+<form class="newsletter__form" action="send.php" method="post">
+<input class="newsletter__fild" type="email" placeholder="Your email" name="email">
+<input class="newsletter__submit" type="submit" value="subscribe" name="subscribe">
+</form>
+</div><footer class="site-footer">
+<ul class="footer-nav">
+<li class="footer-nav__item"><a href="#" class="footer-nav__link">about</a></li>
+<li class="footer-nav__item"><a href="#" class="footer-nav__link">search</a></li>
+<li class="footer-nav__item"><a href="#" class="footer-nav__link">contact</a></li>
+<li class="footer-nav__item"><a href="#" class="footer-nav__link">facebook</a></li>
+<li class="footer-nav__item"><a href="#" class="footer-nav__link">twitter</a></li>
+</ul>
+<div class="copy">© Industrial Design Magazine</div>
+</footer>
+    </div>
+    <script src="scripts/common.min.js"></script>
+  </body>
+</html>

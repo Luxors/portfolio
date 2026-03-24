@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>industrial</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/admin.css">
+</head>
+<body>
+  <div class="wrapper">
+		<header class="admin-header clearfix">
+			<h3 class="admin-header__title">Администрирование</h3>
+			<a class="admin-header__link" href="index.html" target="_blank" >Перейти на сайт</a>
+		</header>
+		<main class="page-content">
+			<div class="form-edit">
+				<header class="edit-header">
+					<h2 class="edit-header__title">Редактирование</h2>
+				</header>	
+				<form>
+					<div class="form-group">
+						<label for="name">Название товара</label>
+						<input id="name" type="text"><br>
+					</div>
+					<div class="form-group">	
+						<label for="description">Описание</label>
+						<textarea id="description"></textarea>
+					</div>
+					<div class="form-group">	
+						<label for="meta-teg">Мета-тег Title</label>
+						<input id="meta-teg" type="text"><br>
+					</div>
+					<div class="form-group">	
+						<label for="meta-description">Мета-тег Description</label>
+						<textarea id="meta-description"></textarea>
+					</div>
+					<div class="form-group">	
+						<label for="meta-keyword">Мета-тег Keyword</label>
+						<textarea id="meta-keyword"></textarea>
+					</div>
+					<div class="form-group">	
+						<label for="picture">Изображение товара</label>
+						<input id="picture" type="file"><br>
+					</div>
+					<div class="form-group">	
+						<label for="model">Модель</label>
+						<input id="model" type="text"><br>
+					</div>
+					<div class="form-group">	
+						<label for="price">Цена</label>
+						<input id="price" type="text"><br>
+					</div>
+					<div class="form-group">	
+						<label for="quantity">Количество</label>
+						<input id="quantity" type="text"><br>
+					</div>
+					<div class="form-group">	
+						<label for="date-available">Дата поступления</label>
+						<input id="date-available" type="date"><br>
+					</div>
+					<div class="form-group">
+						<label for="status">Статус</label>
+						<select id="status">
+							<option>Включено</option>
+							<option>Отключено</option>
+						</select>
+					</div>
+					<p class="form-edit__submit-btn"><input type="submit" value="Сохранить"></p>
+				</form>
+			</div>
+		</main>
+		
+		<footer class="admin-footer">
+			<div class="copy">© Industrial Design Magazine</div>
+		</footer>
+	</div>
+  
+  <script src="scripts/index.js"></script>
+</body>
+</html>
