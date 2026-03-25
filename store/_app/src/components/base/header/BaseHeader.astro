@@ -1,0 +1,28 @@
+---
+// import LayoutHeaderSearch from '@/components/base/LayoutHeaderSearch.astro';
+import BaseLogo from '@/components/base/logo/BaseLogo.astro';
+import BaseMenu from '@/components/base/menu/BaseMenu.astro';
+import BaseToolbar from '@/components/base/toolbar/BaseToolbar.astro';
+---
+
+<header class="base-header">
+  <div class="container">
+    <div class="row">
+       <div class="col col-2">
+         <BaseLogo />
+       </div>
+
+       <div class="col col-6">
+         <BaseMenu />
+       </div>
+
+       <div class="col col--end col-4">
+         <BaseToolbar />
+       </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  @import './_base-header.scss';
+</style>

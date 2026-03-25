@@ -21,6 +21,12 @@ export default [
     rules: {},
   },
   {
+    files: ['**/*.{ts,tsx,astro}'],
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+    },
+  },
+  {
     ignores: ['node_modules/', 'dist/', '.astro/', 'public/', 'postcss.config.cjs'],
   },
 ];

@@ -1,15 +1,15 @@
 ---
 import '@/assets/styles/main.scss';
 
-import LayoutHeader from '@/components/layout/LayoutHeader.astro';
-import LayoutNav from '@/components/layout/LayoutNav.astro';
-import LayoutFooter from '@/components/layout/LayoutFooter.astro';
-import LayoutPrefooter from '@/components/layout/LayoutPrefooter.astro';
-import LayoutPageHeader from '@/components/layout/LayoutPageHeader.astro';
+import BaseHeader from '@/components/base/header/BaseHeader.astro';
+// import LayoutFooter from '@/components/base/LayoutFooter.astro';
+// import LayoutPrefooter from '@/components/base/LayoutPrefooter.astro';
+// import LayoutPageHeader from '@/components/layout/LayoutPageHeader.astro';
 
-const currentUrl = Astro.url.pathname;
-const isHomePage = currentUrl === '/';
+// const currentUrl = Astro.url.pathname;
+// const isHomePage = currentUrl === '/';
 
+// const { siteTitle } = Astro.props;
 const { pageTitle } = Astro.props;
 ---
 
@@ -21,17 +21,16 @@ const { pageTitle } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <title>fooseshoes</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <LayoutHeader />
-    <LayoutNav />
+    <BaseHeader />
     <main class="main">
-      {!isHomePage && <LayoutPageHeader title={pageTitle} />}
+      <!-- {!isHomePage && <LayoutPageHeader title={pageTitle} />} -->
       <slot />
     </main>
-    <LayoutPrefooter />
-    <LayoutFooter />
+    <!-- <LayoutPrefooter />
+    <LayoutFooter /> -->
   </body>
 </html>
 

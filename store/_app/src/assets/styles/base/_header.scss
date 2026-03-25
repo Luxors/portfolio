@@ -1,23 +1,23 @@
-.layout-header {
-  flex-shrink: 0;
-  background: #242424;
+// .base-header {
+//   flex-shrink: 0;
+//   background: var(--base-weak);
 
-  &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 3.125rem;
-  }
-}
+//   &__container {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     height: 3.125rem;
+//   }
+// }
 
-.layout-header-brand {
-  font-size: 0;
+// .layout-header-brand {
+//   font-size: 0;
 
-  &__img {
-    width: 9.688rem;
-    height: 1.25rem;
-  }
-}
+//   // &__img {
+//   //   width: 9.688rem;
+//   //   height: 1.25rem;
+//   // }
+// }
 
 .layout-header-toolbar {
   display: flex;

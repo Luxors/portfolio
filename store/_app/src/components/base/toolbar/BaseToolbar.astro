@@ -1,0 +1,43 @@
+---
+import type { SvgComponent } from "astro/types";
+
+import IconStar from '@/assets/images/icons/star.svg';
+import IconCart from '@/assets/images/icons/cart.svg';
+
+import LayoutHeaderSearch from '@/components/base/LayoutHeaderSearch.astro';
+
+interface Item {
+  id: string;
+  action?: string;
+  href?: string;
+  icon?: SvgComponent;
+  component?: any;
+}
+
+const toolbarItems: Item[] = [
+  { id: 'wishlist', href: '/wishlist', icon: IconStar },
+  { id: 'search', component: LayoutHeaderSearch},
+  { id: 'cart', href: '/cart', icon: IconCart },
+];
+---
+
+<ul class="base-toolbar">
+  {
+    toolbarItems.map((item) => {
+      if (item.component) {
+        const Component = item.component;
+        return <Component />
+      } else {
+        return (
+        <a href={item.href} class="layout-nav-toolbar__link">
+          {item.icon && <item.icon class="layout-nav-toolbar__icon" />}
+        </a>
+        )
+      }
+    })
+  }
+</ul>
+
+<style>
+  @import './_base-toolbar.scss';
+</style>
