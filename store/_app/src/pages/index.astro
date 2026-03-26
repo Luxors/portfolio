@@ -1,7 +1,7 @@
 ---
 import { type IProduct } from '@/components/ui/product-card/BaseProductCard.astro';
 
-import Layout from '@/layouts/Layout.astro';
+import BaseLayout from '@/layouts/BaseLayout.astro';
 import HomeSlider from '@/components/home/HomeSlider.astro';
 import HomeOffers from '@/components/home/HomeOffers.astro';
 import HomePromo from '@/components/home/HomePromo.astro';
@@ -63,7 +63,7 @@ const newArrivals = products?.filter((product: IProduct) => product.isNewArrival
 const bestSellers = products?.filter((product: IProduct) => product.isBestSeller === true) ?? [];
 ---
 
-<Layout pageTitle="Store">
+<BaseLayout pageTitle="Store">
   <HomeSlider />
   <HomeOffers />
 
@@ -72,4 +72,4 @@ const bestSellers = products?.filter((product: IProduct) => product.isBestSeller
     <HomePromo title="best sellers of the months" products={bestSellers} />
     <HomeAddons />
   </div>
-</Layout>
+</BaseLayout>
