@@ -23,4 +23,8 @@
       color: inherit;
     }
   }
+
+  &-link--active {
+    color: var(--primary);
+  }
 }

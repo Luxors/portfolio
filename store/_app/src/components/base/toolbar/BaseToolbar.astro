@@ -10,23 +10,28 @@ import IconCart from '@/assets/images/icons/cart.svg';
 
 import BaseSearch from '@/components/base/search/BaseSearch.astro';
 
-interface Item {
+interface IBaseToolbarItem {
   id: string;
   action?: string;
-  href?: string;
   icon?: SvgComponent;
   component?: any;
 }
 
 const baseUrl = import.meta.env.BASE_URL;
 
-const toolbarItems: Item[] = [
+const currentPath = Astro.url.pathname;
+
+const toolbarItems: IBaseToolbarItem[] = [
   { id: 'search', component: BaseSearch},
-  { id: 'compare', href: `compare`, icon: IconRepeat },
-  { id: 'wishlist', href: 'wishlist', icon: IconHeart },
-  { id: 'user', href: 'account', icon: IconUser },
-  { id: 'cart', href: 'cart', icon: IconCart },
+  { id: 'compare', icon: IconRepeat },
+  { id: 'wishlist', icon: IconHeart },
+  { id: 'account', icon: IconUser },
+  { id: 'cart', icon: IconCart },
 ];
+
+const href = (item: IBaseToolbarItem): string => {
+  return `${baseUrl}/${item.id}`
+}
 ---
 
 <ul class="base-toolbar">
@@ -38,7 +43,11 @@ const toolbarItems: Item[] = [
       content = <Component />;
     } else {
       content = (
-        <a href={`${baseUrl}/${item.href}`} >
+        <a
+          href={href(item)}
+          class:list={[
+          { 'base-toolbar-link--active': currentPath === href(item) }
+        ]}>
           {item.icon && <item.icon />}
         </a>
       );
