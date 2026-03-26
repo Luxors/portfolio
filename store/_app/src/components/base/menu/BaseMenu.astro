@@ -1,63 +1,41 @@
 ---
+import './_base-menu.scss';
+
+interface baseMenuItem {
+  href: string;
+  name: string;
+}
+
 const currentPath = Astro.url.pathname;
 
-// import { Image } from 'astro:assets';
-// import type { SvgComponent } from "astro/types";
+const baseUrl = import.meta.env.BASE_URL;
 
-// import IconStar from '@/assets/images/icons/star.svg';
-// import IconCart from '@/assets/images/icons/cart.svg';
-
-const menuItems = [
-  { href: '/portfolio/store', text: 'home' },
-  { href: '/portfolio/store/store', text: 'store' },
-  { href: '/portfolio/store/about', text: 'about' },
-  { href: '/portfolio/store/blog', text: 'blog' },
-  { href: '/portfolio/store/contacts', text: 'contacts' },
+const menuItems: baseMenuItem[] = [
+  { href: '/portfolio/store/', name: 'home' },
+  { href: '/portfolio/store/store', name: 'store' },
+  { href: '/portfolio/store/about', name: 'about' },
+  { href: '/portfolio/store/blog', name: 'blog' },
+  { href: '/portfolio/store/contacts', name: 'contacts' },
 ];
 
-// const toolbarItems = [
-//   { id: 'wishlist', href: '/wishlist', icon: IconStar, count: 30 },
-//   { id: 'cart', href: '/cart', icon: IconCart, count: 0 },
-// ];
+const href = (item: baseMenuItem): string => {
+  return item.name === 'home' ? `${baseUrl}` : `${baseUrl}/${item.name}`
+}
 ---
 
-<!-- <div class="base-menu"> -->
-  <!-- <div class="wrapper"> -->
-    <!-- <div class="layout-nav__container"> -->
-      <nav class="base-menu">
-        {
-          menuItems.map((item) => (
-            <a
-              href={item.href}
-              class:list={[
-                'base-menu-link',
-                { 'base-menu-link--active': currentPath === item.href },
-              ]}
-            >
-              {item.text}
-            </a>
-          ))
-        }
-      </nav>
-
-      <!-- <ul class="menu-bar layout-nav__toolbar layout-nav-toolbar">
-        {
-          toolbarItems.map((item) => (
-            <a href={item.href} class="layout-nav-toolbar__link">
-              <item.icon class="layout-nav-toolbar__icon" />
-              <span
-                class:list={['layout-nav-toolbar__count', `layout-nav-toolbar__count--${item.id}`]}
-              >
-                {item.count}
-              </span>
-            </a>
-          ))
-        }
-      </ul> -->
-    <!-- </div> -->
-  <!-- </div> -->
-<!-- </div> -->
-
-<style>
-  @import './_base-menu.scss';
-</style>
+<nav class="base-menu">
+  {
+    menuItems.map((item) => (
+      <a
+        href={href(item)}
+        class:list={[
+          'base-menu-link',
+          { 'base-menu-link--active': currentPath === item.href },
+          { 'base-menu-link--store': item.name === 'store' },
+        ]}
+      >
+        {item.name}
+      </a>
+    ))
+  }
+</nav>

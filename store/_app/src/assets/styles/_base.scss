@@ -9,12 +9,32 @@ html {
   font-size: 16px;
 }
 
+script {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+}
+
+input {
+  border: none;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
 li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
+  color: var(--base-foreground);
+  transition: var(--transition-color);
+
+  &:hover {
+    color: var(--primary);
+  }
 }
 
 button {
@@ -30,8 +50,8 @@ body {
   min-height: 100%;
   font-size: 1rem;
   font-family: 'AllerRegular', sans-serif;
-  color: #242424;
-  background-color: #ebe7df;
+  color: var(--base-foreground);
+  background-color: var(--base-background);
 }
 
 .main {

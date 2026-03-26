@@ -1,10 +1,14 @@
 ---
+import './_base-toolbar.scss';
+
 import type { SvgComponent } from "astro/types";
 
-import IconStar from '@/assets/images/icons/star.svg';
+import IconRepeat from '@/assets/images/icons/repeat.svg';
+import IconHeart from '@/assets/images/icons/heart.svg';
+import IconUser from '@/assets/images/icons/user.svg';
 import IconCart from '@/assets/images/icons/cart.svg';
 
-import LayoutHeaderSearch from '@/components/base/LayoutHeaderSearch.astro';
+import BaseSearch from '@/components/base/search/BaseSearch.astro';
 
 interface Item {
   id: string;
@@ -14,30 +18,32 @@ interface Item {
   component?: any;
 }
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const toolbarItems: Item[] = [
-  { id: 'wishlist', href: '/wishlist', icon: IconStar },
-  { id: 'search', component: LayoutHeaderSearch},
-  { id: 'cart', href: '/cart', icon: IconCart },
+  { id: 'search', component: BaseSearch},
+  { id: 'compare', href: `compare`, icon: IconRepeat },
+  { id: 'wishlist', href: 'wishlist', icon: IconHeart },
+  { id: 'user', href: 'account', icon: IconUser },
+  { id: 'cart', href: 'cart', icon: IconCart },
 ];
 ---
 
 <ul class="base-toolbar">
-  {
-    toolbarItems.map((item) => {
-      if (item.component) {
-        const Component = item.component;
-        return <Component />
-      } else {
-        return (
-        <a href={item.href} class="layout-nav-toolbar__link">
-          {item.icon && <item.icon class="layout-nav-toolbar__icon" />}
+  {toolbarItems.map((item) => {
+    let content;
+    
+    if (item.component) {
+      const Component = item.component;
+      content = <Component />;
+    } else {
+      content = (
+        <a href={`${baseUrl}/${item.href}`} >
+          {item.icon && <item.icon />}
         </a>
-        )
-      }
-    })
-  }
+      );
+    }
+    
+    return <li class="base-toolbar__item">{content}</li>;
+  })}
 </ul>
-
-<style>
-  @import './_base-toolbar.scss';
-</style>

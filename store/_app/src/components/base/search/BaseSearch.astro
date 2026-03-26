@@ -1,0 +1,41 @@
+---
+import './_base-search.scss';
+
+import IconSearch from '@/assets/images/icons/search.svg';
+import IconX from '@/assets/images/icons/x.svg';
+---
+
+<script>
+  const VISIBLE_CLASS = "base-search--visible";
+
+  const container = document.getElementById('base-search');
+  const input = document.getElementById('base-search-input');
+  const control = document.getElementById('base-search-control');
+
+  function toggleVisible() {
+    if (!container) return;
+
+    container.classList.toggle(VISIBLE_CLASS);
+    if (container.classList.contains(VISIBLE_CLASS)) {
+      input?.focus();
+    }
+  }
+
+  function handleClickOutside(e: MouseEvent) {
+    if (container?.classList.contains(VISIBLE_CLASS) && 
+        !container?.contains(e.target as HTMLElement)) {
+      container?.classList.remove(VISIBLE_CLASS);
+    }
+  }
+
+  control?.addEventListener('click', toggleVisible)
+  document.addEventListener('click', handleClickOutside);
+</script>
+
+<div id="base-search" class="base-search" >
+  <input id="base-search-input" placeholder="Search..." class="base-search__input" />
+  <button id="base-search-control" class="base-search__control">
+    <IconX width={24} height={24} class="base-search__icon base-search__icon--x" />
+    <IconSearch width={24} height={24} class="base-search__icon base-search__icon--search" />
+  </button>
+</div>
