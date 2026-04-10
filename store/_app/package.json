@@ -13,7 +13,9 @@
     "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "astro": "^5.17.1",
+    "astro-splide": "^2.0.2",
     "autoprefixer": "^10.4.24",
     "lightningcss": "^1.31.1",
     "sass": "^1.97.3",

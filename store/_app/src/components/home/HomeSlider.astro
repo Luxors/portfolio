@@ -1,55 +1,65 @@
 ---
+import "@splidejs/splide/css"
+import { Splide, SplideSlide } from 'astro-splide';
+import type { Options } from '@splidejs/splide';
+
 import BasePriceBage from '@/components/ui/price-bage/BasePriceBage.astro';
 import BaseProductActions from '@/components/ui/product-actions/BaseProductActions.astro';
-import HomeSliderNav from '@/components/home/HomeSliderNav.astro';
+// import HomeSliderNav from '@/components/home/HomeSliderNav.astro';
 
-const slides = [
-  {
-    title: 'Pink Shoes',
-    description: 'Now af $145,99'
-  },
-  {
-    title: 'Anna Field',
-    description: 'Limited Edition'
-  },
-  {
-    title: 'Prada',
-    description: 'Summer is coming'
-  },
-  {
-    title: 'Casadei',
-    description: 'All Colors avaiable'
-  },
-  {
-    title: 'Mellow Yellow',
-    description: 'Free delivery'
-  }
-]
+const options: Options = {
+  type         : 'loop',
+  gap          : '1rem',
+  autoplay     : true,
+  pauseOnHover : false,
+  resetProgress: false,
+};
 
-const price = '149,99';
-const productId = '5';
+const response = await fetch("https://dummyjson.com/products?limit=5&skip=10");
+const data = await response.json();
+
+const products = data.products
 ---
 
-<div class="home-slider">
-  <div class="home-slider-item">
-    <img class="home-slider-item__img" src="/src/assets/images/top_bg.jpg" alt="" />
-    <div class="wrapper">
-      <div class="home-slider-item__container">
-        <div></div>
-        <div class="home-slider-info">
-          <BasePriceBage price={price} />
-          <h2 class="home-slider-info__title">
-            Pink Shoes<br />
-            2013 Collection
-          </h2>
-          <p class="home-slider-info__description">
-            Nunc non fermentum nunc. Sed ut ante <br />
-            eget leo tempor consequat sit amet eu orci. Donec dignissim dolor eget..
-          </p>
-          <BaseProductActions productId={productId} />
+<Splide
+  options={ options }
+  onMounted={(splide) => {
+    splide.on('pagination:mounted', (data) => {
+      data.items.forEach((item) => {
+        // Берем название товара
+        const product = products[item.page];
+        if (product) {
+          item.button.textContent = product.title;
+        }
+      });
+    });
+  }}
+  class="home-slider"
+>
+  {products && products.map((item: any) => (
+    <SplideSlide>
+      <div class="home-slider-item">
+        <div class="container">
+          <div class="row">
+            <div class="col col-6">
+              <img src={item.images[0]} alt="" class="home-slider-image" />
+            </div>
+            <div class="col col-6">
+              <div class="home-slider-info">
+                <BasePriceBage price={item.price} />
+                <h2 class="home-slider-info__title">
+                  {item.title}
+                </h2>
+                <p class="home-slider-info__description">
+                  {item.description}
+                </p>
+                <BaseProductActions productId={item.id} />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <HomeSliderNav items={slides} />
-</div>
+    </SplideSlide>
+  ))}
+  <!-- <HomeSliderNav items={slides} /> -->
+</Splide>
