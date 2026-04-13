@@ -11,11 +11,11 @@ const currentPath = Astro.url.pathname;
 const baseUrl = import.meta.env.BASE_URL;
 
 const menuItems: baseMenuItem[] = [
-  { href: '/portfolio/store/', name: 'home' },
-  { href: '/portfolio/store/store', name: 'store' },
-  { href: '/portfolio/store/about', name: 'about' },
-  { href: '/portfolio/store/blog', name: 'blog' },
-  { href: '/portfolio/store/contacts', name: 'contacts' },
+  { href: '/', name: 'home' },
+  { href: '/store', name: 'store' },
+  { href: '/about', name: 'about' },
+  { href: '/blog', name: 'blog' },
+  { href: '/contacts', name: 'contacts' },
 ];
 
 const href = (item: baseMenuItem): string => {
