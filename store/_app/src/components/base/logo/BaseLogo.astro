@@ -1,8 +1,10 @@
 ---
 import { Image } from 'astro:assets';
 import Logo from '@/assets/images/logo.png';
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
-<a href="/portfolio/store" class="base-logo">
+<a href={baseUrl} class="base-logo">
   <Image src={Logo} alt="Store" class="base-logo__image" />
 </a>
