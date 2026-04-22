@@ -12,10 +12,10 @@ const baseUrl = import.meta.env.BASE_URL;
 
 const menuItems: baseMenuItem[] = [
   { href: '/', name: 'home' },
-  { href: 'store', name: 'store' },
-  { href: 'about', name: 'about' },
-  { href: 'blog', name: 'blog' },
-  { href: 'contacts', name: 'contacts' },
+  { href: '/store', name: 'store' },
+  { href: '/about', name: 'about' },
+  { href: '/blog', name: 'blog' },
+  { href: '/contacts', name: 'contacts' },
 ];
 
 const href = (item: baseMenuItem): string => {
@@ -38,7 +38,7 @@ const href = (item: baseMenuItem): string => {
       //   {item.name}
       // </a>
       // <a href={new URL(`${baseUrl}/${item.name}`, Astro.url)}
-      <a href={href(item)}
+      <a href={item.href}
         class:list={[
           'base-menu-link',
           { 'base-menu-link--active': currentPath === item.href },
