@@ -9,7 +9,6 @@ interface baseMenuItem {
 const currentPath = Astro.url.pathname;
 
 const baseUrl = import.meta.env.BASE_URL;
-// const baseUrl = import.meta.env.PROD ? import.meta.env.BASE_URL : ''
 
 const menuItems: baseMenuItem[] = [
   { href: '/', name: 'home' },
@@ -21,25 +20,12 @@ const menuItems: baseMenuItem[] = [
 
 const href = (item: baseMenuItem): string => {
   return item.name === 'home' ? `${baseUrl}` : `${baseUrl}${item.name}`
-  // return item.href;
 }
 ---
 
 <nav class="base-menu">
-  <div>{baseUrl}</div>
   {
     menuItems.map((item) => (
-      // <a
-      //   href={href(item)}
-      //   class:list={[
-      //     'base-menu-link',
-      //     { 'base-menu-link--active': currentPath === item.href },
-      //     { 'base-menu-link--store': item.name === 'store' },
-      //   ]}
-      // >
-      //   {item.name}
-      // </a>
-      // <a href={new URL(`${baseUrl}/${item.name}`, Astro.url)}
       <a href={href(item)}
         class:list={[
           'base-menu-link',
