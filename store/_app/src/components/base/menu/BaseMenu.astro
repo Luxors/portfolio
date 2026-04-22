@@ -9,8 +9,7 @@ interface baseMenuItem {
 const currentPath = Astro.url.pathname;
 
 const baseUrl = import.meta.env.BASE_URL;
-
-console.log(baseUrl)
+// const baseUrl = import.meta.env.PROD ? import.meta.env.BASE_URL : ''
 
 const menuItems: baseMenuItem[] = [
   { href: '/', name: 'home' },
@@ -21,7 +20,7 @@ const menuItems: baseMenuItem[] = [
 ];
 
 const href = (item: baseMenuItem): string => {
-  return item.name === 'home' ? `/${baseUrl}` : `/${baseUrl}/${item.name}`
+  return item.name === 'home' ? `${baseUrl}` : `${baseUrl}${item.name}`
   // return item.href;
 }
 ---
