@@ -10,6 +10,8 @@ const currentPath = Astro.url.pathname;
 
 const baseUrl = import.meta.env.BASE_URL;
 
+console.log(baseUrl)
+
 const menuItems: baseMenuItem[] = [
   { href: '/', name: 'home' },
   { href: '/store', name: 'store' },
@@ -19,12 +21,13 @@ const menuItems: baseMenuItem[] = [
 ];
 
 const href = (item: baseMenuItem): string => {
-  return item.name === 'home' ? `${baseUrl}` : `/${baseUrl}/${item.name}`
+  return item.name === 'home' ? `/${baseUrl}` : `/${baseUrl}/${item.name}`
   // return item.href;
 }
 ---
 
 <nav class="base-menu">
+  <div>{baseUrl}</div>
   {
     menuItems.map((item) => (
       // <a
