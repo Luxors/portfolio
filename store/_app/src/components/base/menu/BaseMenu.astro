@@ -19,7 +19,7 @@ const menuItems: baseMenuItem[] = [
 ];
 
 const href = (item: baseMenuItem): string => {
-  return item.name === 'home' ? `${baseUrl}` : `${baseUrl}${item.name}`
+  return item.name === 'home' ? `${baseUrl}` : `${baseUrl}/${item.name}`
   // return item.href;
 }
 ---
@@ -38,7 +38,7 @@ const href = (item: baseMenuItem): string => {
       //   {item.name}
       // </a>
       // <a href={new URL(`${baseUrl}/${item.name}`, Astro.url)}
-      <a href={item.href}
+      <a href={href(item)}
         class:list={[
           'base-menu-link',
           { 'base-menu-link--active': currentPath === item.href },
