@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Экран постановки задачи</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../bundle.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+
+  <div class="operation-container">
+      <header class="page-header">
+        <div class="menu-container">
+          <div class="menu-line">
+              <div class="menu-item menu-item__active">ПС-ДА</div>
+              <div class="menu-item">ПС-ЭА</div>
+              <div class="menu-item">ПС-УП</div>
+              <div class="menu-item">ПС-СИ</div>
+              <div class="menu-item">ПС-БР</div>
+          </div>
+          <div class="menu-line menu-line2">
+              <div class="menu-item">Мониторинг</div>
+              <div class="menu-item">Объекты интереса</div>
+              <div class="menu-item menu-item__active">Операции и задачи</div>
+              <div class="menu-item">Экспресс анализ</div>
+              <div class="menu-item">ПОИ</div>
+              <div class="menu-item">Инкубатор</div>
+              <div class="menu-item">Безкомпроматная работа</div>
+          </div>
+          <div class="menu-line menu-line3">
+              <div class="menu-item">Задачи</div>
+              <div class="menu-item menu-item__active-2">Операции</div>
+              <div class="menu-item">Регулярные операции</div>
+          </div>
+        </div>
+      
+        <h1 class="operation-title">Операция: Репост</h1>
+      </header>
+
+      <div class="main-content">
+             
+        <div class="form-container">
+          <form>
+
+            <fieldset>
+              <legend>Сортировка</legend>
+              <select>
+                <option label="Выбрать..."></option>
+                <option value="">По популярности</option>
+                <option value="">По дате регистрации</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>Регион</legend>
+              <select>
+                <option label="Выбрать..."></option>
+                <option value="">Россия</option>
+                <option value="">Украина</option>
+                <option value="">Беларусь</option>
+                <option value="">Казахстан</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>Школа</legend>
+              <input type="text" placeholder="Школа">
+            </fieldset>
+
+            <fieldset>
+              <legend>Университет</legend>
+              <input type="text" placeholder="Университет">
+            </fieldset>
+
+            <fieldset>
+              <legend>Возраст от</legend>
+              <p class="form-input-box"><input type="text" placeholder="Возраст до"></p>
+            </fieldset>
+
+            <fieldset>
+              <legend>Возраст до</legend>
+              <p class="form-input-box"><input type="text" placeholder="Возраст до"></p>
+            </fieldset>
+
+            <fieldset>
+              <legend>Пол</legend>
+              <p class="form-container__input-radio"><input name="пол" type="radio"><span>Женский</span></p>
+              <p class="form-container__input-radio"><input name="пол" type="radio"><span>Мужской</span></p>
+              <p class="form-container__input-radio"><input name="пол" type="radio"><span>Любой</span></p>
+            </fieldset>
+
+            <fieldset>
+              <legend>Семейное положение</legend>
+                <select>
+                  <option label="Выбрать..."></option>
+                  <option value="">Не замужем</option>
+                  <option value="">Замужем</option>
+                  <option value="">В гражданском браке</option>
+                  <option value="">Встречается</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>Мировоззрение</legend>
+              <select>
+                <option label="Выбрать..."></option>
+                <option value="">Православие</option>
+                <option value="">Католицизм</option>
+                <option value="">Протестанцизм</option>
+                <option value="">Ислам</option>
+                <option value="">Буддизм</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>Главное в жизни</legend>   
+              <select>
+                <option label="Выбрать..."></option>
+                <option value="">Семья и дети</option>
+                <option value="">Карьера и дненьги</option>
+                <option value="">Развлечения и отдых</option>
+                <option value="">Наука и исследования</option>
+                <option value="">Совершенствование мира</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>Работа</legend>
+              <input type="text" placeholder="Работа"><br>
+            </fieldset>
+
+            <fieldset>
+              <legend>Дополнительно</legend>
+              <p class="form-container__input-checkbox"><input type="checkbox"><span>Только в именах</span></p>
+            </fieldset>
+
+          </form>
+        </div>   
+              
+        <div class="option-container">
+          <h2 class="option-container__title">Настройки выполнения</h2>
+          <form>
+            <fieldset>
+              <div class="option-select-button btn btn-default">регулярно</div>
+              <h3>Частота</h3>
+              <select>
+                 <option></option>
+                 <option>раз в час</option>
+                 <option>раз в день</option>
+                 <option>раз в неделю</option>
+                 <option>раз в месяц</option>
+                 <option>раз в год</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <div class="option-select-button btn btn-default">позже</div>
+              <h3>Выполнить через:</h3>
+              <select class="option-day">
+                 <option></option>
+                 <option value="1">1</option>
+                 <option value="">2</option>
+                 <option value="">3</option>
+                 <option value="">4</option>
+                 <option value="">5</option>
+                 <option value="">6</option>
+                 <option value="">7</option>
+                 <option value="">8</option>
+                 <option value="">9</option>
+                 <option value="">10</option>
+                 <option value="">11</option>
+                 <option value="">12</option>
+                 <option value="">13</option>
+                 <option value="">14</option>
+                 <option value="">15</option>
+                 <option value="">16</option>
+                 <option value="">17</option>
+                 <option value="">18</option>
+                 <option value="">19</option>
+                 <option value="">20</option>
+                 <option value="">21</option>
+                 <option value="">22</option>
+                 <option value="">23</option>
+                 <option value="">24</option>
+                 <option value="">25</option>
+                 <option value="">26</option>
+                 <option value="">27</option>
+                 <option value="">28</option>
+                 <option value="">29</option>
+                 <option value="">30</option>
+                 <option value="">31</option>
+              </select>
+              <select  class="option-period">
+                 <option></option>
+                 <option>часа</option>
+                 <option>дня</option>
+                 <option>недели</option>
+                 <option>месяца</option>
+                 <option>года</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <div class="option-select-button btn btn btn-default">сейчас</div>
+            </fieldset>
+          </form>
+        </div>
+
+        <div class="option-btn-box">
+           <div class="option-btn btn btn-default">выполнить</div>
+        </div>
+
+      </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel__arrow"><i class="fa fa-caret-down"></i></div>
+    <div class="panel__title">уведомления</div>
+  </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
