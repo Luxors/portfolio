@@ -1,0 +1,113 @@
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	h2 {
+		font-size: 55px;
+	}
+	.reviews {
+		padding: 0 58px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.page-header {
+		background-image: url(../img/header_bg.png);
+	}
+	.promo {
+		text-align: left;
+	}
+	.promo__title {
+		font-size: 70px;
+	}
+	.promo__text {
+		font-size: 32px;
+	}
+	.result__text {
+		padding: 40px 20px;
+	}
+	.pricing__list {
+		font-size: 19px;
+	}
+	.pricing__cost {
+		font-size: 28px;
+	}
+	.pricing-border_top {
+		border-top: none;
+	}
+	.pricing-border_left {
+		border-left: 1px solid #dddddd;
+	}
+	.reviews {
+		padding: 0;
+	}
+/*
+	.reviews__open-btn {
+		display: block;
+		margin-top: 15px;
+		padding: 0;
+		color: #6798f8;
+		font-size: 18px;
+		font-family: FuturaPTBook, sans-serif;
+		text-decoration: none;
+	}
+*/
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.result__text {
+		padding: 40px 50px;
+	}
+	.pricing__list {
+		font-size: 24px;
+	}
+	.pricing__cost {
+		font-size: 35px;
+	}
+	.declaration__img {
+		margin-bottom: 0;
+	}
+	.declaration__inner {
+		margin-bottom: 0;
+		padding-top: 150px;
+		text-align: left;
+	}
+	.info {
+		text-align: left;
+	}
+	.info__link {
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: 0;
+		margin-left: 30px;
+	}
+	.info__link:nth-child(1) {
+		margin-left: 0;
+	}
+	.social {
+		text-align: right;
+	}
+}
+@media only screen and (min-width : 1200px) {
+
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1400px) {
+
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	
+
+}
+
+
