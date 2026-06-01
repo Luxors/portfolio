@@ -59,4 +59,44 @@ export const list = [
     key: 'industrial',
     name: 'industrial',
   },
+  {
+    key: 'foos',
+    name: 'foos',
+  },
+  {
+    key: 'donut',
+    name: 'donut',
+  },
+  {
+    key: 'icndy',
+    name: 'icndy',
+  },
+  {
+    key: 'instahak',
+    name: 'instahak',
+  },
+  {
+    key: 'keep',
+    name: 'keep',
+  },
+  {
+    key: 'keksby',
+    name: 'keksby',
+  },
+  {
+    key: 'sedona',
+    name: 'sedona',
+  },
+  {
+    key: 'look',
+    name: 'look',
+  },
+  {
+    key: 'single',
+    name: 'single',
+  },
+  {
+    key: 'retro',
+    name: 'retro',
+  },
 ];
