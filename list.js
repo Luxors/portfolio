@@ -101,6 +101,6 @@ export const list = [
   },
   {
     key: 'sv-fun-box',
-    name: 'svete fun box',
+    name: 'svelte fun box',
   },
 ];
