@@ -99,4 +99,8 @@ export const list = [
     key: 'retro',
     name: 'retro',
   },
+  {
+    key: 'sv-fun-box',
+    name: 'svete fun box',
+  },
 ];
