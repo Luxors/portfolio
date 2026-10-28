@@ -1,4 +1,8 @@
 ---
+import { Font } from "astro:assets";
+
+import "../assets/styles/main.css";
+
 import Header from "../components/Header.astro";
 ---
 
@@ -10,7 +14,8 @@ import Header from "../components/Header.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <title>Industrial</title>
+    <Font cssVariable="--font-hkgrotesk" />
   </head>
   <body>
     <Header />
