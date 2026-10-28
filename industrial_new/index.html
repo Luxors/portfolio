@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>test</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="styles/style.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+	<header class="site-header clearfix">
+		<div class="inline logo">
+			<a class="logo__link" href="index.html">
+				<img class="logo__img" src="https://s20.postimg.cc/xzyr9le4d/logo.png" alt="industrial">
+			</a>
+		</div>
+		<nav class="site-menu">
+			<ul class="site-menu__list">
+				<li class="site-menu__item"><a href="index.html" class="site-menu__link">home</a></li>
+				<li class="site-menu__item"><a href="#" class="site-menu__link">shop</a>
+					<ul class="menu-dropdown">
+						<li class="menu-dropdown__item"><a href="catalog.html" class="site-menu__link">catalog</a></li>
+						<li class="menu-dropdown__item"><a href="#" class="site-menu__link">lorem</a></li>
+						<li class="menu-dropdown__item"><a href="#" class="site-menu__link">lorem</a></li>
+						<li class="menu-dropdown__item"><a href="#" class="site-menu__link">lorem</a></li>
+					</ul>
+				</li>
+				<li class="site-menu__item"><a href="#" class="site-menu__link">contacts</a></li>
+				<li class="site-menu__item"><a href="login.html" class="site-menu__link">sign in</a></li>
+				<li class="site-menu__item"><a href="admin.html" class="site-menu__link">admin</a></li>
+			</ul>
+		</nav>
+		<div class="tools">
+			<div class="search">
+				<a class="search__btn" href="search.html">
+					<img class="search__img" src="https://s20.postimg.cc/d70xyxayl/search_ico.png" alt="search">
+				</a>
+			</div>
+			<div class="cart">
+				<a class="cart__btn" href="cart.html">
+					<img src="https://s20.postimg.cc/g3jdlgrel/cart_ico.png" alt="cart" class="cart__img">
+				</a>
+			</div>
+			<div class="burger">
+				<img src="img/bars.png" alt="cart" class="cart__img">
+			</div>
+		</div>
+	</header>
+	<main class="page-content">
+	<section class="product-box">
+		<div class="gina">
+			<div class="gina__product-lead">
+				<h1 class="product__title">gina</h1>
+				<p class="product__text">A coffee instrument combining classic coffee techniques with the latest technology</p>
+				<a href="#" class="btn btn-gina">shop now</a>
+			</div>
+			<img class="bage" src="https://s20.postimg.cc/ya69sxsql/kickstarter.png" alt="kickstarter">
+		</div>
+	</section>
+	<section class="product-box clearfix">
+		<div class="product product-beoplay">
+			<img class="product__img" src="img/beoplay.jpg" alt="">
+			<div class="product__lead">
+				<h2 class="product__title">Beoplay A1</h2>
+				<p class="product__text">The ultra-portable Bluetooth speaker that will travel with you anywhere</p>
+				<a href="#" class="btn">buy</a>
+			</div>
+		</div>
+		<div class="product product-leica">
+			<img class="product__img" src="img/leica.jpg" alt="">
+			<div class="product__lead">
+				<h2 class="product__title">Leica MP</h2>
+				<p class="product__text">Focused technology for focused photography</p>
+				<a href="#" class="btn">buy</a>
+			</div>
+		</div>
+	</section>
+	<section class="promo clearfix">
+		<div class="product-promo product-molekule">
+			<img class="product__img" src="img/molekule.jpg" alt="">
+			<div class="product-promo__lead">
+				<p class="product-promo__text">The world’s first molecular air purifier.</p>
+				<h3 class="product-promo__title">Molekule</h3>
+				<a href="#" class="btn">details</a>
+			</div>
+		</div>
+		<div class="product-promo product-p9">
+			<img class="product__img" src="img/p9.jpg" alt="">
+			<div class="product-promo__lead">
+				<p class="product-promo__text">Bowers & Wilkins</p>
+				<h3 class="product-promo__title">P9 Signature</h3>
+				<a href="#" class="btn">details</a>
+			</div>
+		</div>
+		<div class="product-promo product-drII">
+			<img class="product__img" src="img/dr_II.jpg" alt="">
+			<div class="product-promo__lead">
+				<p class="product-promo__text">An homage to Dieter Rams</p>
+				<h3 class="product-promo__title">DR-II</h3>
+				<a href="#" class="btn">details</a>
+			</div>
+		</div>
+	</section>
+	<div class="newsletter">
+		<h4 class="newsletter__title">Get our freshest content delivered to your inbox</h4>
+		<p class="newsletter__text">For the latest stories, news, events, promotions and exclusive offers, sign up today. We know you get a lot of emails, but we promise... ours is the one you want.</p>
+		<form class="newsletter__form" action="send.php" method="post">
+			<input class="newsletter__fild" type="email" placeholder="Your email" name="email">
+			<input class="newsletter__submit" type="submit" value="subscribe" name="subscribe">
+		</form>
+	</div>
+	</main>
+	<footer class="site-footer">
+		<ul class="footer-nav">
+			<li class="footer-nav__item"><a href="#" class="footer-nav__link">about</a></li>
+			<li class="footer-nav__item"><a href="#" class="footer-nav__link">search</a></li>
+			<li class="footer-nav__item"><a href="#" class="footer-nav__link">contact</a></li>
+			<li class="footer-nav__item"><a href="#" class="footer-nav__link">facebook</a></li>
+			<li class="footer-nav__item"><a href="#" class="footer-nav__link">twitter</a></li>
+		</ul>
+		<div class="copy">© Industrial Design Magazine</div>
+	</footer>
+</div>
+<script src="scripts/common.min.js"></script>
+</body>
+</html>
