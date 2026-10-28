@@ -1,0 +1,13 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-nav {
+  display: flex;
+}
+
+.app-toolbar {
+  display: flex;
+}

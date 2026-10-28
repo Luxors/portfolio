@@ -18,16 +18,9 @@ import Header from "../components/Header.astro";
     <Font cssVariable="--font-hkgrotesk" />
   </head>
   <body>
-    <Header />
-    <slot />
+    <div class="app-container">
+      <Header />
+      <slot />
+    </div>
   </body>
 </html>
-
-<style>
-  html,
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-  }
-</style>
