@@ -20,6 +20,26 @@ body {
   background-color: #272f45;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .app-container {
   width: 100%;
   max-width: 1320px;

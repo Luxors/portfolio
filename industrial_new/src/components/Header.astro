@@ -1,89 +1,66 @@
 ---
 import "@/assets/styles/header.css";
+
+import { Image } from "astro:assets";
+
+import Logo from "@/assets/images/logo.png";
+import IconSearch from "@/assets/images/icons/search.svg";
+import IconShoppingBag from "@/assets/images/icons/shopping-bag.svg";
+
+const currentPath = Astro.url.pathname;
+
+const menuItems = [
+  { href: "/", text: "home" },
+  { href: "/catalog", text: "catalog" },
+  { href: "/contacts", text: "contacts" },
+  { href: "/login", text: "sign in" },
+  { href: "/admin", text: "admin" },
+];
+
+const toolbarItems = [
+  { id: "search", icon: IconSearch },
+  { id: "cart", href: "/cart", icon: IconShoppingBag },
+];
+
+const toolbarIconSize = 32;
 ---
 
 <header class="app-header">
-  <div class="inline logo">
-    <a class="logo__link" href="index.html">
-      <img
-        class="logo__img"
-        src="https://s20.postimg.cc/xzyr9le4d/logo.png"
-        alt="industrial"
-      />
-    </a>
-  </div>
+  <a class="app-logo" href="index.html">
+    <Image
+      src={Logo}
+      alt="Industrial"
+      width={265}
+      height={65}
+      class="app-logo__image"
+    />
+  </a>
   <nav class="app-nav">
-    <!-- <ul class="site-menu__list">
-      <li class="site-menu__item"> -->
-    <a href="index.html" class="site-menu__link">
-      home
-    </a>
-    <!-- </li>
-      <li class="site-menu__item"> -->
-    <a href="#" class="site-menu__link">
-      catalog
-    </a>
-    <!-- <ul class="menu-dropdown">
-          <li class="menu-dropdown__item">
-            <a href="catalog.html" class="site-menu__link">
-              catalog
-            </a>
-          </li>
-          <li class="menu-dropdown__item">
-            <a href="#" class="site-menu__link">
-              lorem
-            </a>
-          </li>
-          <li class="menu-dropdown__item">
-            <a href="#" class="site-menu__link">
-              lorem
-            </a>
-          </li>
-          <li class="menu-dropdown__item">
-            <a href="#" class="site-menu__link">
-              lorem
-            </a>
-          </li>
-        </ul>
-      </li> -->
-    <!-- <li class="site-menu__item"> -->
-    <a href="#" class="site-menu__link">
-      contacts
-    </a>
-    <!-- </li>
-      <li class="site-menu__item"> -->
-    <a href="login.html" class="site-menu__link">
-      sign in
-    </a>
-    <!-- </li>
-      <li class="site-menu__item"> -->
-    <a href="admin.html" class="site-menu__link">
-      admin
-    </a>
-    <!-- </li>
-    </ul> -->
+    {menuItems.map((item) => (
+      <a
+        href={item.href}
+        class:list={[
+          "app-nav__link",
+          { "app-nav__link--active": currentPath === item.href },
+        ]}
+      >
+        {item.text}
+      </a>
+    ))}
   </nav>
-  <div class="app-toolbar">
-    <div class="search">
-      <a class="search__btn" href="search.html">
-        <img
-          class="search__img"
-          src="https://s20.postimg.cc/d70xyxayl/search_ico.png"
-          alt="search"
-        />
+  <ul class="app-toolbar">
+    <li class="app-toolbar__item">
+      <button type="button" class="app-toolbar__control">
+        <IconSearch class="app-toolbar__icon" />
+      </button>
+    </li>
+    <li class="app-toolbar__item">
+      <a href="cart.html" class="app-toolbar__control">
+        <IconShoppingBag class="app-toolbar__icon" />
       </a>
-    </div>
-    <div class="cart">
-      <a class="cart__btn" href="cart.html">
-        <img
-          src="https://s20.postimg.cc/g3jdlgrel/cart_ico.png"
-          alt="cart"
-          class="cart__img"
-        />
-      </a>
-    </div>
-    <div class="burger">
+    </li>
+    <!-- <div class="burger">
       <img src="img/bars.png" alt="cart" class="cart__img" />
-    </div>
-  </div>
+    </div> -->
+  </ul>
 </header>
