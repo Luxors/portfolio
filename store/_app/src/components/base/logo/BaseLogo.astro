@@ -1,4 +1,6 @@
 ---
+import './_base-logo.scss';
+
 import { Image } from 'astro:assets';
 import Logo from '@/assets/images/logo.png';
 
@@ -6,5 +8,5 @@ const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <a href={baseUrl} class="base-logo">
-  <Image src={Logo} alt="Store" class="base-logo__image" />
+  <Image src={Logo} alt="Roomly" width={170} height={30} class="base-logo__image" />
 </a>

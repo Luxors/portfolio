@@ -8,18 +8,29 @@ import BaseToolbar from '@/components/base/toolbar/BaseToolbar.astro';
 
 <header class="base-header">
   <div class="container">
-    <div class="row">
-       <div class="col col-2">
-         <BaseLogo />
-       </div>
+    <div class="row base-header__row">
+      <!-- <div class="col col-6">
+        <BaseMenu />
+      </div>
 
-       <div class="col col-6">
-         <BaseMenu />
-       </div>
+      <div class="col col-2">
+        <BaseLogo />
+      </div>
 
-       <div class="col col--end col-4">
-         <BaseToolbar />
-       </div>
+      <div class="col col--end col-4">
+        <BaseToolbar />
+      </div> -->
+      <div class="base-header__item base-header__item--menu">
+        <BaseMenu />
+      </div>
+
+      <div class="base-header__item base-header__item--logo">
+        <BaseLogo />
+      </div>
+
+      <div class="base-header__item base-header__item--toolbar">
+        <BaseToolbar />
+      </div>
     </div>
   </div>
 </header>
