@@ -2,12 +2,17 @@
   display: flex;
   align-items: center;
   gap: 1.875rem;
+  padding: 0.625rem 1.5rem;
+  background: rgba(3, 3, 3, 0.6);
+  border-radius: 1.25rem;
 }
 
 .base-menu-link {
-  font-size: 1rem;
-  text-transform: uppercase;
+  font-size: 1.438rem;
+  text-transform: capitalize;
   font-weight: 600;
+  line-height: 130%;
+  color: var(--color-base-weak);
 
   &--active {
     color: var(--primary);
