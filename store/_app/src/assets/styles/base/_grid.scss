@@ -1,8 +1,15 @@
 .container {
   width: 100%;
-  max-width: var(--container-max-width);
   margin: 0 auto;
   padding-inline: var(--container-padding-inline);
+
+  &-sm {
+    max-width: var(--container-sm-max-width);
+  }
+
+  &-lg {
+    max-width: var(--container-lg-max-width);
+  }
 }
 
 .row {
@@ -18,11 +25,11 @@
   display: flex;
   align-items: center;
 
-  &--center {
+  &-center {
     justify-content: center;
   }
 
-  &--end {
+  &-end {
     justify-content: end;
   }
 }

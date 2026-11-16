@@ -1,7 +1,7 @@
 ---
 import './_base-toolbar.scss';
 
-import type { SvgComponent } from "astro/types";
+import type { SvgComponent } from 'astro/types';
 
 import IconRepeat from '@/assets/images/icons/repeat.svg';
 import IconHeart from '@/assets/images/icons/heart.svg';
@@ -22,7 +22,7 @@ const baseUrl = import.meta.env.BASE_URL;
 const currentPath = Astro.url.pathname;
 
 const toolbarItems: IBaseToolbarItem[] = [
-  { id: 'search', component: BaseSearch},
+  { id: 'search', component: BaseSearch },
   { id: 'compare', icon: IconRepeat },
   { id: 'wishlist', icon: IconHeart },
   { id: 'account', icon: IconUser },
@@ -30,29 +30,36 @@ const toolbarItems: IBaseToolbarItem[] = [
 ];
 
 const href = (item: IBaseToolbarItem): string => {
-  return `${baseUrl}${item.id}`
-}
+  return `${baseUrl}${item.id}`;
+};
 ---
 
+<script>
+  document.querySelectorAll('.base-toolbar__item > *').forEach((el) => {
+    el.classList.add('base-toolbar__content');
+  });
+</script>
+
 <ul class="base-toolbar">
-  {toolbarItems.map((item) => {
-    let content;
-    
-    if (item.component) {
-      const Component = item.component;
-      content = <Component />;
-    } else {
-      content = (
-        <a
-          href={href(item)}
-          class:list={[
-          { 'base-toolbar-link--active': currentPath === href(item) }
-        ]}>
-          {item.icon && <item.icon />}
-        </a>
-      );
-    }
-    
-    return <li class="base-toolbar__item">{content}</li>;
-  })}
+  {
+    toolbarItems.map((item) => {
+      let content;
+
+      if (item.component) {
+        const Component = item.component;
+        content = <Component />;
+      } else {
+        content = (
+          <a
+            href={href(item)}
+            class:list={[{ 'base-toolbar-link--active': currentPath === href(item) }]}
+          >
+            {item.icon && <item.icon />}
+          </a>
+        );
+      }
+
+      return <li class="base-toolbar__item">{content}</li>;
+    })
+  }
 </ul>
