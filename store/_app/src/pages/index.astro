@@ -2,7 +2,8 @@
 import { type IProduct } from '@/components/ui/product-card/BaseProductCard.astro';
 
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import HomeSlider from '@/components/home/HomeSlider.astro';
+// import HomeSlider from '@/components/home/HomeSlider.astro';
+import HomeLead from '@/components/home/HomeLead.astro';
 import HomeOffers from '@/components/home/HomeOffers.astro';
 import HomePromo from '@/components/home/HomePromo.astro';
 import HomeAddons from '@/components/home/HomeAddons.astro';
@@ -64,7 +65,8 @@ const bestSellers = products?.filter((product: IProduct) => product.isBestSeller
 ---
 
 <BaseLayout pageTitle="Store">
-  <HomeSlider />
+  <!-- <HomeSlider /> -->
+  <HomeLead />
   <HomeOffers />
 
   <div class="home-content">

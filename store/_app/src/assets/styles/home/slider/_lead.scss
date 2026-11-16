@@ -1,0 +1,40 @@
+.home-lead {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  &__photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__caption {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-aller);
+    color: var(--color-base-weak);
+    background: var(--backdrop);
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 4.125rem;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 140%;
+    margin-bottom: 2rem;
+    letter-spacing: 0.02em;
+  }
+}

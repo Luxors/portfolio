@@ -1,0 +1,20 @@
+---
+import { Image } from 'astro:assets';
+import LeadPhoto from '@/assets/images/lead.jpg';
+---
+
+<section class="home-lead">
+  <Image src={LeadPhoto} alt="Lead" class="home-lead__photo" />
+  <div class="home-lead__caption">
+    <div class="container container-sm">
+      <h2 class="home-lead__title">
+        Embrace Comfort,
+        <br />
+        Embrace Your Desires
+      </h2>
+      <p class="home-lead__description">
+        We take you into the arms of comfort, where you can truly <br /> live your authentic desires.
+      </p>
+    </div>
+  </div>
+</section>

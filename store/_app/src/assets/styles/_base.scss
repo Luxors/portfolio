@@ -19,8 +19,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   font-size: 1rem;
-  // font-family: 'AllerRegular', sans-serif;
-  font-family: 'LatoRegular', sans-serif;
+  font-family: var(--font-lato);
   color: var(--base-foreground);
   background-color: var(--base-background);
 }
